@@ -109,7 +109,7 @@
       "issue_id": "dragonfly-xvx"
     }
   ],
-  "authority_hash": "23693062ecf62a15642468f4a7eeee40dce75f18353b100278c796f739b45b18",
+  "authority_hash": "114397bf9c358b2f47d0581765da5c4c052515927d713c2dcf408337c76af66f",
   "blockers_to_clear": [],
   "commands": {
     "claim_top": "",
@@ -118,11 +118,11 @@
     "list_blocked": "",
     "refresh_triage": "bv --robot-triage"
   },
-  "data_hash": "3ffae1fd94abc01a31567bfaf37b78d93fd44e91adcc6f89e21874f1cd7c5dc4",
-  "generated_at": "2026-11-27T00:48:52Z",
+  "data_hash": "be1accf1b31381204afd0ae585b698997023dcd068906a64d8cba1514dcfa5fb",
+  "generated_at": "2026-11-27T08:43:38Z",
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-11-27T00:48:52.645497716Z",
+    "generated_at": "2026-11-27T08:43:38.564718873Z",
     "phase2_ready": true,
     "issue_count": 100,
     "compute_time_ms": 0
@@ -8814,7 +8814,7 @@
       "total_unblocks": 0
     }
   ],
-  "scope_hash": "a675c8c30a90cd5ebf75ae0833f392f4b1ff2e29b71c0ea2b6197c632119d27e",
+  "scope_hash": "fe97a148b0483dba6eb2a752ed3fe809e5556d24a5aa3209a34a13af59e5d95f",
   "source_authority": {
     "state": "complete",
     "claim_safe": true,
@@ -8834,7 +8834,7 @@
         "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
         "source_kind": "jsonl_local",
         "status": "loaded",
-        "data_hash": "3ffae1fd94abc01a31567bfaf37b78d93fd44e91adcc6f89e21874f1cd7c5dc4",
+        "data_hash": "be1accf1b31381204afd0ae585b698997023dcd068906a64d8cba1514dcfa5fb",
         "valid": 100,
         "errors": 0,
         "skipped": 0,
@@ -8851,38 +8851,38 @@
   "status": {
     "PageRank": {
       "state": "computed",
-      "ms": 0.032655
+      "ms": 0.03321
     },
     "Betweenness": {
       "state": "computed",
-      "ms": 0.004348
+      "ms": 0.005709
     },
     "Eigenvector": {
       "state": "computed",
-      "ms": 0.016998
+      "ms": 0.026379
     },
     "HITS": {
       "state": "computed"
     },
     "Critical": {
       "state": "computed",
-      "ms": 0.020488
+      "ms": 0.015523
     },
     "Cycles": {
       "state": "computed",
-      "ms": 0.035885
+      "ms": 0.016675
     },
     "KCore": {
       "state": "computed",
-      "ms": 0.009742
+      "ms": 0.00668
     },
     "Articulation": {
       "state": "computed",
-      "ms": 0.001932
+      "ms": 0.001522
     },
     "Slack": {
       "state": "computed",
-      "ms": 0.007381
+      "ms": 0.005749
     }
   },
   "version": "v0.29.0"
