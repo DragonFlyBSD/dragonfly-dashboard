@@ -209,11 +209,11 @@
     "status": {
       "PageRank": {
         "state": "computed",
-        "ms": 0.047989
+        "ms": 0.04272
       },
       "Betweenness": {
         "state": "computed",
-        "ms": 0.007983
+        "ms": 0.004318
       },
       "Eigenvector": {
         "state": "skipped"
@@ -240,7 +240,7 @@
   },
   "data_hash": "3ffae1fd94abc01a31567bfaf37b78d93fd44e91adcc6f89e21874f1cd7c5dc4",
   "edge_count": 0,
-  "generated_at": "2026-11-27T00:13:22Z",
+  "generated_at": "2026-11-27T00:48:52Z",
   "links": [],
   "metrics": {
     "dragonfly-0ig": [

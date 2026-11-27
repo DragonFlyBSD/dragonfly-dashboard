@@ -119,10 +119,10 @@
     "refresh_triage": "bv --robot-triage"
   },
   "data_hash": "3ffae1fd94abc01a31567bfaf37b78d93fd44e91adcc6f89e21874f1cd7c5dc4",
-  "generated_at": "2026-11-27T00:19:53Z",
+  "generated_at": "2026-11-27T00:48:52Z",
   "meta": {
     "version": "1.0.0",
-    "generated_at": "2026-11-27T00:19:53.617028321Z",
+    "generated_at": "2026-11-27T00:48:52.645497716Z",
     "phase2_ready": true,
     "issue_count": 100,
     "compute_time_ms": 0
@@ -8851,38 +8851,38 @@
   "status": {
     "PageRank": {
       "state": "computed",
-      "ms": 0.064411
+      "ms": 0.032655
     },
     "Betweenness": {
       "state": "computed",
-      "ms": 0.009207
+      "ms": 0.004348
     },
     "Eigenvector": {
       "state": "computed",
-      "ms": 0.027331
+      "ms": 0.016998
     },
     "HITS": {
       "state": "computed"
     },
     "Critical": {
       "state": "computed",
-      "ms": 0.02649
+      "ms": 0.020488
     },
     "Cycles": {
       "state": "computed",
-      "ms": 0.032721
+      "ms": 0.035885
     },
     "KCore": {
       "state": "computed",
-      "ms": 0.014016
+      "ms": 0.009742
     },
     "Articulation": {
       "state": "computed",
-      "ms": 0.002445
+      "ms": 0.001932
     },
     "Slack": {
       "state": "computed",
-      "ms": 0.011051
+      "ms": 0.007381
     }
   },
   "version": "v0.29.0"
