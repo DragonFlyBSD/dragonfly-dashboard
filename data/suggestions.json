@@ -1,9 +1,9 @@
 {
-  "authority_hash": "23693062ecf62a15642468f4a7eeee40dce75f18353b100278c796f739b45b18",
-  "data_hash": "3ffae1fd94abc01a31567bfaf37b78d93fd44e91adcc6f89e21874f1cd7c5dc4",
-  "generated_at": "2026-11-27T00:13:22Z",
+  "authority_hash": "114397bf9c358b2f47d0581765da5c4c052515927d713c2dcf408337c76af66f",
+  "data_hash": "be1accf1b31381204afd0ae585b698997023dcd068906a64d8cba1514dcfa5fb",
+  "generated_at": "2026-11-27T19:00:33Z",
   "output_format": "json",
-  "scope_hash": "a675c8c30a90cd5ebf75ae0833f392f4b1ff2e29b71c0ea2b6197c632119d27e",
+  "scope_hash": "fe97a148b0483dba6eb2a752ed3fe809e5556d24a5aa3209a34a13af59e5d95f",
   "source_authority": {
     "state": "complete",
     "claim_safe": true,
@@ -23,7 +23,7 @@
         "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
         "source_kind": "jsonl_local",
         "status": "loaded",
-        "data_hash": "3ffae1fd94abc01a31567bfaf37b78d93fd44e91adcc6f89e21874f1cd7c5dc4",
+        "data_hash": "be1accf1b31381204afd0ae585b698997023dcd068906a64d8cba1514dcfa5fb",
         "valid": 100,
         "errors": 0,
         "skipped": 0,
@@ -57,7 +57,7 @@
       "summary": "May depend on dragonfly-ckt",
       "reason": "18 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -89,7 +89,7 @@
       "summary": "May depend on dragonfly-diq.22",
       "reason": "27 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -130,7 +130,7 @@
       "summary": "May depend on dragonfly-diq.16",
       "reason": "10 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -154,7 +154,7 @@
       "summary": "May depend on dragonfly-bfu",
       "reason": "24 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -192,7 +192,7 @@
       "summary": "May depend on dragonfly-854",
       "reason": "7 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -213,7 +213,7 @@
       "summary": "May depend on dragonfly-bfu",
       "reason": "19 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -246,7 +246,7 @@
       "summary": "May depend on dragonfly-diq.16",
       "reason": "14 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -274,7 +274,7 @@
       "summary": "May depend on dragonfly-diq",
       "reason": "7 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -295,7 +295,7 @@
       "summary": "May depend on dragonfly-i25",
       "reason": "14 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -323,7 +323,7 @@
       "summary": "May depend on dragonfly-agp",
       "reason": "12 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -349,7 +349,7 @@
       "summary": "May depend on dragonfly-854",
       "reason": "7 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -370,7 +370,7 @@
       "summary": "May depend on dragonfly-a5s",
       "reason": "33 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -417,7 +417,7 @@
       "summary": "May depend on dragonfly-7v8",
       "reason": "3 shared keywords",
       "confidence": 0.7500000000000001,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -434,7 +434,7 @@
       "summary": "May depend on dragonfly-854",
       "reason": "5 shared keywords",
       "confidence": 0.65,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -453,7 +453,7 @@
       "summary": "May depend on dragonfly-ouk",
       "reason": "5 shared keywords",
       "confidence": 0.65,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -472,7 +472,7 @@
       "summary": "May depend on dragonfly-854",
       "reason": "6 shared keywords",
       "confidence": 0.65,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -492,7 +492,7 @@
       "summary": "May depend on dragonfly-9g2",
       "reason": "5 shared keywords",
       "confidence": 0.65,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -511,7 +511,7 @@
       "summary": "May depend on dragonfly-9iu",
       "reason": "5 shared keywords",
       "confidence": 0.65,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -530,7 +530,7 @@
       "summary": "May depend on dragonfly-diq",
       "reason": "11 shared keywords",
       "confidence": 0.65,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -555,7 +555,7 @@
       "summary": "May depend on dragonfly-diq.1",
       "reason": "5 shared keywords",
       "confidence": 0.65,
-      "generated_at": "2026-11-27T00:13:22.066207098Z",
+      "generated_at": "2026-11-27T19:00:33.612980083Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
