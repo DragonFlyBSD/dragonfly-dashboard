@@ -1,24 +1,486 @@
 {
-  "authority_hash": "ff9c21c5a974b5a6bccac6b063f47d3326329728bf7ee55632dab25c3f76201c",
-  "data_hash": "eb8f38b00892072cd73e0e93ddd60276f7112903f3a407cc2a319751d27ca7c8",
-  "generated_at": "2026-11-26T23:56:03Z",
+  "authority_hash": "ce5fdab79b72afce38a62047abcda0ca02b4ebfd51550707369d71059d7806e6",
+  "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
+  "generated_at": "2026-11-27T00:03:38Z",
   "global_capacity": {
-    "open_count": 1,
-    "total_minutes": 112,
-    "critical_path_minutes": 112,
-    "parallelizable_pct": 0,
+    "open_count": 66,
+    "total_minutes": 6829,
+    "critical_path_minutes": 169,
+    "parallelizable_pct": 97.52525992092546,
     "velocity_minutes_per_day": 8.571428571428571,
-    "days_1_agent": 13.066666666666666,
-    "days_2_agents_min": 13.066666666666666,
-    "days_2_agents_max": 13.066666666666666,
-    "days_4_agents_min": 13.066666666666666,
-    "days_4_agents_max": 13.066666666666666,
+    "days_1_agent": 796.7166666666667,
+    "days_2_agents_min": 398.35833333333335,
+    "days_2_agents_max": 408.2166666666667,
+    "days_4_agents_min": 199.17916666666667,
+    "days_4_agents_max": 213.96666666666667,
     "critical_path_ids": [
-      "dragonfly-dof"
+      "dragonfly-diq"
     ]
   },
   "output_format": "json",
-  "scope_hash": "2d6fa3f488d0ea873b805ae594ea940acf7abfd4022d79c76998c7b882a97628",
+  "priority_recommendations": [
+    {
+      "issue_id": "dragonfly-bfu",
+      "title": "pmap: pmap_page_set_memattr() on a normal page rewrites the cache type of its whole 2 MB DMAP mapping",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-cfs",
+      "title": "drm: drm_close() leaks the open's minor ref; unload leaks drm_device",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-ckt",
+      "title": "radeon: GPU reset and resume panic on a NULL pointer in radeon_wb_init()",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq",
+      "title": "drm: virtio-gpu phase 1 (2D KMS, dumb buffers) as a module",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.11",
+      "title": "vgpu 10: virtio-gpu fbdev console for syscons",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.15",
+      "title": "vgpu 14: userland: Xorg modesetting and sway on virtio-gpu",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.16",
+      "title": "vgpu 16: stress tests: KMS, TTM, Xorg, desktop soak",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.17",
+      "title": "virtio_gpu: TTM swaps out buffers the host still uses",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.19",
+      "title": "vgpu phase 2: virgl 3D on virtio_gpu.ko",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.22",
+      "title": "drm/virtio: TTM delayed delete waits for ctrlq space on system_wq, ahead of the ctrlq reclaim work: deadlock",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-e6r",
+      "title": "drm: drm_is_current_master() ignores dev-\u003emaster, X never gets master back after a VT switch",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-fb1",
+      "title": "drm: down_read_trylock() takes the lock exclusive, radeon fence interrupts never enabled under load, 15 s stalls",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-i25",
+      "title": "drm: Linux 'wait forever' (MAX_SCHEDULE_TIMEOUT) completion and wait_event waits return after one tick",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-yw0",
+      "title": "drm: every open leaves the drm device busy; driver can't detach",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.1",
+      "title": "vgpu 0: DragonFly test guest on test desktop (nvmm, virtio-vga, serial, gdb paths)",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35525,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.10",
+      "title": "vgpu 9: import Linux v4.20 virtio-gpu (phase-1 files)",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35525,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.12",
+      "title": "vgpu 11: post-4.20 virtio-gpu fixes",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35525,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.13",
+      "title": "vgpu 12: virtio_gpu.ko module build glue",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35525,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.14",
+      "title": "vgpu 13: dumb-buffer test program",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35525,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-diq.2",
+      "title": "vgpu 1: virtio core: VERSION_1, 64-bit features, FEATURES_OK, VIRTIO_ID_GPU, nfree",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35525,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    }
+  ],
+  "scope_hash": "201e522aa896729b6ef34afb6e8ccac12c4cfb0f501c9480172d34699cf42c60",
   "source_authority": {
     "state": "complete",
     "claim_safe": true,
@@ -26,11 +488,11 @@
     "loaded": 1,
     "failed": 0,
     "disabled": 0,
-    "valid": 1,
+    "valid": 81,
     "errors": 0,
     "skipped": 0,
     "read_errors": 0,
-    "visible": 1,
+    "visible": 81,
     "tombstones": 0,
     "warning_count": 0,
     "sources": [
@@ -38,12 +500,12 @@
         "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
         "source_kind": "jsonl_local",
         "status": "loaded",
-        "data_hash": "eb8f38b00892072cd73e0e93ddd60276f7112903f3a407cc2a319751d27ca7c8",
-        "valid": 1,
+        "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
+        "valid": 81,
         "errors": 0,
         "skipped": 0,
         "read_errors": 0,
-        "visible": 1,
+        "visible": 81,
         "tombstones": 0,
         "stale": false,
         "warning_count": 0

@@ -1,34 +1,43 @@
 {
-  "authority_hash": "ff9c21c5a974b5a6bccac6b063f47d3326329728bf7ee55632dab25c3f76201c",
+  "authority_hash": "ce5fdab79b72afce38a62047abcda0ca02b4ebfd51550707369d71059d7806e6",
   "counts": {
-    "total": 1,
-    "open": 0,
-    "closed": 0,
+    "total": 81,
+    "open": 39,
+    "closed": 15,
     "blocked": 0,
-    "actionable": 0,
-    "not_closed": 1,
+    "actionable": 65,
+    "not_closed": 66,
     "dependency_blocked": 1,
     "by_status": {
-      "deferred": 1
+      "closed": 15,
+      "deferred": 1,
+      "in_progress": 26,
+      "open": 39
     },
     "by_type": {
-      "feature": 1
+      "bug": 58,
+      "epic": 1,
+      "feature": 4,
+      "task": 18
     },
     "by_priority": {
-      "3": 1
+      "1": 31,
+      "2": 29,
+      "3": 20,
+      "4": 1
     }
   },
-  "data_hash": "eb8f38b00892072cd73e0e93ddd60276f7112903f3a407cc2a319751d27ca7c8",
-  "generated_at": "2026-11-26T23:56:03Z",
+  "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
+  "generated_at": "2026-11-27T00:03:38Z",
   "graph": {
-    "node_count": 1,
+    "node_count": 81,
     "edge_count": 0,
     "density": 0,
     "has_cycles": false,
     "phase2_ready": true
   },
   "output_format": "json",
-  "scope_hash": "2d6fa3f488d0ea873b805ae594ea940acf7abfd4022d79c76998c7b882a97628",
+  "scope_hash": "201e522aa896729b6ef34afb6e8ccac12c4cfb0f501c9480172d34699cf42c60",
   "source_authority": {
     "state": "complete",
     "claim_safe": true,
@@ -36,11 +45,11 @@
     "loaded": 1,
     "failed": 0,
     "disabled": 0,
-    "valid": 1,
+    "valid": 81,
     "errors": 0,
     "skipped": 0,
     "read_errors": 0,
-    "visible": 1,
+    "visible": 81,
     "tombstones": 0,
     "warning_count": 0,
     "sources": [
@@ -48,12 +57,12 @@
         "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
         "source_kind": "jsonl_local",
         "status": "loaded",
-        "data_hash": "eb8f38b00892072cd73e0e93ddd60276f7112903f3a407cc2a319751d27ca7c8",
-        "valid": 1,
+        "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
+        "valid": 81,
         "errors": 0,
         "skipped": 0,
         "read_errors": 0,
-        "visible": 1,
+        "visible": 81,
         "tombstones": 0,
         "stale": false,
         "warning_count": 0

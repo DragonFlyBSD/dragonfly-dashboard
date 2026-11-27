@@ -1,0 +1,647 @@
+{
+  "authority_hash": "ce5fdab79b72afce38a62047abcda0ca02b4ebfd51550707369d71059d7806e6",
+  "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
+  "generated_at": "2026-11-27T00:03:38Z",
+  "output_format": "json",
+  "scope_hash": "201e522aa896729b6ef34afb6e8ccac12c4cfb0f501c9480172d34699cf42c60",
+  "source_authority": {
+    "state": "complete",
+    "claim_safe": true,
+    "readiness": "proven",
+    "loaded": 1,
+    "failed": 0,
+    "disabled": 0,
+    "valid": 81,
+    "errors": 0,
+    "skipped": 0,
+    "read_errors": 0,
+    "visible": 81,
+    "tombstones": 0,
+    "warning_count": 0,
+    "sources": [
+      {
+        "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
+        "source_kind": "jsonl_local",
+        "status": "loaded",
+        "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
+        "valid": 81,
+        "errors": 0,
+        "skipped": 0,
+        "read_errors": 0,
+        "visible": 81,
+        "tombstones": 0,
+        "stale": false,
+        "warning_count": 0
+      }
+    ]
+  },
+  "source_kind": "jsonl_local",
+  "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
+  "stats": {
+    "total": 20,
+    "by_type": {
+      "missing_dependency": 20
+    },
+    "by_confidence": {
+      "high": 9,
+      "medium": 11
+    },
+    "high_confidence_count": 9,
+    "actionable_count": 0
+  },
+  "suggestions": [
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0jy",
+      "related_bead": "dragonfly-ckt",
+      "summary": "May depend on dragonfly-ckt",
+      "reason": "18 shared keywords",
+      "confidence": 0.95,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "accel",
+          "desktop",
+          "drm",
+          "evergreen",
+          "every",
+          "gpu",
+          "init",
+          "kernel",
+          "lockup",
+          "master",
+          "radeon",
+          "radeon_gpu_reset",
+          "rdev",
+          "reset",
+          "ring",
+          "sets",
+          "succeeded",
+          "test"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0m9",
+      "related_bead": "dragonfly-diq.22",
+      "summary": "May depend on dragonfly-diq.22",
+      "reason": "27 shared keywords",
+      "confidence": 0.95,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "another",
+          "cpu",
+          "cursor",
+          "dequeue",
+          "dragonfly",
+          "drm",
+          "drops",
+          "fix",
+          "idea",
+          "interrupt",
+          "item",
+          "linux",
+          "linux_workqueue",
+          "one",
+          "own",
+          "per",
+          "queue",
+          "queue_work",
+          "queued",
+          "run",
+          "runs",
+          "schedule_work",
+          "system_wq",
+          "virtio_gpu",
+          "while",
+          "work",
+          "worker"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-4he",
+      "related_bead": "dragonfly-diq.16",
+      "summary": "May depend on dragonfly-diq.16",
+      "reason": "10 shared keywords",
+      "confidence": 0.95,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "linux",
+          "motion",
+          "pointer",
+          "qemu",
+          "tablet",
+          "through",
+          "usb",
+          "vnc",
+          "xfce",
+          "xorg"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-8ba",
+      "related_bead": "dragonfly-bfu",
+      "summary": "May depend on dragonfly-bfu",
+      "reason": "24 shared keywords",
+      "confidence": 0.95,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "2mb",
+          "512",
+          "changes",
+          "dmap",
+          "dragonfly",
+          "entry",
+          "fix",
+          "kernel",
+          "master",
+          "memory",
+          "one",
+          "ordinary",
+          "page",
+          "pages",
+          "pc64",
+          "platform",
+          "pmap",
+          "pmap_change_attr",
+          "sys",
+          "type",
+          "types",
+          "while",
+          "whole",
+          "x86_64"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-a5s",
+      "related_bead": "dragonfly-bfu",
+      "summary": "May depend on dragonfly-bfu",
+      "reason": "19 shared keywords",
+      "confidence": 0.95,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "alloc_page",
+          "combined",
+          "desktop",
+          "dragonfly",
+          "makes",
+          "memory",
+          "out",
+          "page",
+          "pages",
+          "path",
+          "pool",
+          "same",
+          "started",
+          "test",
+          "through",
+          "ttm",
+          "uncached",
+          "while",
+          "write"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-diq.17",
+      "related_bead": "dragonfly-diq.16",
+      "summary": "May depend on dragonfly-diq.16",
+      "reason": "14 shared keywords",
+      "confidence": 0.95,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "destroy",
+          "dumb",
+          "every",
+          "host",
+          "kmsstress",
+          "limit",
+          "linux",
+          "memory",
+          "qemu",
+          "raised",
+          "second",
+          "swaps",
+          "ttm",
+          "while"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-i25",
+      "related_bead": "dragonfly-diq",
+      "summary": "May depend on dragonfly-diq",
+      "reason": "7 shared keywords",
+      "confidence": 0.95,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "dragonfly",
+          "drm",
+          "gpu",
+          "kmod",
+          "linux",
+          "test",
+          "virtio"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-ouk",
+      "related_bead": "dragonfly-i25",
+      "summary": "May depend on dragonfly-i25",
+      "reason": "14 shared keywords",
+      "confidence": 0.95,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "already",
+          "dragonfly",
+          "drm",
+          "failed",
+          "found",
+          "gpu",
+          "i915",
+          "linux",
+          "moves",
+          "pass",
+          "passes",
+          "test",
+          "until",
+          "wait"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-zbv",
+      "related_bead": "dragonfly-a5s",
+      "summary": "May depend on dragonfly-a5s",
+      "reason": "33 shared keywords",
+      "confidence": 0.95,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "10840k",
+          "854",
+          "accel",
+          "alloc_pages",
+          "allocate",
+          "available",
+          "boot",
+          "desktop",
+          "dma",
+          "dma_reserved",
+          "dragonfly",
+          "drm",
+          "enomem",
+          "extra",
+          "failed",
+          "free",
+          "get",
+          "gtt",
+          "large",
+          "memory",
+          "out",
+          "page",
+          "pages",
+          "radeon_gem_object_create",
+          "remaining",
+          "request",
+          "reserve",
+          "space",
+          "test",
+          "ttm",
+          "unable",
+          "used",
+          "xorg"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0jy",
+      "related_bead": "dragonfly-diq",
+      "summary": "May depend on dragonfly-diq",
+      "reason": "11 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "accel",
+          "desktop",
+          "dragonfly",
+          "drm",
+          "gpu",
+          "local",
+          "master",
+          "path",
+          "test",
+          "ttm",
+          "xorg"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0jy",
+      "related_bead": "dragonfly-diq.1",
+      "summary": "May depend on dragonfly-diq.1",
+      "reason": "5 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "accel",
+          "desktop",
+          "dragonfly",
+          "kernel",
+          "test"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0jy",
+      "related_bead": "dragonfly-diq.16",
+      "summary": "May depend on dragonfly-diq.16",
+      "reason": "10 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "desktop",
+          "every",
+          "glxgears",
+          "kldunload",
+          "llvmpipe",
+          "second",
+          "testing",
+          "tests",
+          "ttm",
+          "xorg"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0jy",
+      "related_bead": "dragonfly-diq.17",
+      "summary": "May depend on dragonfly-diq.17",
+      "reason": "13 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "current",
+          "dragonfly",
+          "every",
+          "fails",
+          "gpu",
+          "kernel",
+          "one",
+          "out",
+          "second",
+          "sets",
+          "still",
+          "stops",
+          "ttm"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0jy",
+      "related_bead": "dragonfly-e6r",
+      "summary": "May depend on dragonfly-e6r",
+      "reason": "21 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "back",
+          "client",
+          "clients",
+          "current",
+          "desktop",
+          "drm",
+          "failed",
+          "gpu",
+          "llvmpipe",
+          "master",
+          "new",
+          "one",
+          "open",
+          "path",
+          "radeon",
+          "returns",
+          "says",
+          "switch",
+          "test",
+          "without",
+          "xorg"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0jy",
+      "related_bead": "dragonfly-fb1",
+      "summary": "May depend on dragonfly-fb1",
+      "reason": "21 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "accel",
+          "desktop",
+          "drm",
+          "evergreen",
+          "every",
+          "failed",
+          "fails",
+          "failure",
+          "fence",
+          "glxgears",
+          "gpu",
+          "kernel",
+          "leaves",
+          "lockup",
+          "off",
+          "radeon",
+          "rdev",
+          "seen",
+          "test",
+          "ttm",
+          "wait"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0jy",
+      "related_bead": "dragonfly-ouk",
+      "summary": "May depend on dragonfly-ouk",
+      "reason": "28 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "5450",
+          "back",
+          "cedar",
+          "connected",
+          "desktop",
+          "dragonfly",
+          "drm",
+          "evergreen",
+          "every",
+          "failed",
+          "failure",
+          "fence",
+          "gpu",
+          "loaded",
+          "monitor",
+          "off",
+          "radeon",
+          "ring",
+          "same",
+          "stalled",
+          "started",
+          "switch",
+          "test",
+          "testing",
+          "tests",
+          "until",
+          "wait",
+          "xorg"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0jy",
+      "related_bead": "dragonfly-yw0",
+      "summary": "May depend on dragonfly-yw0",
+      "reason": "13 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "busy",
+          "dragonfly",
+          "drm",
+          "ebusy",
+          "every",
+          "fails",
+          "kldunload",
+          "leaves",
+          "open",
+          "radeon",
+          "returns",
+          "tests",
+          "without"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0m9",
+      "related_bead": "dragonfly-0jy",
+      "summary": "May depend on dragonfly-0jy",
+      "reason": "11 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "another",
+          "dragonfly",
+          "drm",
+          "false",
+          "fence",
+          "new",
+          "off",
+          "one",
+          "radeon",
+          "running",
+          "runs"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0m9",
+      "related_bead": "dragonfly-bfu",
+      "summary": "May depend on dragonfly-bfu",
+      "reason": "7 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "dev",
+          "dragonfly",
+          "fix",
+          "one",
+          "sys",
+          "while",
+          "work"
+        ]
+      }
+    },
+    {
+      "type": "missing_dependency",
+      "target_bead": "dragonfly-0m9",
+      "related_bead": "dragonfly-ckt",
+      "summary": "May depend on dragonfly-ckt",
+      "reason": "6 shared keywords",
+      "confidence": 0.65,
+      "generated_at": "2026-11-27T00:03:38.430254596Z",
+      "metadata": {
+        "action_unavailable_reason": "source has no verified live tracker route",
+        "shared_keywords": [
+          "code",
+          "drm",
+          "fix",
+          "found",
+          "linux",
+          "radeon"
+        ]
+      }
+    }
+  ],
+  "version": "v0.29.0"
+}

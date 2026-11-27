@@ -1,21 +1,181 @@
 {
-  "authority_hash": "ff9c21c5a974b5a6bccac6b063f47d3326329728bf7ee55632dab25c3f76201c",
+  "authority_hash": "ce5fdab79b72afce38a62047abcda0ca02b4ebfd51550707369d71059d7806e6",
   "centrality": {
     "version": 1,
     "pagerank": {
-      "dragonfly-dof": 1
+      "dragonfly-0jy": 0.012345679012345703,
+      "dragonfly-0m9": 0.012345679012345703,
+      "dragonfly-0oy": 0.012345679012345703,
+      "dragonfly-0yg": 0.012345679012345703,
+      "dragonfly-163": 0.012345679012345703,
+      "dragonfly-1xz": 0.012345679012345703,
+      "dragonfly-36q": 0.012345679012345703,
+      "dragonfly-39z": 0.012345679012345703,
+      "dragonfly-3ar": 0.012345679012345703,
+      "dragonfly-3el": 0.012345679012345703,
+      "dragonfly-3q4": 0.012345679012345703,
+      "dragonfly-3r7": 0.012345679012345703,
+      "dragonfly-3tj": 0.012345679012345703,
+      "dragonfly-4he": 0.012345679012345703,
+      "dragonfly-4mg": 0.012345679012345703,
+      "dragonfly-4ys": 0.012345679012345703,
+      "dragonfly-5uv": 0.012345679012345703,
+      "dragonfly-6s3": 0.012345679012345703,
+      "dragonfly-7bb": 0.012345679012345703,
+      "dragonfly-8ba": 0.012345679012345703,
+      "dragonfly-8h8": 0.012345679012345703,
+      "dragonfly-914": 0.012345679012345703,
+      "dragonfly-a5s": 0.012345679012345703,
+      "dragonfly-aus": 0.012345679012345703,
+      "dragonfly-bfu": 0.012345679012345703,
+      "dragonfly-c3v": 0.012345679012345703,
+      "dragonfly-c8n": 0.012345679012345703,
+      "dragonfly-cfs": 0.012345679012345703,
+      "dragonfly-ck4": 0.012345679012345703,
+      "dragonfly-ckt": 0.012345679012345703,
+      "dragonfly-diq": 0.012345679012345703,
+      "dragonfly-diq.1": 0.012345679012345703,
+      "dragonfly-diq.10": 0.012345679012345703,
+      "dragonfly-diq.11": 0.012345679012345703,
+      "dragonfly-diq.12": 0.012345679012345703,
+      "dragonfly-diq.13": 0.012345679012345703,
+      "dragonfly-diq.14": 0.012345679012345703,
+      "dragonfly-diq.15": 0.012345679012345703,
+      "dragonfly-diq.16": 0.012345679012345703,
+      "dragonfly-diq.17": 0.012345679012345703,
+      "dragonfly-diq.18": 0.012345679012345703,
+      "dragonfly-diq.19": 0.012345679012345703,
+      "dragonfly-diq.2": 0.012345679012345703,
+      "dragonfly-diq.22": 0.012345679012345703,
+      "dragonfly-diq.23": 0.012345679012345703,
+      "dragonfly-diq.3": 0.012345679012345703,
+      "dragonfly-diq.4": 0.012345679012345703,
+      "dragonfly-diq.5": 0.012345679012345703,
+      "dragonfly-diq.6": 0.012345679012345703,
+      "dragonfly-diq.7": 0.012345679012345703,
+      "dragonfly-diq.8": 0.012345679012345703,
+      "dragonfly-diq.9": 0.012345679012345703,
+      "dragonfly-dof": 0.012345679012345703,
+      "dragonfly-dp6": 0.012345679012345703,
+      "dragonfly-e6r": 0.012345679012345703,
+      "dragonfly-e9a": 0.012345679012345703,
+      "dragonfly-ehm": 0.012345679012345703,
+      "dragonfly-el8": 0.012345679012345703,
+      "dragonfly-fb1": 0.012345679012345703,
+      "dragonfly-g4e": 0.012345679012345703,
+      "dragonfly-gcj": 0.012345679012345703,
+      "dragonfly-h46": 0.012345679012345703,
+      "dragonfly-hsu": 0.012345679012345703,
+      "dragonfly-i25": 0.012345679012345703,
+      "dragonfly-ih6": 0.012345679012345703,
+      "dragonfly-j4c": 0.012345679012345703,
+      "dragonfly-m8r": 0.012345679012345703,
+      "dragonfly-ouk": 0.012345679012345703,
+      "dragonfly-q52": 0.012345679012345703,
+      "dragonfly-s1f": 0.012345679012345703,
+      "dragonfly-u5i": 0.012345679012345703,
+      "dragonfly-w1w": 0.012345679012345703,
+      "dragonfly-wo3": 0.012345679012345703,
+      "dragonfly-wzn": 0.012345679012345703,
+      "dragonfly-xpk": 0.012345679012345703,
+      "dragonfly-xvx": 0.012345679012345703,
+      "dragonfly-y11": 0.012345679012345703,
+      "dragonfly-y5w": 0.012345679012345703,
+      "dragonfly-yu7": 0.012345679012345703,
+      "dragonfly-yw0": 0.012345679012345703,
+      "dragonfly-zbv": 0.012345679012345703
     },
     "betweenness": {
-      "dragonfly-dof": 0
+      "dragonfly-0jy": 0,
+      "dragonfly-0m9": 0,
+      "dragonfly-0oy": 0,
+      "dragonfly-0yg": 0,
+      "dragonfly-163": 0,
+      "dragonfly-1xz": 0,
+      "dragonfly-36q": 0,
+      "dragonfly-39z": 0,
+      "dragonfly-3ar": 0,
+      "dragonfly-3el": 0,
+      "dragonfly-3q4": 0,
+      "dragonfly-3r7": 0,
+      "dragonfly-3tj": 0,
+      "dragonfly-4he": 0,
+      "dragonfly-4mg": 0,
+      "dragonfly-4ys": 0,
+      "dragonfly-5uv": 0,
+      "dragonfly-6s3": 0,
+      "dragonfly-7bb": 0,
+      "dragonfly-8ba": 0,
+      "dragonfly-8h8": 0,
+      "dragonfly-914": 0,
+      "dragonfly-a5s": 0,
+      "dragonfly-aus": 0,
+      "dragonfly-bfu": 0,
+      "dragonfly-c3v": 0,
+      "dragonfly-c8n": 0,
+      "dragonfly-cfs": 0,
+      "dragonfly-ck4": 0,
+      "dragonfly-ckt": 0,
+      "dragonfly-diq": 0,
+      "dragonfly-diq.1": 0,
+      "dragonfly-diq.10": 0,
+      "dragonfly-diq.11": 0,
+      "dragonfly-diq.12": 0,
+      "dragonfly-diq.13": 0,
+      "dragonfly-diq.14": 0,
+      "dragonfly-diq.15": 0,
+      "dragonfly-diq.16": 0,
+      "dragonfly-diq.17": 0,
+      "dragonfly-diq.18": 0,
+      "dragonfly-diq.19": 0,
+      "dragonfly-diq.2": 0,
+      "dragonfly-diq.22": 0,
+      "dragonfly-diq.23": 0,
+      "dragonfly-diq.3": 0,
+      "dragonfly-diq.4": 0,
+      "dragonfly-diq.5": 0,
+      "dragonfly-diq.6": 0,
+      "dragonfly-diq.7": 0,
+      "dragonfly-diq.8": 0,
+      "dragonfly-diq.9": 0,
+      "dragonfly-dof": 0,
+      "dragonfly-dp6": 0,
+      "dragonfly-e6r": 0,
+      "dragonfly-e9a": 0,
+      "dragonfly-ehm": 0,
+      "dragonfly-el8": 0,
+      "dragonfly-fb1": 0,
+      "dragonfly-g4e": 0,
+      "dragonfly-gcj": 0,
+      "dragonfly-h46": 0,
+      "dragonfly-hsu": 0,
+      "dragonfly-i25": 0,
+      "dragonfly-ih6": 0,
+      "dragonfly-j4c": 0,
+      "dragonfly-m8r": 0,
+      "dragonfly-ouk": 0,
+      "dragonfly-q52": 0,
+      "dragonfly-s1f": 0,
+      "dragonfly-u5i": 0,
+      "dragonfly-w1w": 0,
+      "dragonfly-wo3": 0,
+      "dragonfly-wzn": 0,
+      "dragonfly-xpk": 0,
+      "dragonfly-xvx": 0,
+      "dragonfly-y11": 0,
+      "dragonfly-y5w": 0,
+      "dragonfly-yu7": 0,
+      "dragonfly-yw0": 0,
+      "dragonfly-zbv": 0
     },
     "status": {
       "PageRank": {
         "state": "computed",
-        "ms": 0.016435
+        "ms": 0.04002
       },
       "Betweenness": {
         "state": "computed",
-        "ms": 0.003676
+        "ms": 0.003005
       },
       "Eigenvector": {
         "state": "skipped"
@@ -40,28 +200,908 @@
       }
     }
   },
-  "data_hash": "eb8f38b00892072cd73e0e93ddd60276f7112903f3a407cc2a319751d27ca7c8",
+  "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
   "edge_count": 0,
-  "generated_at": "2026-11-26T23:56:03Z",
+  "generated_at": "2026-11-27T00:03:38Z",
   "links": [],
   "metrics": {
+    "dragonfly-0jy": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-0m9": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-0oy": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-0yg": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-163": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-1xz": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-36q": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-39z": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-3ar": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-3el": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-3q4": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-3r7": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-3tj": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-4he": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-4mg": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-4ys": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-5uv": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-6s3": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-7bb": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-8ba": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-8h8": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-914": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-a5s": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-aus": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-bfu": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-c3v": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-c8n": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-cfs": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-ck4": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-ckt": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.1": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.10": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.11": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.12": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.13": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.14": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.15": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.16": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.17": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.18": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.19": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.2": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.22": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.23": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.3": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.4": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.5": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.6": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.7": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.8": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-diq.9": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
     "dragonfly-dof": [
-      1,
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-dp6": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-e6r": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-e9a": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-ehm": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-el8": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-fb1": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-g4e": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-gcj": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-h46": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-hsu": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-i25": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-ih6": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-j4c": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-m8r": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-ouk": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-q52": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-s1f": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-u5i": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-w1w": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-wo3": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-wzn": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-xpk": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-xvx": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-y11": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-y5w": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-yu7": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-yw0": [
+      0.012345679012345703,
+      0,
+      0,
+      0,
+      0
+    ],
+    "dragonfly-zbv": [
+      0.012345679012345703,
       0,
       0,
       0,
       0
     ]
   },
-  "node_count": 1,
+  "node_count": 81,
   "output_format": "json",
   "positions": {
-    "dragonfly-dof": [
+    "dragonfly-0jy": [
+      0,
+      -3200
+    ],
+    "dragonfly-0m9": [
+      0,
+      -3120
+    ],
+    "dragonfly-0oy": [
+      0,
+      -3040
+    ],
+    "dragonfly-0yg": [
+      0,
+      -2960
+    ],
+    "dragonfly-163": [
+      0,
+      -2880
+    ],
+    "dragonfly-1xz": [
+      0,
+      -2800
+    ],
+    "dragonfly-36q": [
+      0,
+      -2720
+    ],
+    "dragonfly-39z": [
+      0,
+      -2640
+    ],
+    "dragonfly-3ar": [
+      0,
+      -2560
+    ],
+    "dragonfly-3el": [
+      0,
+      -2480
+    ],
+    "dragonfly-3q4": [
+      0,
+      -2400
+    ],
+    "dragonfly-3r7": [
+      0,
+      -2320
+    ],
+    "dragonfly-3tj": [
+      0,
+      -2240
+    ],
+    "dragonfly-4he": [
+      0,
+      -2160
+    ],
+    "dragonfly-4mg": [
+      0,
+      -2080
+    ],
+    "dragonfly-4ys": [
+      0,
+      -2000
+    ],
+    "dragonfly-5uv": [
+      0,
+      -1920
+    ],
+    "dragonfly-6s3": [
+      0,
+      -1840
+    ],
+    "dragonfly-7bb": [
+      0,
+      -1760
+    ],
+    "dragonfly-8ba": [
+      0,
+      -1680
+    ],
+    "dragonfly-8h8": [
+      0,
+      -1600
+    ],
+    "dragonfly-914": [
+      0,
+      -1520
+    ],
+    "dragonfly-a5s": [
+      0,
+      -1440
+    ],
+    "dragonfly-aus": [
+      0,
+      -1360
+    ],
+    "dragonfly-bfu": [
+      0,
+      -1280
+    ],
+    "dragonfly-c3v": [
+      0,
+      -1200
+    ],
+    "dragonfly-c8n": [
+      0,
+      -1120
+    ],
+    "dragonfly-cfs": [
+      0,
+      -1040
+    ],
+    "dragonfly-ck4": [
+      0,
+      -960
+    ],
+    "dragonfly-ckt": [
+      0,
+      -880
+    ],
+    "dragonfly-diq": [
+      0,
+      -800
+    ],
+    "dragonfly-diq.1": [
+      0,
+      -720
+    ],
+    "dragonfly-diq.10": [
+      0,
+      -640
+    ],
+    "dragonfly-diq.11": [
+      0,
+      -560
+    ],
+    "dragonfly-diq.12": [
+      0,
+      -480
+    ],
+    "dragonfly-diq.13": [
+      0,
+      -400
+    ],
+    "dragonfly-diq.14": [
+      0,
+      -320
+    ],
+    "dragonfly-diq.15": [
+      0,
+      -240
+    ],
+    "dragonfly-diq.16": [
+      0,
+      -160
+    ],
+    "dragonfly-diq.17": [
+      0,
+      -80
+    ],
+    "dragonfly-diq.18": [
       0,
       0
+    ],
+    "dragonfly-diq.19": [
+      0,
+      80
+    ],
+    "dragonfly-diq.2": [
+      0,
+      160
+    ],
+    "dragonfly-diq.22": [
+      0,
+      240
+    ],
+    "dragonfly-diq.23": [
+      0,
+      320
+    ],
+    "dragonfly-diq.3": [
+      0,
+      400
+    ],
+    "dragonfly-diq.4": [
+      0,
+      480
+    ],
+    "dragonfly-diq.5": [
+      0,
+      560
+    ],
+    "dragonfly-diq.6": [
+      0,
+      640
+    ],
+    "dragonfly-diq.7": [
+      0,
+      720
+    ],
+    "dragonfly-diq.8": [
+      0,
+      800
+    ],
+    "dragonfly-diq.9": [
+      0,
+      880
+    ],
+    "dragonfly-dof": [
+      0,
+      960
+    ],
+    "dragonfly-dp6": [
+      0,
+      1040
+    ],
+    "dragonfly-e6r": [
+      0,
+      1120
+    ],
+    "dragonfly-e9a": [
+      0,
+      1200
+    ],
+    "dragonfly-ehm": [
+      0,
+      1280
+    ],
+    "dragonfly-el8": [
+      0,
+      1360
+    ],
+    "dragonfly-fb1": [
+      0,
+      1440
+    ],
+    "dragonfly-g4e": [
+      0,
+      1520
+    ],
+    "dragonfly-gcj": [
+      0,
+      1600
+    ],
+    "dragonfly-h46": [
+      0,
+      1680
+    ],
+    "dragonfly-hsu": [
+      0,
+      1760
+    ],
+    "dragonfly-i25": [
+      0,
+      1840
+    ],
+    "dragonfly-ih6": [
+      0,
+      1920
+    ],
+    "dragonfly-j4c": [
+      0,
+      2000
+    ],
+    "dragonfly-m8r": [
+      0,
+      2080
+    ],
+    "dragonfly-ouk": [
+      0,
+      2160
+    ],
+    "dragonfly-q52": [
+      0,
+      2240
+    ],
+    "dragonfly-s1f": [
+      0,
+      2320
+    ],
+    "dragonfly-u5i": [
+      0,
+      2400
+    ],
+    "dragonfly-w1w": [
+      0,
+      2480
+    ],
+    "dragonfly-wo3": [
+      0,
+      2560
+    ],
+    "dragonfly-wzn": [
+      0,
+      2640
+    ],
+    "dragonfly-xpk": [
+      0,
+      2720
+    ],
+    "dragonfly-xvx": [
+      0,
+      2800
+    ],
+    "dragonfly-y11": [
+      0,
+      2880
+    ],
+    "dragonfly-y5w": [
+      0,
+      2960
+    ],
+    "dragonfly-yu7": [
+      0,
+      3040
+    ],
+    "dragonfly-yw0": [
+      0,
+      3120
+    ],
+    "dragonfly-zbv": [
+      0,
+      3200
     ]
   },
-  "scope_hash": "2d6fa3f488d0ea873b805ae594ea940acf7abfd4022d79c76998c7b882a97628",
+  "scope_hash": "201e522aa896729b6ef34afb6e8ccac12c4cfb0f501c9480172d34699cf42c60",
   "source_authority": {
     "state": "complete",
     "claim_safe": true,
@@ -69,11 +1109,11 @@
     "loaded": 1,
     "failed": 0,
     "disabled": 0,
-    "valid": 1,
+    "valid": 81,
     "errors": 0,
     "skipped": 0,
     "read_errors": 0,
-    "visible": 1,
+    "visible": 81,
     "tombstones": 0,
     "warning_count": 0,
     "sources": [
@@ -81,12 +1121,12 @@
         "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
         "source_kind": "jsonl_local",
         "status": "loaded",
-        "data_hash": "eb8f38b00892072cd73e0e93ddd60276f7112903f3a407cc2a319751d27ca7c8",
-        "valid": 1,
+        "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
+        "valid": 81,
         "errors": 0,
         "skipped": 0,
         "read_errors": 0,
-        "visible": 1,
+        "visible": 81,
         "tombstones": 0,
         "stale": false,
         "warning_count": 0
