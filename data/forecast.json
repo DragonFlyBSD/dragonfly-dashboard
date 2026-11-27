@@ -1,24 +1,116 @@
 {
-  "authority_hash": "ce5fdab79b72afce38a62047abcda0ca02b4ebfd51550707369d71059d7806e6",
-  "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
-  "generated_at": "2026-11-27T00:03:38Z",
+  "authority_hash": "23693062ecf62a15642468f4a7eeee40dce75f18353b100278c796f739b45b18",
+  "data_hash": "3ffae1fd94abc01a31567bfaf37b78d93fd44e91adcc6f89e21874f1cd7c5dc4",
+  "generated_at": "2026-11-27T00:13:22Z",
   "global_capacity": {
-    "open_count": 66,
-    "total_minutes": 6829,
+    "open_count": 83,
+    "total_minutes": 8159,
     "critical_path_minutes": 169,
-    "parallelizable_pct": 97.52525992092546,
+    "parallelizable_pct": 97.92866772888834,
     "velocity_minutes_per_day": 8.571428571428571,
-    "days_1_agent": 796.7166666666667,
-    "days_2_agents_min": 398.35833333333335,
-    "days_2_agents_max": 408.2166666666667,
-    "days_4_agents_min": 199.17916666666667,
-    "days_4_agents_max": 213.96666666666667,
+    "days_1_agent": 951.8833333333333,
+    "days_2_agents_min": 475.94166666666666,
+    "days_2_agents_max": 485.8,
+    "days_4_agents_min": 237.97083333333333,
+    "days_4_agents_max": 252.75833333333335,
     "critical_path_ids": [
       "dragonfly-diq"
     ]
   },
   "output_format": "json",
   "priority_recommendations": [
+    {
+      "issue_id": "dragonfly-7v8",
+      "title": "drm: kobject_release() frees kobj-\u003ename after the object was freed",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-854",
+      "title": "drm/ttm: TTM pages put on the VM active queue, pool relinks pageq, queue corruption panic",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-9g2",
+      "title": "drm: kldunload of radeon or amdgpu leaves the drm device registered",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
+      "issue_id": "dragonfly-9iu",
+      "title": "drm/ttm: freeing a page that was mapped twice panics (PG_MAPPED)",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
     {
       "issue_id": "dragonfly-bfu",
       "title": "pmap: pmap_page_set_memattr() on a normal page rewrites the cache type of its whole 2 MB DMAP mapping",
@@ -227,6 +319,29 @@
       }
     },
     {
+      "issue_id": "dragonfly-diq.21",
+      "title": "virtio_gpu: fbdev dirty work can run after the console buffer is gone",
+      "labels": [],
+      "current_priority": 1,
+      "suggested_priority": 2,
+      "impact_score": 0.35925,
+      "confidence": 0.8,
+      "reasoning": [
+        "High centrality in dependency graph",
+        "Stale for 15+ days",
+        "Zero slack on critical chain"
+      ],
+      "direction": "decrease",
+      "what_if": {
+        "direct_unblocks": 0,
+        "transitive_unblocks": 0,
+        "blocked_reduction": 0,
+        "depth_reduction": 0.1,
+        "parallelization_gain": -1,
+        "explanation": "No immediate downstream impact"
+      }
+    },
+    {
       "issue_id": "dragonfly-diq.22",
       "title": "drm/virtio: TTM delayed delete waits for ctrlq space on system_wq, ahead of the ctrlq reclaim work: deadlock",
       "labels": [],
@@ -342,123 +457,8 @@
       }
     },
     {
-      "issue_id": "dragonfly-diq.1",
-      "title": "vgpu 0: DragonFly test guest on test desktop (nvmm, virtio-vga, serial, gdb paths)",
-      "labels": [],
-      "current_priority": 1,
-      "suggested_priority": 2,
-      "impact_score": 0.35525,
-      "confidence": 0.8,
-      "reasoning": [
-        "High centrality in dependency graph",
-        "Stale for 15+ days",
-        "Zero slack on critical chain"
-      ],
-      "direction": "decrease",
-      "what_if": {
-        "direct_unblocks": 0,
-        "transitive_unblocks": 0,
-        "blocked_reduction": 0,
-        "depth_reduction": 0.1,
-        "parallelization_gain": -1,
-        "explanation": "No immediate downstream impact"
-      }
-    },
-    {
-      "issue_id": "dragonfly-diq.10",
-      "title": "vgpu 9: import Linux v4.20 virtio-gpu (phase-1 files)",
-      "labels": [],
-      "current_priority": 1,
-      "suggested_priority": 2,
-      "impact_score": 0.35525,
-      "confidence": 0.8,
-      "reasoning": [
-        "High centrality in dependency graph",
-        "Stale for 15+ days",
-        "Zero slack on critical chain"
-      ],
-      "direction": "decrease",
-      "what_if": {
-        "direct_unblocks": 0,
-        "transitive_unblocks": 0,
-        "blocked_reduction": 0,
-        "depth_reduction": 0.1,
-        "parallelization_gain": -1,
-        "explanation": "No immediate downstream impact"
-      }
-    },
-    {
-      "issue_id": "dragonfly-diq.12",
-      "title": "vgpu 11: post-4.20 virtio-gpu fixes",
-      "labels": [],
-      "current_priority": 1,
-      "suggested_priority": 2,
-      "impact_score": 0.35525,
-      "confidence": 0.8,
-      "reasoning": [
-        "High centrality in dependency graph",
-        "Stale for 15+ days",
-        "Zero slack on critical chain"
-      ],
-      "direction": "decrease",
-      "what_if": {
-        "direct_unblocks": 0,
-        "transitive_unblocks": 0,
-        "blocked_reduction": 0,
-        "depth_reduction": 0.1,
-        "parallelization_gain": -1,
-        "explanation": "No immediate downstream impact"
-      }
-    },
-    {
-      "issue_id": "dragonfly-diq.13",
-      "title": "vgpu 12: virtio_gpu.ko module build glue",
-      "labels": [],
-      "current_priority": 1,
-      "suggested_priority": 2,
-      "impact_score": 0.35525,
-      "confidence": 0.8,
-      "reasoning": [
-        "High centrality in dependency graph",
-        "Stale for 15+ days",
-        "Zero slack on critical chain"
-      ],
-      "direction": "decrease",
-      "what_if": {
-        "direct_unblocks": 0,
-        "transitive_unblocks": 0,
-        "blocked_reduction": 0,
-        "depth_reduction": 0.1,
-        "parallelization_gain": -1,
-        "explanation": "No immediate downstream impact"
-      }
-    },
-    {
-      "issue_id": "dragonfly-diq.14",
-      "title": "vgpu 13: dumb-buffer test program",
-      "labels": [],
-      "current_priority": 1,
-      "suggested_priority": 2,
-      "impact_score": 0.35525,
-      "confidence": 0.8,
-      "reasoning": [
-        "High centrality in dependency graph",
-        "Stale for 15+ days",
-        "Zero slack on critical chain"
-      ],
-      "direction": "decrease",
-      "what_if": {
-        "direct_unblocks": 0,
-        "transitive_unblocks": 0,
-        "blocked_reduction": 0,
-        "depth_reduction": 0.1,
-        "parallelization_gain": -1,
-        "explanation": "No immediate downstream impact"
-      }
-    },
-    {
-      "issue_id": "dragonfly-diq.2",
-      "title": "vgpu 1: virtio core: VERSION_1, 64-bit features, FEATURES_OK, VIRTIO_ID_GPU, nfree",
+      "issue_id": "dragonfly-c3m",
+      "title": "sound: buffer resize can free the soft buffer under chn_read/write",
       "labels": [],
       "current_priority": 1,
       "suggested_priority": 2,
@@ -480,7 +480,7 @@
       }
     }
   ],
-  "scope_hash": "201e522aa896729b6ef34afb6e8ccac12c4cfb0f501c9480172d34699cf42c60",
+  "scope_hash": "a675c8c30a90cd5ebf75ae0833f392f4b1ff2e29b71c0ea2b6197c632119d27e",
   "source_authority": {
     "state": "complete",
     "claim_safe": true,
@@ -488,11 +488,11 @@
     "loaded": 1,
     "failed": 0,
     "disabled": 0,
-    "valid": 81,
+    "valid": 100,
     "errors": 0,
     "skipped": 0,
     "read_errors": 0,
-    "visible": 81,
+    "visible": 100,
     "tombstones": 0,
     "warning_count": 0,
     "sources": [
@@ -500,12 +500,12 @@
         "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
         "source_kind": "jsonl_local",
         "status": "loaded",
-        "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
-        "valid": 81,
+        "data_hash": "3ffae1fd94abc01a31567bfaf37b78d93fd44e91adcc6f89e21874f1cd7c5dc4",
+        "valid": 100,
         "errors": 0,
         "skipped": 0,
         "read_errors": 0,
-        "visible": 81,
+        "visible": 100,
         "tombstones": 0,
         "stale": false,
         "warning_count": 0

@@ -1,43 +1,44 @@
 {
-  "authority_hash": "ce5fdab79b72afce38a62047abcda0ca02b4ebfd51550707369d71059d7806e6",
+  "authority_hash": "23693062ecf62a15642468f4a7eeee40dce75f18353b100278c796f739b45b18",
   "counts": {
-    "total": 81,
-    "open": 39,
-    "closed": 15,
+    "total": 100,
+    "open": 47,
+    "closed": 17,
     "blocked": 0,
-    "actionable": 65,
-    "not_closed": 66,
+    "actionable": 82,
+    "not_closed": 83,
     "dependency_blocked": 1,
     "by_status": {
-      "closed": 15,
+      "closed": 17,
       "deferred": 1,
-      "in_progress": 26,
-      "open": 39
+      "in_progress": 35,
+      "open": 47
     },
     "by_type": {
-      "bug": 58,
+      "bug": 76,
       "epic": 1,
       "feature": 4,
+      "spike": 1,
       "task": 18
     },
     "by_priority": {
-      "1": 31,
-      "2": 29,
+      "1": 41,
+      "2": 38,
       "3": 20,
       "4": 1
     }
   },
-  "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
-  "generated_at": "2026-11-27T00:03:38Z",
+  "data_hash": "3ffae1fd94abc01a31567bfaf37b78d93fd44e91adcc6f89e21874f1cd7c5dc4",
+  "generated_at": "2026-11-27T00:13:22Z",
   "graph": {
-    "node_count": 81,
+    "node_count": 100,
     "edge_count": 0,
     "density": 0,
     "has_cycles": false,
     "phase2_ready": true
   },
   "output_format": "json",
-  "scope_hash": "201e522aa896729b6ef34afb6e8ccac12c4cfb0f501c9480172d34699cf42c60",
+  "scope_hash": "a675c8c30a90cd5ebf75ae0833f392f4b1ff2e29b71c0ea2b6197c632119d27e",
   "source_authority": {
     "state": "complete",
     "claim_safe": true,
@@ -45,11 +46,11 @@
     "loaded": 1,
     "failed": 0,
     "disabled": 0,
-    "valid": 81,
+    "valid": 100,
     "errors": 0,
     "skipped": 0,
     "read_errors": 0,
-    "visible": 81,
+    "visible": 100,
     "tombstones": 0,
     "warning_count": 0,
     "sources": [
@@ -57,12 +58,12 @@
         "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
         "source_kind": "jsonl_local",
         "status": "loaded",
-        "data_hash": "36eadd317bee5206fac1416275e75945dd156332dc6cfdf4f303e3067cbd763d",
-        "valid": 81,
+        "data_hash": "3ffae1fd94abc01a31567bfaf37b78d93fd44e91adcc6f89e21874f1cd7c5dc4",
+        "valid": 100,
         "errors": 0,
         "skipped": 0,
         "read_errors": 0,
-        "visible": 81,
+        "visible": 100,
         "tombstones": 0,
         "stale": false,
         "warning_count": 0
