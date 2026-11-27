@@ -1,13 +1,13 @@
 {
-  "authority_hash": "114397bf9c358b2f47d0581765da5c4c052515927d713c2dcf408337c76af66f",
+  "authority_hash": "cdce15a55278195d00572e930cd84321b187e732e63311114c1be98356cb9db1",
   "counts": {
     "total": 100,
     "open": 47,
     "closed": 17,
     "blocked": 0,
-    "actionable": 82,
+    "actionable": 79,
     "not_closed": 83,
-    "dependency_blocked": 1,
+    "dependency_blocked": 4,
     "by_status": {
       "closed": 17,
       "deferred": 1,
@@ -28,17 +28,17 @@
       "4": 1
     }
   },
-  "data_hash": "be1accf1b31381204afd0ae585b698997023dcd068906a64d8cba1514dcfa5fb",
-  "generated_at": "2026-11-27T19:00:33Z",
+  "data_hash": "39c0b5156eacc9a0a6129fddaa976318ffd2c24ed15484174518193ca5dccd4b",
+  "generated_at": "2026-11-27T23:17:25Z",
   "graph": {
     "node_count": 100,
-    "edge_count": 0,
-    "density": 0,
+    "edge_count": 4,
+    "density": 0.00040404040404040404,
     "has_cycles": false,
     "phase2_ready": true
   },
   "output_format": "json",
-  "scope_hash": "fe97a148b0483dba6eb2a752ed3fe809e5556d24a5aa3209a34a13af59e5d95f",
+  "scope_hash": "f2eae3bbf737d75ce0fecd5b71fba94391e3746149096515eba44ae507dea719",
   "source_authority": {
     "state": "complete",
     "claim_safe": true,
@@ -58,7 +58,7 @@
         "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
         "source_kind": "jsonl_local",
         "status": "loaded",
-        "data_hash": "be1accf1b31381204afd0ae585b698997023dcd068906a64d8cba1514dcfa5fb",
+        "data_hash": "39c0b5156eacc9a0a6129fddaa976318ffd2c24ed15484174518193ca5dccd4b",
         "valid": 100,
         "errors": 0,
         "skipped": 0,
@@ -72,18 +72,24 @@
   },
   "source_kind": "jsonl_local",
   "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
+  "staleness": {
+    "stale_count": 2,
+    "stalest_issue_id": "dragonfly-586",
+    "stalest_issue_days": 20,
+    "threshold_days": 14
+  },
   "velocity": {
-    "closed_last_7_days": 0,
-    "closed_last_30_days": 0,
-    "avg_days_to_close": 0,
+    "closed_last_7_days": 9,
+    "closed_last_30_days": 17,
+    "avg_days_to_close": 4.048060321350762,
     "weekly": [
       {
         "week_start": "2026-11-23T00:00:00Z",
-        "closed": 0
+        "closed": 9
       },
       {
         "week_start": "2026-11-16T00:00:00Z",
-        "closed": 0
+        "closed": 8
       },
       {
         "week_start": "2026-11-09T00:00:00Z",
