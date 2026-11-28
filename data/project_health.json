@@ -1,44 +1,44 @@
 {
-  "authority_hash": "cdce15a55278195d00572e930cd84321b187e732e63311114c1be98356cb9db1",
+  "authority_hash": "4c3ae9478b8b9f3391caa1f3febf547ccd9cd822e3510c246d8efbb919a35e1b",
   "counts": {
-    "total": 100,
-    "open": 47,
-    "closed": 17,
+    "total": 108,
+    "open": 50,
+    "closed": 21,
     "blocked": 0,
-    "actionable": 79,
-    "not_closed": 83,
-    "dependency_blocked": 4,
+    "actionable": 55,
+    "not_closed": 87,
+    "dependency_blocked": 32,
     "by_status": {
-      "closed": 17,
+      "closed": 21,
       "deferred": 1,
-      "in_progress": 35,
-      "open": 47
+      "in_progress": 36,
+      "open": 50
     },
     "by_type": {
       "bug": 76,
-      "epic": 1,
+      "epic": 2,
       "feature": 4,
       "spike": 1,
-      "task": 18
+      "task": 25
     },
     "by_priority": {
-      "1": 41,
+      "1": 49,
       "2": 38,
       "3": 20,
       "4": 1
     }
   },
-  "data_hash": "39c0b5156eacc9a0a6129fddaa976318ffd2c24ed15484174518193ca5dccd4b",
-  "generated_at": "2026-11-27T23:17:25Z",
+  "data_hash": "2a7ddd4c904e41640ac894741ce0313b6ce546f234b7161800adc5839c83db8a",
+  "generated_at": "2026-11-28T02:01:52Z",
   "graph": {
-    "node_count": 100,
-    "edge_count": 4,
-    "density": 0.00040404040404040404,
+    "node_count": 108,
+    "edge_count": 14,
+    "density": 0.0012114918656974732,
     "has_cycles": false,
     "phase2_ready": true
   },
   "output_format": "json",
-  "scope_hash": "f2eae3bbf737d75ce0fecd5b71fba94391e3746149096515eba44ae507dea719",
+  "scope_hash": "dea05ebb064eb462773eaa01fa61b71d1ea510c7b09c7a9eb3e53fb866b7f315",
   "source_authority": {
     "state": "complete",
     "claim_safe": true,
@@ -46,11 +46,11 @@
     "loaded": 1,
     "failed": 0,
     "disabled": 0,
-    "valid": 100,
+    "valid": 108,
     "errors": 0,
     "skipped": 0,
     "read_errors": 0,
-    "visible": 100,
+    "visible": 108,
     "tombstones": 0,
     "warning_count": 0,
     "sources": [
@@ -58,12 +58,12 @@
         "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
         "source_kind": "jsonl_local",
         "status": "loaded",
-        "data_hash": "39c0b5156eacc9a0a6129fddaa976318ffd2c24ed15484174518193ca5dccd4b",
-        "valid": 100,
+        "data_hash": "2a7ddd4c904e41640ac894741ce0313b6ce546f234b7161800adc5839c83db8a",
+        "valid": 108,
         "errors": 0,
         "skipped": 0,
         "read_errors": 0,
-        "visible": 100,
+        "visible": 108,
         "tombstones": 0,
         "stale": false,
         "warning_count": 0
@@ -72,20 +72,14 @@
   },
   "source_kind": "jsonl_local",
   "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
-  "staleness": {
-    "stale_count": 2,
-    "stalest_issue_id": "dragonfly-586",
-    "stalest_issue_days": 20,
-    "threshold_days": 14
-  },
   "velocity": {
-    "closed_last_7_days": 9,
-    "closed_last_30_days": 17,
-    "avg_days_to_close": 4.048060321350762,
+    "closed_last_7_days": 13,
+    "closed_last_30_days": 21,
+    "avg_days_to_close": 4.390629960317461,
     "weekly": [
       {
         "week_start": "2026-11-23T00:00:00Z",
-        "closed": 9
+        "closed": 13
       },
       {
         "week_start": "2026-11-16T00:00:00Z",

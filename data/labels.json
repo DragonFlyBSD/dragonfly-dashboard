@@ -1,119 +1,191 @@
 {
-  "authority_hash": "cdce15a55278195d00572e930cd84321b187e732e63311114c1be98356cb9db1",
+  "authority_hash": "4c3ae9478b8b9f3391caa1f3febf547ccd9cd822e3510c246d8efbb919a35e1b",
   "cascades": [
     {
       "source_label": "kernel",
-      "blocked_count": 1,
-      "total_impact": 4,
+      "blocked_count": 8,
+      "total_impact": 16,
       "max_depth": 1,
       "affected_labels": [
+        "drm",
         "master-fixes",
         "microvm",
         "pc64",
-        "reboot"
+        "reboot",
+        "virtio",
+        "virtio-gpu"
       ],
       "recommendations": [
         {
-          "issue_id": "dragonfly-ck4",
-          "issue_title": "pc64: cpu_reset() last resort does not reset, reboot hangs",
+          "issue_id": "dragonfly-6es.3",
+          "issue_title": "vmod 2: virtio_pci: modern (virtio 1.0) transport",
           "label": "kernel",
-          "unblocks_count": 5,
+          "unblocks_count": 9,
           "cascade_depth": 1,
-          "reason": "Unblocks 5 issues across 4 downstream labels"
+          "reason": "Unblocks 9 issues across 7 downstream labels"
+        },
+        {
+          "issue_id": "dragonfly-6es.1",
+          "issue_title": "vmod 0: branch from master and guest test setup",
+          "label": "kernel",
+          "unblocks_count": 3,
+          "cascade_depth": 1,
+          "reason": "Unblocks 3 issues across 7 downstream labels"
+        },
+        {
+          "issue_id": "dragonfly-6es.2",
+          "issue_title": "vmod 1: virtio core: VERSION_1, FEATURES_OK, ring address helpers",
+          "label": "kernel",
+          "unblocks_count": 3,
+          "cascade_depth": 1,
+          "reason": "Unblocks 3 issues across 7 downstream labels"
         }
       ]
     },
     {
       "source_label": "master-fixes",
       "blocked_count": 1,
-      "total_impact": 4,
-      "max_depth": 1,
+      "total_impact": 16,
+      "max_depth": 2,
       "affected_labels": [
+        "drm",
         "kernel",
         "microvm",
         "pc64",
-        "reboot"
+        "reboot",
+        "virtio",
+        "virtio-gpu"
       ],
       "recommendations": [
         {
           "issue_id": "dragonfly-ck4",
           "issue_title": "pc64: cpu_reset() last resort does not reset, reboot hangs",
           "label": "kernel",
-          "unblocks_count": 5,
-          "cascade_depth": 1,
-          "reason": "Unblocks 5 issues across 4 downstream labels"
+          "unblocks_count": 17,
+          "cascade_depth": 2,
+          "reason": "Unblocks 17 issues across 7 downstream labels"
         }
       ]
     },
     {
       "source_label": "microvm",
       "blocked_count": 1,
-      "total_impact": 4,
-      "max_depth": 1,
+      "total_impact": 16,
+      "max_depth": 2,
       "affected_labels": [
+        "drm",
         "kernel",
         "master-fixes",
         "pc64",
-        "reboot"
+        "reboot",
+        "virtio",
+        "virtio-gpu"
       ],
       "recommendations": [
         {
           "issue_id": "dragonfly-ck4",
           "issue_title": "pc64: cpu_reset() last resort does not reset, reboot hangs",
           "label": "kernel",
-          "unblocks_count": 5,
-          "cascade_depth": 1,
-          "reason": "Unblocks 5 issues across 4 downstream labels"
+          "unblocks_count": 17,
+          "cascade_depth": 2,
+          "reason": "Unblocks 17 issues across 7 downstream labels"
         }
       ]
     },
     {
       "source_label": "pc64",
       "blocked_count": 1,
-      "total_impact": 4,
-      "max_depth": 1,
+      "total_impact": 16,
+      "max_depth": 2,
       "affected_labels": [
+        "drm",
         "kernel",
         "master-fixes",
         "microvm",
-        "reboot"
+        "reboot",
+        "virtio",
+        "virtio-gpu"
       ],
       "recommendations": [
         {
           "issue_id": "dragonfly-ck4",
           "issue_title": "pc64: cpu_reset() last resort does not reset, reboot hangs",
           "label": "kernel",
-          "unblocks_count": 5,
-          "cascade_depth": 1,
-          "reason": "Unblocks 5 issues across 4 downstream labels"
+          "unblocks_count": 17,
+          "cascade_depth": 2,
+          "reason": "Unblocks 17 issues across 7 downstream labels"
         }
       ]
     },
     {
       "source_label": "reboot",
       "blocked_count": 1,
-      "total_impact": 4,
-      "max_depth": 1,
+      "total_impact": 16,
+      "max_depth": 2,
       "affected_labels": [
+        "drm",
         "kernel",
         "master-fixes",
         "microvm",
-        "pc64"
+        "pc64",
+        "virtio",
+        "virtio-gpu"
       ],
       "recommendations": [
         {
           "issue_id": "dragonfly-ck4",
           "issue_title": "pc64: cpu_reset() last resort does not reset, reboot hangs",
           "label": "kernel",
-          "unblocks_count": 5,
-          "cascade_depth": 1,
-          "reason": "Unblocks 5 issues across 4 downstream labels"
+          "unblocks_count": 17,
+          "cascade_depth": 2,
+          "reason": "Unblocks 17 issues across 7 downstream labels"
+        }
+      ]
+    },
+    {
+      "source_label": "virtio",
+      "blocked_count": 28,
+      "total_impact": 15,
+      "max_depth": 2,
+      "affected_labels": [
+        "drm",
+        "kernel",
+        "master-fixes",
+        "microvm",
+        "pc64",
+        "reboot",
+        "virtio-gpu"
+      ],
+      "recommendations": [
+        {
+          "issue_id": "dragonfly-diq",
+          "issue_title": "drm: virtio-gpu phase 1 (2D KMS, dumb buffers) as a module",
+          "label": "drm",
+          "unblocks_count": 20,
+          "cascade_depth": 2,
+          "reason": "Unblocks 20 issues across 7 downstream labels"
+        },
+        {
+          "issue_id": "dragonfly-6es.3",
+          "issue_title": "vmod 2: virtio_pci: modern (virtio 1.0) transport",
+          "label": "kernel",
+          "unblocks_count": 3,
+          "cascade_depth": 2,
+          "reason": "Unblocks 3 issues across 7 downstream labels"
+        },
+        {
+          "issue_id": "dragonfly-6es",
+          "issue_title": "virtio: modern (virtio 1.0) PCI transport",
+          "label": "kernel",
+          "unblocks_count": 1,
+          "cascade_depth": 2,
+          "reason": "Unblocks 1 issues across 7 downstream labels"
         }
       ]
     }
   ],
-  "critical_count": 1,
-  "data_hash": "39c0b5156eacc9a0a6129fddaa976318ffd2c24ed15484174518193ca5dccd4b",
+  "critical_count": 0,
+  "data_hash": "2a7ddd4c904e41640ac894741ce0313b6ce546f234b7161800adc5839c83db8a",
   "flow": {
     "labels": [
       "accounting",
@@ -163,7 +235,6 @@
       "sound",
       "spike",
       "syscons",
-      "tcp",
       "threads",
       "timers",
       "tmpfs",
@@ -239,74 +310,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -428,74 +434,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -617,74 +558,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -806,74 +682,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -995,74 +806,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -1184,74 +930,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -1324,6 +1005,378 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
         0,
         0,
         0,
@@ -1371,76 +1424,11 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
+        10,
+        1,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -1562,74 +1550,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -1751,6 +1674,67 @@
         0,
         0,
         0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0
       ],
@@ -1814,6 +1798,67 @@
         0,
         0,
         0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0
       ],
@@ -1877,11 +1922,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
         0,
         0,
         0,
@@ -2003,7 +2046,6 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
@@ -2066,74 +2108,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -2255,6 +2232,67 @@
         0,
         0,
         0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0
       ],
@@ -2318,7 +2356,6 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
@@ -2381,11 +2418,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
         0,
         0,
         0,
@@ -2507,6 +2542,67 @@
         0,
         0,
         0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0
       ],
@@ -2570,74 +2666,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -2759,74 +2790,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -2948,74 +2914,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -3137,74 +3038,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -3326,74 +3162,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -3515,74 +3286,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -3704,74 +3410,9 @@
         0,
         0,
         0,
-        0,
         0
       ],
       [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
@@ -3893,6 +3534,67 @@
         0,
         0,
         0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0
       ],
@@ -3956,11 +3658,257 @@
         0,
         0,
         0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0
       ],
       [
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
         0,
         0,
         0,
@@ -4026,6 +3974,22 @@
     "dependencies": [
       {
         "from_label": "kernel",
+        "to_label": "drm",
+        "issue_count": 1,
+        "issue_ids": [
+          "dragonfly-diq"
+        ],
+        "blocking_pairs": [
+          {
+            "blocker_id": "dragonfly-6es",
+            "blocked_id": "dragonfly-diq",
+            "blocker_label": "kernel",
+            "blocked_label": "drm"
+          }
+        ]
+      },
+      {
+        "from_label": "kernel",
         "to_label": "master-fixes",
         "issue_count": 1,
         "issue_ids": [
@@ -4089,6 +4053,99 @@
         ]
       },
       {
+        "from_label": "kernel",
+        "to_label": "virtio",
+        "issue_count": 10,
+        "issue_ids": [
+          "dragonfly-6es.2",
+          "dragonfly-6es.3",
+          "dragonfly-6es.4",
+          "dragonfly-6es.5",
+          "dragonfly-6es.6",
+          "dragonfly-6es.7",
+          "dragonfly-6es.8",
+          "dragonfly-diq"
+        ],
+        "blocking_pairs": [
+          {
+            "blocker_id": "dragonfly-6es.4",
+            "blocked_id": "dragonfly-6es.7",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio"
+          },
+          {
+            "blocker_id": "dragonfly-6es.5",
+            "blocked_id": "dragonfly-6es.7",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio"
+          },
+          {
+            "blocker_id": "dragonfly-6es.6",
+            "blocked_id": "dragonfly-6es.7",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio"
+          },
+          {
+            "blocker_id": "dragonfly-6es.7",
+            "blocked_id": "dragonfly-6es.8",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio"
+          },
+          {
+            "blocker_id": "dragonfly-6es.3",
+            "blocked_id": "dragonfly-6es.6",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio"
+          },
+          {
+            "blocker_id": "dragonfly-6es.3",
+            "blocked_id": "dragonfly-6es.4",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio"
+          },
+          {
+            "blocker_id": "dragonfly-6es.3",
+            "blocked_id": "dragonfly-6es.5",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio"
+          },
+          {
+            "blocker_id": "dragonfly-6es.2",
+            "blocked_id": "dragonfly-6es.3",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio"
+          },
+          {
+            "blocker_id": "dragonfly-6es.1",
+            "blocked_id": "dragonfly-6es.2",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio"
+          },
+          {
+            "blocker_id": "dragonfly-6es",
+            "blocked_id": "dragonfly-diq",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio"
+          }
+        ]
+      },
+      {
+        "from_label": "kernel",
+        "to_label": "virtio-gpu",
+        "issue_count": 1,
+        "issue_ids": [
+          "dragonfly-diq"
+        ],
+        "blocking_pairs": [
+          {
+            "blocker_id": "dragonfly-6es",
+            "blocked_id": "dragonfly-diq",
+            "blocker_label": "kernel",
+            "blocked_label": "virtio-gpu"
+          }
+        ]
+      },
+      {
         "from_label": "master-fixes",
         "to_label": "kernel",
         "issue_count": 1,
@@ -4341,34 +4398,305 @@
             "blocked_id": "dragonfly-4mg",
             "blocker_label": "reboot",
             "blocked_label": "pc64"
+          }
+        ]
+      },
+      {
+        "from_label": "virtio",
+        "to_label": "drm",
+        "issue_count": 1,
+        "issue_ids": [
+          "dragonfly-diq"
+        ],
+        "blocking_pairs": [
+          {
+            "blocker_id": "dragonfly-6es",
+            "blocked_id": "dragonfly-diq",
+            "blocker_label": "virtio",
+            "blocked_label": "drm"
+          }
+        ]
+      },
+      {
+        "from_label": "virtio",
+        "to_label": "kernel",
+        "issue_count": 9,
+        "issue_ids": [
+          "dragonfly-6es.2",
+          "dragonfly-6es.3",
+          "dragonfly-6es.4",
+          "dragonfly-6es.5",
+          "dragonfly-6es.6",
+          "dragonfly-6es.7",
+          "dragonfly-6es.8"
+        ],
+        "blocking_pairs": [
+          {
+            "blocker_id": "dragonfly-6es.4",
+            "blocked_id": "dragonfly-6es.7",
+            "blocker_label": "virtio",
+            "blocked_label": "kernel"
+          },
+          {
+            "blocker_id": "dragonfly-6es.5",
+            "blocked_id": "dragonfly-6es.7",
+            "blocker_label": "virtio",
+            "blocked_label": "kernel"
+          },
+          {
+            "blocker_id": "dragonfly-6es.6",
+            "blocked_id": "dragonfly-6es.7",
+            "blocker_label": "virtio",
+            "blocked_label": "kernel"
+          },
+          {
+            "blocker_id": "dragonfly-6es.7",
+            "blocked_id": "dragonfly-6es.8",
+            "blocker_label": "virtio",
+            "blocked_label": "kernel"
+          },
+          {
+            "blocker_id": "dragonfly-6es.3",
+            "blocked_id": "dragonfly-6es.6",
+            "blocker_label": "virtio",
+            "blocked_label": "kernel"
+          },
+          {
+            "blocker_id": "dragonfly-6es.3",
+            "blocked_id": "dragonfly-6es.4",
+            "blocker_label": "virtio",
+            "blocked_label": "kernel"
+          },
+          {
+            "blocker_id": "dragonfly-6es.3",
+            "blocked_id": "dragonfly-6es.5",
+            "blocker_label": "virtio",
+            "blocked_label": "kernel"
+          },
+          {
+            "blocker_id": "dragonfly-6es.2",
+            "blocked_id": "dragonfly-6es.3",
+            "blocker_label": "virtio",
+            "blocked_label": "kernel"
+          },
+          {
+            "blocker_id": "dragonfly-6es.1",
+            "blocked_id": "dragonfly-6es.2",
+            "blocker_label": "virtio",
+            "blocked_label": "kernel"
+          }
+        ]
+      },
+      {
+        "from_label": "virtio",
+        "to_label": "virtio-gpu",
+        "issue_count": 1,
+        "issue_ids": [
+          "dragonfly-diq"
+        ],
+        "blocking_pairs": [
+          {
+            "blocker_id": "dragonfly-6es",
+            "blocked_id": "dragonfly-diq",
+            "blocker_label": "virtio",
+            "blocked_label": "virtio-gpu"
           }
         ]
       }
     ],
     "critical_paths": null,
     "bottleneck_labels": [
-      "kernel",
-      "master-fixes",
-      "microvm",
-      "pc64",
-      "reboot"
+      "kernel"
     ],
-    "total_cross_label_deps": 20
+    "total_cross_label_deps": 43
   },
-  "generated_at": "2026-11-27T23:17:25Z",
+  "generated_at": "2026-11-28T02:01:52Z",
   "healthy_count": 0,
   "labels": [
+    {
+      "label": "virtio",
+      "issue_count": 35,
+      "open_count": 31,
+      "closed_count": 4,
+      "blocked_count": 28,
+      "health": 65,
+      "health_level": "warning",
+      "attention_score": 2.026407413217273,
+      "normalized_score": 1,
+      "attention_rank": 1,
+      "closed_last_7_days": 3,
+      "closed_last_30_days": 4,
+      "trend_direction": "improving",
+      "weekly_closed": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "stale_count": 0,
+      "incoming_deps": 10,
+      "outgoing_deps": 11,
+      "incoming_labels": [
+        "kernel"
+      ],
+      "outgoing_labels": [
+        "drm",
+        "kernel",
+        "virtio-gpu"
+      ],
+      "cooccurring_labels": [
+        {
+          "label": "drm",
+          "count": 25
+        },
+        {
+          "label": "virtio-gpu",
+          "count": 24
+        },
+        {
+          "label": "kernel",
+          "count": 10
+        },
+        {
+          "label": "master-fixes",
+          "count": 1
+        },
+        {
+          "label": "microvm",
+          "count": 1
+        }
+      ],
+      "top_core_issue_id": "dragonfly-6es.1",
+      "critical_path_count": 35,
+      "velocity": {
+        "closed_last_7_days": 3,
+        "closed_last_30_days": 4,
+        "avg_days_to_close": 5.10900462962963,
+        "trend_direction": "improving",
+        "trend_percent": 200,
+        "velocity_score": 50,
+        "historical": {
+          "label": "virtio",
+          "weekly_velocity": [
+            {
+              "week_start": "2026-11-23T00:00:00Z",
+              "week_end": "2026-11-30T00:00:00Z",
+              "closed": 3,
+              "weeks_ago": 0,
+              "issue_ids": [
+                "dragonfly-diq.4",
+                "dragonfly-diq.3",
+                "dragonfly-diq.2"
+              ],
+              "cumulative": 4
+            },
+            {
+              "week_start": "2026-11-16T00:00:00Z",
+              "week_end": "2026-11-23T00:00:00Z",
+              "closed": 1,
+              "weeks_ago": 1,
+              "issue_ids": [
+                "dragonfly-81q"
+              ],
+              "cumulative": 1
+            },
+            {
+              "week_start": "2026-11-09T00:00:00Z",
+              "week_end": "2026-11-16T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 2,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-02T00:00:00Z",
+              "week_end": "2026-11-09T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 3,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-26T00:00:00Z",
+              "week_end": "2026-11-02T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 4,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-19T00:00:00Z",
+              "week_end": "2026-10-26T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 5,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-12T00:00:00Z",
+              "week_end": "2026-10-19T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 6,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-05T00:00:00Z",
+              "week_end": "2026-10-12T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 7,
+              "cumulative": 0
+            }
+          ],
+          "weeks_analyzed": 8,
+          "moving_avg_4_week": 1,
+          "moving_avg_8_week": 0.5,
+          "peak_week": 0,
+          "peak_velocity": 3,
+          "trough_week": 1,
+          "trough_velocity": 1,
+          "variance": 1,
+          "consistency_score": 0
+        }
+      },
+      "freshness": {
+        "most_recent_update": "2026-11-27T19:40:20Z",
+        "oldest_open_issue": "2026-11-13T19:24:57Z",
+        "avg_days_since_update": 0.7145139441115186,
+        "stale_count": 0,
+        "stale_threshold_days": 14,
+        "freshness_score": 97
+      },
+      "flow": {
+        "incoming_deps": 10,
+        "outgoing_deps": 11,
+        "incoming_labels": [
+          "kernel"
+        ],
+        "outgoing_labels": [
+          "drm",
+          "kernel",
+          "virtio-gpu"
+        ],
+        "blocked_by_external": 8,
+        "blocking_external": 8,
+        "flow_score": 50
+      },
+      "criticality": {
+        "avg_pagerank": 0.011396210748655418,
+        "avg_betweenness": 0.8,
+        "max_betweenness": 10,
+        "critical_path_count": 35,
+        "bottleneck_count": 6,
+        "criticality_score": 63
+      }
+    },
     {
       "label": "master-fixes",
       "issue_count": 10,
       "open_count": 10,
       "closed_count": 0,
       "blocked_count": 1,
-      "health": 44,
+      "health": 47,
       "health_level": "warning",
       "attention_score": 2,
-      "normalized_score": 1,
-      "attention_rank": 1,
+      "normalized_score": 0.9869683593511204,
+      "attention_rank": 2,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
       "trend_direction": "stable",
@@ -4495,12 +4823,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:38Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:57Z",
-        "avg_days_since_update": 8.941534661559468,
+        "avg_days_since_update": 0.2649608527136689,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 4,
@@ -4522,12 +4850,12 @@
         "flow_score": 80
       },
       "criticality": {
-        "avg_pagerank": 0.010493229514960022,
+        "avg_pagerank": 0.00853702713102834,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 10,
         "bottleneck_count": 0,
-        "criticality_score": 29
+        "criticality_score": 10
       }
     },
     {
@@ -4536,11 +4864,11 @@
       "open_count": 5,
       "closed_count": 0,
       "blocked_count": 1,
-      "health": 45,
+      "health": 47,
       "health_level": "warning",
       "attention_score": 2,
-      "normalized_score": 1,
-      "attention_rank": 2,
+      "normalized_score": 0.9869683593511204,
+      "attention_rank": 3,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
       "trend_direction": "stable",
@@ -4667,12 +4995,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:38Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:57Z",
-        "avg_days_since_update": 8.94153813378169,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 4,
@@ -4694,154 +5022,12 @@
         "flow_score": 80
       },
       "criticality": {
-        "avg_pagerank": 0.011315278706560022,
+        "avg_pagerank": 0.009205825820967949,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 5,
         "bottleneck_count": 0,
-        "criticality_score": 31
-      }
-    },
-    {
-      "label": "nlist",
-      "issue_count": 1,
-      "open_count": 1,
-      "closed_count": 0,
-      "blocked_count": 0,
-      "health": 39,
-      "health_level": "critical",
-      "attention_score": 2,
-      "normalized_score": 1,
-      "attention_rank": 3,
-      "closed_last_7_days": 0,
-      "closed_last_30_days": 0,
-      "trend_direction": "stable",
-      "weekly_closed": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "stale_count": 1,
-      "incoming_deps": 0,
-      "outgoing_deps": 0,
-      "cooccurring_labels": [
-        {
-          "label": "libc",
-          "count": 1
-        },
-        {
-          "label": "regression",
-          "count": 1
-        },
-        {
-          "label": "robustness",
-          "count": 1
-        }
-      ],
-      "top_core_issue_id": "dragonfly-586",
-      "critical_path_count": 1,
-      "velocity": {
-        "closed_last_7_days": 0,
-        "closed_last_30_days": 0,
-        "avg_days_to_close": 0,
-        "trend_direction": "stable",
-        "trend_percent": 0,
-        "velocity_score": 0,
-        "historical": {
-          "label": "nlist",
-          "weekly_velocity": [
-            {
-              "week_start": "2026-11-23T00:00:00Z",
-              "week_end": "2026-11-30T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 0,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-16T00:00:00Z",
-              "week_end": "2026-11-23T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 1,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-09T00:00:00Z",
-              "week_end": "2026-11-16T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 2,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-02T00:00:00Z",
-              "week_end": "2026-11-09T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 3,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-26T00:00:00Z",
-              "week_end": "2026-11-02T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 4,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-19T00:00:00Z",
-              "week_end": "2026-10-26T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 5,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-12T00:00:00Z",
-              "week_end": "2026-10-19T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 6,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-05T00:00:00Z",
-              "week_end": "2026-10-12T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 7,
-              "cumulative": 0
-            }
-          ],
-          "weeks_analyzed": 8,
-          "moving_avg_4_week": 0,
-          "peak_week": 0,
-          "peak_velocity": 0,
-          "trough_week": 0,
-          "trough_velocity": 0,
-          "variance": 0,
-          "consistency_score": 0
-        }
-      },
-      "freshness": {
-        "most_recent_update": "2026-11-07T12:54:56Z",
-        "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 20.43228813378169,
-        "stale_count": 1,
-        "stale_threshold_days": 14,
-        "freshness_score": 27
-      },
-      "flow": {
-        "incoming_deps": 0,
-        "outgoing_deps": 0,
-        "incoming_labels": null,
-        "outgoing_labels": null,
-        "blocked_by_external": 0,
-        "blocking_external": 0,
-        "flow_score": 100
-      },
-      "criticality": {
-        "avg_pagerank": 0.009671180323360019,
-        "avg_betweenness": 0,
-        "max_betweenness": 0,
-        "critical_path_count": 1,
-        "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 10
       }
     },
     {
@@ -4850,10 +5036,10 @@
       "open_count": 5,
       "closed_count": 0,
       "blocked_count": 1,
-      "health": 46,
+      "health": 47,
       "health_level": "warning",
       "attention_score": 1.9999999999999996,
-      "normalized_score": 0.9999999999999998,
+      "normalized_score": 0.9869683593511202,
       "attention_rank": 4,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -4981,12 +5167,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:19Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:58Z",
-        "avg_days_since_update": 7.367410818966874,
+        "avg_days_since_update": 0.4489909453062616,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 73
+        "freshness_score": 98
       },
       "flow": {
         "incoming_deps": 4,
@@ -5008,12 +5194,12 @@
         "flow_score": 80
       },
       "criticality": {
-        "avg_pagerank": 0.01131527870656002,
+        "avg_pagerank": 0.009205825820967949,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 5,
         "bottleneck_count": 0,
-        "criticality_score": 31
+        "criticality_score": 10
       }
     },
     {
@@ -5022,10 +5208,10 @@
       "open_count": 2,
       "closed_count": 0,
       "blocked_count": 1,
-      "health": 47,
+      "health": 48,
       "health_level": "warning",
       "attention_score": 1.9999999999999998,
-      "normalized_score": 0.9999999999999999,
+      "normalized_score": 0.9869683593511203,
       "attention_rank": 5,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -5149,12 +5335,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:37Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:58Z",
-        "avg_days_since_update": 8.941541606003913,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 4,
@@ -5176,84 +5362,110 @@
         "flow_score": 80
       },
       "criticality": {
-        "avg_pagerank": 0.013781426281360025,
+        "avg_pagerank": 0.011212221890786772,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 2,
         "bottleneck_count": 0,
-        "criticality_score": 38
+        "criticality_score": 13
       }
     },
     {
-      "label": "robustness",
-      "issue_count": 3,
-      "open_count": 3,
-      "closed_count": 0,
-      "blocked_count": 0,
-      "health": 50,
+      "label": "kernel",
+      "issue_count": 31,
+      "open_count": 25,
+      "closed_count": 6,
+      "blocked_count": 8,
+      "health": 64,
       "health_level": "warning",
-      "attention_score": 1.3333333333333333,
-      "normalized_score": 0.6666666666666666,
+      "attention_score": 1.4418374667173819,
+      "normalized_score": 0.7115239794885151,
       "attention_rank": 6,
-      "closed_last_7_days": 0,
-      "closed_last_30_days": 0,
-      "trend_direction": "stable",
+      "closed_last_7_days": 2,
+      "closed_last_30_days": 6,
+      "trend_direction": "declining",
       "weekly_closed": [
         0,
         0,
-        0,
-        0
+        4,
+        2
       ],
-      "stale_count": 1,
-      "incoming_deps": 0,
-      "outgoing_deps": 0,
+      "stale_count": 0,
+      "incoming_deps": 13,
+      "outgoing_deps": 16,
+      "incoming_labels": [
+        "master-fixes",
+        "microvm",
+        "pc64",
+        "reboot",
+        "virtio"
+      ],
+      "outgoing_labels": [
+        "drm",
+        "master-fixes",
+        "microvm",
+        "pc64",
+        "reboot",
+        "virtio",
+        "virtio-gpu"
+      ],
       "cooccurring_labels": [
         {
-          "label": "db",
-          "count": 2
+          "label": "master-fixes",
+          "count": 10
         },
         {
-          "label": "libc",
-          "count": 2
+          "label": "virtio",
+          "count": 10
         },
         {
-          "label": "dsynth",
-          "count": 1
+          "label": "microvm",
+          "count": 5
         },
         {
-          "label": "hash",
-          "count": 1
+          "label": "pc64",
+          "count": 5
         },
         {
-          "label": "nlist",
-          "count": 1
+          "label": "signals",
+          "count": 3
         }
       ],
-      "top_core_issue_id": "dragonfly-586",
-      "critical_path_count": 3,
+      "top_core_issue_id": "dragonfly-6es.1",
+      "critical_path_count": 31,
       "velocity": {
-        "closed_last_7_days": 0,
-        "closed_last_30_days": 0,
-        "avg_days_to_close": 0,
-        "trend_direction": "stable",
-        "trend_percent": 0,
-        "velocity_score": 0,
+        "closed_last_7_days": 2,
+        "closed_last_30_days": 6,
+        "avg_days_to_close": 5.823713348765431,
+        "trend_direction": "declining",
+        "trend_percent": -50,
+        "velocity_score": 60,
         "historical": {
-          "label": "robustness",
+          "label": "kernel",
           "weekly_velocity": [
             {
               "week_start": "2026-11-23T00:00:00Z",
               "week_end": "2026-11-30T00:00:00Z",
-              "closed": 0,
+              "closed": 2,
               "weeks_ago": 0,
-              "cumulative": 0
+              "issue_ids": [
+                "dragonfly-8a9",
+                "dragonfly-yu7"
+              ],
+              "cumulative": 6
             },
             {
               "week_start": "2026-11-16T00:00:00Z",
               "week_end": "2026-11-23T00:00:00Z",
-              "closed": 0,
+              "closed": 4,
               "weeks_ago": 1,
-              "cumulative": 0
+              "issue_ids": [
+                "dragonfly-3tj",
+                "dragonfly-8h8",
+                "dragonfly-h46",
+                "dragonfly-6s3"
+              ],
+              "cumulative": 4
             },
             {
               "week_start": "2026-11-09T00:00:00Z",
@@ -5299,39 +5511,54 @@
             }
           ],
           "weeks_analyzed": 8,
-          "moving_avg_4_week": 0,
-          "peak_week": 0,
-          "peak_velocity": 0,
+          "moving_avg_4_week": 1.5,
+          "moving_avg_8_week": 0.75,
+          "peak_week": 1,
+          "peak_velocity": 4,
           "trough_week": 0,
-          "trough_velocity": 0,
-          "variance": 0,
+          "trough_velocity": 2,
+          "variance": 1.9375,
           "consistency_score": 0
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:27Z",
-        "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 7.524641528843418,
-        "stale_count": 1,
+        "most_recent_update": "2026-11-27T19:40:20Z",
+        "oldest_open_issue": "2026-11-07T12:16:53Z",
+        "avg_days_since_update": 0.5180747416025578,
+        "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 73
+        "freshness_score": 98
       },
       "flow": {
-        "incoming_deps": 0,
-        "outgoing_deps": 0,
-        "incoming_labels": null,
-        "outgoing_labels": null,
-        "blocked_by_external": 0,
-        "blocking_external": 0,
-        "flow_score": 100
+        "incoming_deps": 13,
+        "outgoing_deps": 16,
+        "incoming_labels": [
+          "master-fixes",
+          "microvm",
+          "pc64",
+          "reboot",
+          "virtio"
+        ],
+        "outgoing_labels": [
+          "drm",
+          "master-fixes",
+          "microvm",
+          "pc64",
+          "reboot",
+          "virtio",
+          "virtio-gpu"
+        ],
+        "blocked_by_external": 8,
+        "blocking_external": 9,
+        "flow_score": 35
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
-        "avg_betweenness": 0,
-        "max_betweenness": 0,
-        "critical_path_count": 3,
-        "bottleneck_count": 0,
-        "criticality_score": 27
+        "avg_pagerank": 0.012282917297979892,
+        "avg_betweenness": 0.9032258064516129,
+        "max_betweenness": 10,
+        "critical_path_count": 31,
+        "bottleneck_count": 6,
+        "criticality_score": 64
       }
     },
     {
@@ -5340,10 +5567,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 7,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -5443,12 +5670,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:29Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-25T16:53:01Z",
-        "avg_days_since_update": 1.0707950782261342,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -5460,12 +5687,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -5474,10 +5701,10 @@
       "open_count": 2,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 8,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -5589,12 +5816,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:27Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-10T15:22:09Z",
-        "avg_days_since_update": 1.0708182263742825,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -5606,12 +5833,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 2,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -5620,10 +5847,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 49,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 9,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -5731,12 +5958,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:37Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:59Z",
-        "avg_days_since_update": 8.941535818966875,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -5748,12 +5975,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -5762,10 +5989,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 51,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 10,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -5871,10 +6098,10 @@
       "freshness": {
         "most_recent_update": "2026-11-26T21:35:20Z",
         "oldest_open_issue": "2026-11-25T23:00:10Z",
-        "avg_days_since_update": 1.070899244892801,
+        "avg_days_since_update": 1.185099741602558,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 95
       },
       "flow": {
         "incoming_deps": 0,
@@ -5886,12 +6113,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -5900,10 +6127,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 11,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -6011,12 +6238,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:27Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-10T15:22:09Z",
-        "avg_days_since_update": 1.0708182263742825,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -6028,12 +6255,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -6042,10 +6269,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 49,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 12,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -6153,12 +6380,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:38Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:25:00Z",
-        "avg_days_since_update": 8.9415242448928,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -6170,12 +6397,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -6184,10 +6411,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 49,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 13,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -6295,12 +6522,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:38Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:25:00Z",
-        "avg_days_since_update": 8.9415242448928,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -6312,12 +6539,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -6326,10 +6553,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 49,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 14,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -6441,12 +6668,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:38Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:59Z",
-        "avg_days_since_update": 8.9415242448928,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -6458,12 +6685,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -6472,10 +6699,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 49,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 15,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -6579,12 +6806,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:35Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:16:53Z",
-        "avg_days_since_update": 8.941558967115023,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -6596,12 +6823,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -6610,10 +6837,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 16,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -6717,12 +6944,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:25Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-20T12:38:21Z",
-        "avg_days_since_update": 1.0708413745224306,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -6734,12 +6961,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -6748,10 +6975,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 17,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -6855,12 +7082,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:31Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-14T12:32:02Z",
-        "avg_days_since_update": 1.070771930077986,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -6872,12 +7099,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -6886,10 +7113,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 49,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 18,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -7001,12 +7228,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:37Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:58Z",
-        "avg_days_since_update": 8.941535818966875,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -7018,24 +7245,24 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
       "label": "netinet",
-      "issue_count": 2,
-      "open_count": 2,
+      "issue_count": 1,
+      "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
       "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 19,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -7051,24 +7278,20 @@
       "outgoing_deps": 0,
       "cooccurring_labels": [
         {
-          "label": "kernel",
-          "count": 2
+          "label": "build",
+          "count": 1
         },
         {
-          "label": "build",
+          "label": "kernel",
           "count": 1
         },
         {
           "label": "master-fixes",
           "count": 1
-        },
-        {
-          "label": "tcp",
-          "count": 1
         }
       ],
       "top_core_issue_id": "dragonfly-4ys",
-      "critical_path_count": 2,
+      "critical_path_count": 1,
       "velocity": {
         "closed_last_7_days": 0,
         "closed_last_30_days": 0,
@@ -7147,12 +7370,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:18Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:57Z",
-        "avg_days_since_update": 5.006234893040949,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 82
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -7164,12 +7387,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
-        "critical_path_count": 2,
+        "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -7178,10 +7401,10 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 51,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
+      "normalized_score": 0.4934841796755602,
       "attention_rank": 20,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
@@ -7291,10 +7514,10 @@
       "freshness": {
         "most_recent_update": "2026-11-26T21:35:18Z",
         "oldest_open_issue": "2026-11-19T00:18:51Z",
-        "avg_days_since_update": 1.070922393040949,
+        "avg_days_since_update": 1.185122889750706,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 95
       },
       "flow": {
         "incoming_deps": 0,
@@ -7306,12 +7529,154 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
+      }
+    },
+    {
+      "label": "nlist",
+      "issue_count": 1,
+      "open_count": 1,
+      "closed_count": 0,
+      "blocked_count": 0,
+      "health": 52,
+      "health_level": "warning",
+      "attention_score": 1,
+      "normalized_score": 0.4934841796755602,
+      "attention_rank": 21,
+      "closed_last_7_days": 0,
+      "closed_last_30_days": 0,
+      "trend_direction": "stable",
+      "weekly_closed": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "stale_count": 0,
+      "incoming_deps": 0,
+      "outgoing_deps": 0,
+      "cooccurring_labels": [
+        {
+          "label": "libc",
+          "count": 1
+        },
+        {
+          "label": "regression",
+          "count": 1
+        },
+        {
+          "label": "robustness",
+          "count": 1
+        }
+      ],
+      "top_core_issue_id": "dragonfly-586",
+      "critical_path_count": 1,
+      "velocity": {
+        "closed_last_7_days": 0,
+        "closed_last_30_days": 0,
+        "avg_days_to_close": 0,
+        "trend_direction": "stable",
+        "trend_percent": 0,
+        "velocity_score": 0,
+        "historical": {
+          "label": "nlist",
+          "weekly_velocity": [
+            {
+              "week_start": "2026-11-23T00:00:00Z",
+              "week_end": "2026-11-30T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 0,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-16T00:00:00Z",
+              "week_end": "2026-11-23T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 1,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-09T00:00:00Z",
+              "week_end": "2026-11-16T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 2,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-02T00:00:00Z",
+              "week_end": "2026-11-09T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 3,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-26T00:00:00Z",
+              "week_end": "2026-11-02T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 4,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-19T00:00:00Z",
+              "week_end": "2026-10-26T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 5,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-12T00:00:00Z",
+              "week_end": "2026-10-19T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 6,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-05T00:00:00Z",
+              "week_end": "2026-10-12T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 7,
+              "cumulative": 0
+            }
+          ],
+          "weeks_analyzed": 8,
+          "moving_avg_4_week": 0,
+          "peak_week": 0,
+          "peak_velocity": 0,
+          "trough_week": 0,
+          "trough_velocity": 0,
+          "variance": 0,
+          "consistency_score": 0
+        }
+      },
+      "freshness": {
+        "most_recent_update": "2026-11-27T19:40:20Z",
+        "oldest_open_issue": "2026-11-07T12:54:56Z",
+        "avg_days_since_update": 0.264960852713669,
+        "stale_count": 0,
+        "stale_threshold_days": 14,
+        "freshness_score": 99
+      },
+      "flow": {
+        "incoming_deps": 0,
+        "outgoing_deps": 0,
+        "incoming_labels": null,
+        "outgoing_labels": null,
+        "blocked_by_external": 0,
+        "blocking_external": 0,
+        "flow_score": 100
+      },
+      "criticality": {
+        "avg_pagerank": 0.007868228441088733,
+        "avg_betweenness": 0,
+        "max_betweenness": 0,
+        "critical_path_count": 1,
+        "bottleneck_count": 0,
+        "criticality_score": 9
       }
     },
     {
@@ -7320,11 +7685,11 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
-      "attention_rank": 21,
+      "normalized_score": 0.4934841796755602,
+      "attention_rank": 22,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
       "trend_direction": "stable",
@@ -7423,12 +7788,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:29Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-25T16:53:01Z",
-        "avg_days_since_update": 1.0707950782261342,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -7440,12 +7805,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -7454,11 +7819,11 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
-      "attention_rank": 22,
+      "normalized_score": 0.4934841796755602,
+      "attention_rank": 23,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
       "trend_direction": "stable",
@@ -7561,12 +7926,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:25Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-20T12:38:21Z",
-        "avg_days_since_update": 1.0708413745224306,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -7578,12 +7943,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -7592,11 +7957,11 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 49,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
-      "attention_rank": 23,
+      "normalized_score": 0.4934841796755602,
+      "attention_rank": 24,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
       "trend_direction": "stable",
@@ -7707,12 +8072,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:38Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:59Z",
-        "avg_days_since_update": 8.9415242448928,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -7724,12 +8089,162 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
+      }
+    },
+    {
+      "label": "robustness",
+      "issue_count": 3,
+      "open_count": 3,
+      "closed_count": 0,
+      "blocked_count": 0,
+      "health": 52,
+      "health_level": "warning",
+      "attention_score": 1,
+      "normalized_score": 0.4934841796755602,
+      "attention_rank": 25,
+      "closed_last_7_days": 0,
+      "closed_last_30_days": 0,
+      "trend_direction": "stable",
+      "weekly_closed": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "stale_count": 0,
+      "incoming_deps": 0,
+      "outgoing_deps": 0,
+      "cooccurring_labels": [
+        {
+          "label": "db",
+          "count": 2
+        },
+        {
+          "label": "libc",
+          "count": 2
+        },
+        {
+          "label": "dsynth",
+          "count": 1
+        },
+        {
+          "label": "hash",
+          "count": 1
+        },
+        {
+          "label": "nlist",
+          "count": 1
+        }
+      ],
+      "top_core_issue_id": "dragonfly-586",
+      "critical_path_count": 3,
+      "velocity": {
+        "closed_last_7_days": 0,
+        "closed_last_30_days": 0,
+        "avg_days_to_close": 0,
+        "trend_direction": "stable",
+        "trend_percent": 0,
+        "velocity_score": 0,
+        "historical": {
+          "label": "robustness",
+          "weekly_velocity": [
+            {
+              "week_start": "2026-11-23T00:00:00Z",
+              "week_end": "2026-11-30T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 0,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-16T00:00:00Z",
+              "week_end": "2026-11-23T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 1,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-09T00:00:00Z",
+              "week_end": "2026-11-16T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 2,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-02T00:00:00Z",
+              "week_end": "2026-11-09T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 3,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-26T00:00:00Z",
+              "week_end": "2026-11-02T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 4,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-19T00:00:00Z",
+              "week_end": "2026-10-26T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 5,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-12T00:00:00Z",
+              "week_end": "2026-10-19T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 6,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-05T00:00:00Z",
+              "week_end": "2026-10-12T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 7,
+              "cumulative": 0
+            }
+          ],
+          "weeks_analyzed": 8,
+          "moving_avg_4_week": 0,
+          "peak_week": 0,
+          "peak_velocity": 0,
+          "trough_week": 0,
+          "trough_velocity": 0,
+          "variance": 0,
+          "consistency_score": 0
+        }
+      },
+      "freshness": {
+        "most_recent_update": "2026-11-27T19:40:20Z",
+        "oldest_open_issue": "2026-11-07T12:54:56Z",
+        "avg_days_since_update": 0.264960852713669,
+        "stale_count": 0,
+        "stale_threshold_days": 14,
+        "freshness_score": 99
+      },
+      "flow": {
+        "incoming_deps": 0,
+        "outgoing_deps": 0,
+        "incoming_labels": null,
+        "outgoing_labels": null,
+        "blocked_by_external": 0,
+        "blocking_external": 0,
+        "flow_score": 100
+      },
+      "criticality": {
+        "avg_pagerank": 0.007868228441088733,
+        "avg_betweenness": 0,
+        "max_betweenness": 0,
+        "critical_path_count": 3,
+        "bottleneck_count": 0,
+        "criticality_score": 9
       }
     },
     {
@@ -7738,11 +8253,11 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
-      "attention_rank": 24,
+      "normalized_score": 0.4934841796755602,
+      "attention_rank": 26,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
       "trend_direction": "stable",
@@ -7841,12 +8356,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:19Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-19T00:18:50Z",
-        "avg_days_since_update": 1.070910818966875,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -7858,150 +8373,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
-      }
-    },
-    {
-      "label": "tcp",
-      "issue_count": 1,
-      "open_count": 1,
-      "closed_count": 0,
-      "blocked_count": 0,
-      "health": 56,
-      "health_level": "warning",
-      "attention_score": 1,
-      "normalized_score": 0.5,
-      "attention_rank": 25,
-      "closed_last_7_days": 0,
-      "closed_last_30_days": 0,
-      "trend_direction": "stable",
-      "weekly_closed": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "stale_count": 0,
-      "incoming_deps": 0,
-      "outgoing_deps": 0,
-      "cooccurring_labels": [
-        {
-          "label": "kernel",
-          "count": 1
-        },
-        {
-          "label": "netinet",
-          "count": 1
-        }
-      ],
-      "top_core_issue_id": "dragonfly-dg7",
-      "critical_path_count": 1,
-      "velocity": {
-        "closed_last_7_days": 0,
-        "closed_last_30_days": 0,
-        "avg_days_to_close": 0,
-        "trend_direction": "stable",
-        "trend_percent": 0,
-        "velocity_score": 0,
-        "historical": {
-          "label": "tcp",
-          "weekly_velocity": [
-            {
-              "week_start": "2026-11-23T00:00:00Z",
-              "week_end": "2026-11-30T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 0,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-16T00:00:00Z",
-              "week_end": "2026-11-23T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 1,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-09T00:00:00Z",
-              "week_end": "2026-11-16T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 2,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-02T00:00:00Z",
-              "week_end": "2026-11-09T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 3,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-26T00:00:00Z",
-              "week_end": "2026-11-02T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 4,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-19T00:00:00Z",
-              "week_end": "2026-10-26T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 5,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-12T00:00:00Z",
-              "week_end": "2026-10-19T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 6,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-05T00:00:00Z",
-              "week_end": "2026-10-12T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 7,
-              "cumulative": 0
-            }
-          ],
-          "weeks_analyzed": 8,
-          "moving_avg_4_week": 0,
-          "peak_week": 0,
-          "peak_velocity": 0,
-          "trough_week": 0,
-          "trough_velocity": 0,
-          "variance": 0,
-          "consistency_score": 0
-        }
-      },
-      "freshness": {
-        "most_recent_update": "2026-11-26T21:35:18Z",
-        "oldest_open_issue": "2026-11-19T00:22:47Z",
-        "avg_days_since_update": 1.070922393040949,
-        "stale_count": 0,
-        "stale_threshold_days": 14,
-        "freshness_score": 96
-      },
-      "flow": {
-        "incoming_deps": 0,
-        "outgoing_deps": 0,
-        "incoming_labels": null,
-        "outgoing_labels": null,
-        "blocked_by_external": 0,
-        "blocking_external": 0,
-        "flow_score": 100
-      },
-      "criticality": {
-        "avg_pagerank": 0.009671180323360019,
-        "avg_betweenness": 0,
-        "max_betweenness": 0,
-        "critical_path_count": 1,
-        "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -8010,11 +8387,11 @@
       "open_count": 2,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 49,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
-      "attention_rank": 26,
+      "normalized_score": 0.4934841796755602,
+      "attention_rank": 27,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
       "trend_direction": "stable",
@@ -8125,12 +8502,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:38Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:25:00Z",
-        "avg_days_since_update": 8.9415242448928,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -8142,12 +8519,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 2,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -8156,11 +8533,11 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
-      "attention_rank": 27,
+      "normalized_score": 0.4934841796755602,
+      "attention_rank": 28,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
       "trend_direction": "stable",
@@ -8263,12 +8640,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:13Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-20T15:50:10Z",
-        "avg_days_since_update": 1.0709802634113195,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -8280,12 +8657,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -8294,11 +8671,11 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 49,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
-      "attention_rank": 28,
+      "normalized_score": 0.4934841796755602,
+      "attention_rank": 29,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
       "trend_direction": "stable",
@@ -8405,12 +8782,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:41:37Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:59Z",
-        "avg_days_since_update": 8.941535818966875,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -8422,12 +8799,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -8436,11 +8813,11 @@
       "open_count": 1,
       "closed_count": 0,
       "blocked_count": 0,
-      "health": 56,
+      "health": 52,
       "health_level": "warning",
       "attention_score": 1,
-      "normalized_score": 0.5,
-      "attention_rank": 29,
+      "normalized_score": 0.4934841796755602,
+      "attention_rank": 30,
       "closed_last_7_days": 0,
       "closed_last_30_days": 0,
       "trend_direction": "stable",
@@ -8539,12 +8916,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:25Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-19T09:55:54Z",
-        "avg_days_since_update": 1.0708413745224306,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -8556,912 +8933,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
-      }
-    },
-    {
-      "label": "virtio-gpu",
-      "issue_count": 24,
-      "open_count": 24,
-      "closed_count": 0,
-      "blocked_count": 0,
-      "health": 56,
-      "health_level": "warning",
-      "attention_score": 0.9999999999999993,
-      "normalized_score": 0.49999999999999967,
-      "attention_rank": 30,
-      "closed_last_7_days": 0,
-      "closed_last_30_days": 0,
-      "trend_direction": "stable",
-      "weekly_closed": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "stale_count": 0,
-      "incoming_deps": 0,
-      "outgoing_deps": 0,
-      "cooccurring_labels": [
-        {
-          "label": "drm",
-          "count": 24
-        },
-        {
-          "label": "virtio",
-          "count": 24
-        }
-      ],
-      "top_core_issue_id": "dragonfly-diq",
-      "critical_path_count": 24,
-      "velocity": {
-        "closed_last_7_days": 0,
-        "closed_last_30_days": 0,
-        "avg_days_to_close": 0,
-        "trend_direction": "stable",
-        "trend_percent": 0,
-        "velocity_score": 0,
-        "historical": {
-          "label": "virtio-gpu",
-          "weekly_velocity": [
-            {
-              "week_start": "2026-11-23T00:00:00Z",
-              "week_end": "2026-11-30T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 0,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-16T00:00:00Z",
-              "week_end": "2026-11-23T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 1,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-09T00:00:00Z",
-              "week_end": "2026-11-16T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 2,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-02T00:00:00Z",
-              "week_end": "2026-11-09T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 3,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-26T00:00:00Z",
-              "week_end": "2026-11-02T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 4,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-19T00:00:00Z",
-              "week_end": "2026-10-26T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 5,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-12T00:00:00Z",
-              "week_end": "2026-10-19T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 6,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-05T00:00:00Z",
-              "week_end": "2026-10-12T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 7,
-              "cumulative": 0
-            }
-          ],
-          "weeks_analyzed": 8,
-          "moving_avg_4_week": 0,
-          "peak_week": 0,
-          "peak_velocity": 0,
-          "trough_week": 0,
-          "trough_velocity": 0,
-          "variance": 0,
-          "consistency_score": 0
-        }
-      },
-      "freshness": {
-        "most_recent_update": "2026-11-26T21:35:29Z",
-        "oldest_open_issue": "2026-11-20T12:59:52Z",
-        "avg_days_since_update": 1.0709474702014428,
-        "stale_count": 0,
-        "stale_threshold_days": 14,
-        "freshness_score": 96
-      },
-      "flow": {
-        "incoming_deps": 0,
-        "outgoing_deps": 0,
-        "incoming_labels": null,
-        "outgoing_labels": null,
-        "blocked_by_external": 0,
-        "blocking_external": 0,
-        "flow_score": 100
-      },
-      "criticality": {
-        "avg_pagerank": 0.009671180323360014,
-        "avg_betweenness": 0,
-        "max_betweenness": 0,
-        "critical_path_count": 24,
-        "bottleneck_count": 0,
-        "criticality_score": 27
-      }
-    },
-    {
-      "label": "kgdb",
-      "issue_count": 2,
-      "open_count": 1,
-      "closed_count": 1,
-      "blocked_count": 0,
-      "health": 41,
-      "health_level": "warning",
-      "attention_score": 0.5,
-      "normalized_score": 0.25,
-      "attention_rank": 31,
-      "closed_last_7_days": 0,
-      "closed_last_30_days": 1,
-      "trend_direction": "declining",
-      "weekly_closed": [
-        0,
-        0,
-        1,
-        0
-      ],
-      "stale_count": 1,
-      "incoming_deps": 0,
-      "outgoing_deps": 0,
-      "cooccurring_labels": [
-        {
-          "label": "userland",
-          "count": 2
-        },
-        {
-          "label": "libc",
-          "count": 1
-        },
-        {
-          "label": "libkvm",
-          "count": 1
-        },
-        {
-          "label": "regression",
-          "count": 1
-        }
-      ],
-      "top_core_issue_id": "dragonfly-39z",
-      "critical_path_count": 2,
-      "velocity": {
-        "closed_last_7_days": 0,
-        "closed_last_30_days": 1,
-        "avg_days_to_close": 11.519039351851852,
-        "trend_direction": "declining",
-        "trend_percent": -100,
-        "velocity_score": 10,
-        "historical": {
-          "label": "kgdb",
-          "weekly_velocity": [
-            {
-              "week_start": "2026-11-23T00:00:00Z",
-              "week_end": "2026-11-30T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 0,
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-16T00:00:00Z",
-              "week_end": "2026-11-23T00:00:00Z",
-              "closed": 1,
-              "weeks_ago": 1,
-              "issue_ids": [
-                "dragonfly-el8"
-              ],
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-09T00:00:00Z",
-              "week_end": "2026-11-16T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 2,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-02T00:00:00Z",
-              "week_end": "2026-11-09T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 3,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-26T00:00:00Z",
-              "week_end": "2026-11-02T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 4,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-19T00:00:00Z",
-              "week_end": "2026-10-26T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 5,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-12T00:00:00Z",
-              "week_end": "2026-10-19T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 6,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-05T00:00:00Z",
-              "week_end": "2026-10-12T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 7,
-              "cumulative": 0
-            }
-          ],
-          "weeks_analyzed": 8,
-          "moving_avg_4_week": 0.25,
-          "moving_avg_8_week": 0.125,
-          "peak_week": 1,
-          "peak_velocity": 1,
-          "trough_week": 1,
-          "trough_velocity": 1,
-          "variance": 0.109375,
-          "consistency_score": 0
-        }
-      },
-      "freshness": {
-        "most_recent_update": "2026-11-26T21:35:27Z",
-        "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 20.310112207855763,
-        "stale_count": 1,
-        "stale_threshold_days": 14,
-        "freshness_score": 27
-      },
-      "flow": {
-        "incoming_deps": 0,
-        "outgoing_deps": 0,
-        "incoming_labels": null,
-        "outgoing_labels": null,
-        "blocked_by_external": 0,
-        "blocking_external": 0,
-        "flow_score": 100
-      },
-      "criticality": {
-        "avg_pagerank": 0.009671180323360019,
-        "avg_betweenness": 0,
-        "max_betweenness": 0,
-        "critical_path_count": 2,
-        "bottleneck_count": 0,
-        "criticality_score": 27
-      }
-    },
-    {
-      "label": "libc",
-      "issue_count": 3,
-      "open_count": 2,
-      "closed_count": 1,
-      "blocked_count": 0,
-      "health": 50,
-      "health_level": "warning",
-      "attention_score": 0.5,
-      "normalized_score": 0.25,
-      "attention_rank": 32,
-      "closed_last_7_days": 0,
-      "closed_last_30_days": 1,
-      "trend_direction": "declining",
-      "weekly_closed": [
-        0,
-        0,
-        1,
-        0
-      ],
-      "stale_count": 1,
-      "incoming_deps": 0,
-      "outgoing_deps": 0,
-      "cooccurring_labels": [
-        {
-          "label": "regression",
-          "count": 2
-        },
-        {
-          "label": "robustness",
-          "count": 2
-        },
-        {
-          "label": "db",
-          "count": 1
-        },
-        {
-          "label": "hash",
-          "count": 1
-        },
-        {
-          "label": "kgdb",
-          "count": 1
-        }
-      ],
-      "top_core_issue_id": "dragonfly-586",
-      "critical_path_count": 3,
-      "velocity": {
-        "closed_last_7_days": 0,
-        "closed_last_30_days": 1,
-        "avg_days_to_close": 11.519039351851852,
-        "trend_direction": "declining",
-        "trend_percent": -100,
-        "velocity_score": 10,
-        "historical": {
-          "label": "libc",
-          "weekly_velocity": [
-            {
-              "week_start": "2026-11-23T00:00:00Z",
-              "week_end": "2026-11-30T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 0,
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-16T00:00:00Z",
-              "week_end": "2026-11-23T00:00:00Z",
-              "closed": 1,
-              "weeks_ago": 1,
-              "issue_ids": [
-                "dragonfly-el8"
-              ],
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-09T00:00:00Z",
-              "week_end": "2026-11-16T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 2,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-02T00:00:00Z",
-              "week_end": "2026-11-09T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 3,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-26T00:00:00Z",
-              "week_end": "2026-11-02T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 4,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-19T00:00:00Z",
-              "week_end": "2026-10-26T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 5,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-12T00:00:00Z",
-              "week_end": "2026-10-19T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 6,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-05T00:00:00Z",
-              "week_end": "2026-10-12T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 7,
-              "cumulative": 0
-            }
-          ],
-          "weeks_analyzed": 8,
-          "moving_avg_4_week": 0.25,
-          "moving_avg_8_week": 0.125,
-          "peak_week": 1,
-          "peak_velocity": 1,
-          "trough_week": 1,
-          "trough_velocity": 1,
-          "variance": 0.109375,
-          "consistency_score": 0
-        }
-      },
-      "freshness": {
-        "most_recent_update": "2026-11-26T21:35:27Z",
-        "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 10.751553180077986,
-        "stale_count": 1,
-        "stale_threshold_days": 14,
-        "freshness_score": 61
-      },
-      "flow": {
-        "incoming_deps": 0,
-        "outgoing_deps": 0,
-        "incoming_labels": null,
-        "outgoing_labels": null,
-        "blocked_by_external": 0,
-        "blocking_external": 0,
-        "flow_score": 100
-      },
-      "criticality": {
-        "avg_pagerank": 0.009671180323360019,
-        "avg_betweenness": 0,
-        "max_betweenness": 0,
-        "critical_path_count": 3,
-        "bottleneck_count": 0,
-        "criticality_score": 27
-      }
-    },
-    {
-      "label": "userland",
-      "issue_count": 2,
-      "open_count": 1,
-      "closed_count": 1,
-      "blocked_count": 0,
-      "health": 41,
-      "health_level": "warning",
-      "attention_score": 0.5,
-      "normalized_score": 0.25,
-      "attention_rank": 33,
-      "closed_last_7_days": 0,
-      "closed_last_30_days": 1,
-      "trend_direction": "declining",
-      "weekly_closed": [
-        0,
-        0,
-        1,
-        0
-      ],
-      "stale_count": 1,
-      "incoming_deps": 0,
-      "outgoing_deps": 0,
-      "cooccurring_labels": [
-        {
-          "label": "kgdb",
-          "count": 2
-        },
-        {
-          "label": "libc",
-          "count": 1
-        },
-        {
-          "label": "libkvm",
-          "count": 1
-        },
-        {
-          "label": "regression",
-          "count": 1
-        }
-      ],
-      "top_core_issue_id": "dragonfly-39z",
-      "critical_path_count": 2,
-      "velocity": {
-        "closed_last_7_days": 0,
-        "closed_last_30_days": 1,
-        "avg_days_to_close": 11.519039351851852,
-        "trend_direction": "declining",
-        "trend_percent": -100,
-        "velocity_score": 10,
-        "historical": {
-          "label": "userland",
-          "weekly_velocity": [
-            {
-              "week_start": "2026-11-23T00:00:00Z",
-              "week_end": "2026-11-30T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 0,
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-16T00:00:00Z",
-              "week_end": "2026-11-23T00:00:00Z",
-              "closed": 1,
-              "weeks_ago": 1,
-              "issue_ids": [
-                "dragonfly-el8"
-              ],
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-09T00:00:00Z",
-              "week_end": "2026-11-16T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 2,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-02T00:00:00Z",
-              "week_end": "2026-11-09T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 3,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-26T00:00:00Z",
-              "week_end": "2026-11-02T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 4,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-19T00:00:00Z",
-              "week_end": "2026-10-26T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 5,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-12T00:00:00Z",
-              "week_end": "2026-10-19T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 6,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-05T00:00:00Z",
-              "week_end": "2026-10-12T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 7,
-              "cumulative": 0
-            }
-          ],
-          "weeks_analyzed": 8,
-          "moving_avg_4_week": 0.25,
-          "moving_avg_8_week": 0.125,
-          "peak_week": 1,
-          "peak_velocity": 1,
-          "trough_week": 1,
-          "trough_velocity": 1,
-          "variance": 0.109375,
-          "consistency_score": 0
-        }
-      },
-      "freshness": {
-        "most_recent_update": "2026-11-26T21:35:27Z",
-        "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 20.310112207855763,
-        "stale_count": 1,
-        "stale_threshold_days": 14,
-        "freshness_score": 27
-      },
-      "flow": {
-        "incoming_deps": 0,
-        "outgoing_deps": 0,
-        "incoming_labels": null,
-        "outgoing_labels": null,
-        "blocked_by_external": 0,
-        "blocking_external": 0,
-        "flow_score": 100
-      },
-      "criticality": {
-        "avg_pagerank": 0.009671180323360019,
-        "avg_betweenness": 0,
-        "max_betweenness": 0,
-        "critical_path_count": 2,
-        "bottleneck_count": 0,
-        "criticality_score": 27
-      }
-    },
-    {
-      "label": "drm",
-      "issue_count": 28,
-      "open_count": 27,
-      "closed_count": 1,
-      "blocked_count": 0,
-      "health": 58,
-      "health_level": "warning",
-      "attention_score": 0.48214285714285693,
-      "normalized_score": 0.24107142857142846,
-      "attention_rank": 34,
-      "closed_last_7_days": 0,
-      "closed_last_30_days": 1,
-      "trend_direction": "declining",
-      "weekly_closed": [
-        0,
-        0,
-        1,
-        0
-      ],
-      "stale_count": 0,
-      "incoming_deps": 0,
-      "outgoing_deps": 0,
-      "cooccurring_labels": [
-        {
-          "label": "virtio",
-          "count": 25
-        },
-        {
-          "label": "virtio-gpu",
-          "count": 24
-        },
-        {
-          "label": "libdrm",
-          "count": 1
-        },
-        {
-          "label": "ports",
-          "count": 1
-        },
-        {
-          "label": "regression",
-          "count": 1
-        }
-      ],
-      "top_core_issue_id": "dragonfly-0m9",
-      "critical_path_count": 28,
-      "velocity": {
-        "closed_last_7_days": 0,
-        "closed_last_30_days": 1,
-        "avg_days_to_close": 0.03148148148148148,
-        "trend_direction": "declining",
-        "trend_percent": -100,
-        "velocity_score": 10,
-        "historical": {
-          "label": "drm",
-          "weekly_velocity": [
-            {
-              "week_start": "2026-11-23T00:00:00Z",
-              "week_end": "2026-11-30T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 0,
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-16T00:00:00Z",
-              "week_end": "2026-11-23T00:00:00Z",
-              "closed": 1,
-              "weeks_ago": 1,
-              "issue_ids": [
-                "dragonfly-81q"
-              ],
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-09T00:00:00Z",
-              "week_end": "2026-11-16T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 2,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-02T00:00:00Z",
-              "week_end": "2026-11-09T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 3,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-26T00:00:00Z",
-              "week_end": "2026-11-02T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 4,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-19T00:00:00Z",
-              "week_end": "2026-10-26T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 5,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-12T00:00:00Z",
-              "week_end": "2026-10-19T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 6,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-05T00:00:00Z",
-              "week_end": "2026-10-12T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 7,
-              "cumulative": 0
-            }
-          ],
-          "weeks_analyzed": 8,
-          "moving_avg_4_week": 0.25,
-          "moving_avg_8_week": 0.125,
-          "peak_week": 1,
-          "peak_velocity": 1,
-          "trough_week": 1,
-          "trough_velocity": 1,
-          "variance": 0.109375,
-          "consistency_score": 0
-        }
-      },
-      "freshness": {
-        "most_recent_update": "2026-11-26T21:35:29Z",
-        "oldest_open_issue": "2026-11-20T12:38:21Z",
-        "avg_days_since_update": 1.0709429691726362,
-        "stale_count": 0,
-        "stale_threshold_days": 14,
-        "freshness_score": 96
-      },
-      "flow": {
-        "incoming_deps": 0,
-        "outgoing_deps": 0,
-        "incoming_labels": null,
-        "outgoing_labels": null,
-        "blocked_by_external": 0,
-        "blocking_external": 0,
-        "flow_score": 100
-      },
-      "criticality": {
-        "avg_pagerank": 0.009671180323360012,
-        "avg_betweenness": 0,
-        "max_betweenness": 0,
-        "critical_path_count": 28,
-        "bottleneck_count": 0,
-        "criticality_score": 27
-      }
-    },
-    {
-      "label": "virtio",
-      "issue_count": 26,
-      "open_count": 25,
-      "closed_count": 1,
-      "blocked_count": 0,
-      "health": 58,
-      "health_level": "warning",
-      "attention_score": 0.4807692307692305,
-      "normalized_score": 0.24038461538461525,
-      "attention_rank": 35,
-      "closed_last_7_days": 0,
-      "closed_last_30_days": 1,
-      "trend_direction": "declining",
-      "weekly_closed": [
-        0,
-        0,
-        1,
-        0
-      ],
-      "stale_count": 0,
-      "incoming_deps": 0,
-      "outgoing_deps": 0,
-      "cooccurring_labels": [
-        {
-          "label": "drm",
-          "count": 25
-        },
-        {
-          "label": "virtio-gpu",
-          "count": 24
-        },
-        {
-          "label": "kernel",
-          "count": 1
-        },
-        {
-          "label": "master-fixes",
-          "count": 1
-        },
-        {
-          "label": "microvm",
-          "count": 1
-        }
-      ],
-      "top_core_issue_id": "dragonfly-81q",
-      "critical_path_count": 26,
-      "velocity": {
-        "closed_last_7_days": 0,
-        "closed_last_30_days": 1,
-        "avg_days_to_close": 0.03148148148148148,
-        "trend_direction": "declining",
-        "trend_percent": -100,
-        "velocity_score": 10,
-        "historical": {
-          "label": "virtio",
-          "weekly_velocity": [
-            {
-              "week_start": "2026-11-23T00:00:00Z",
-              "week_end": "2026-11-30T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 0,
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-16T00:00:00Z",
-              "week_end": "2026-11-23T00:00:00Z",
-              "closed": 1,
-              "weeks_ago": 1,
-              "issue_ids": [
-                "dragonfly-81q"
-              ],
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-09T00:00:00Z",
-              "week_end": "2026-11-16T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 2,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-02T00:00:00Z",
-              "week_end": "2026-11-09T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 3,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-26T00:00:00Z",
-              "week_end": "2026-11-02T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 4,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-19T00:00:00Z",
-              "week_end": "2026-10-26T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 5,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-12T00:00:00Z",
-              "week_end": "2026-10-19T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 6,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-05T00:00:00Z",
-              "week_end": "2026-10-12T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 7,
-              "cumulative": 0
-            }
-          ],
-          "weeks_analyzed": 8,
-          "moving_avg_4_week": 0.25,
-          "moving_avg_8_week": 0.125,
-          "peak_week": 1,
-          "peak_velocity": 1,
-          "trough_week": 1,
-          "trough_velocity": 1,
-          "variance": 0.109375,
-          "consistency_score": 0
-        }
-      },
-      "freshness": {
-        "most_recent_update": "2026-11-26T21:35:29Z",
-        "oldest_open_issue": "2026-11-13T19:24:57Z",
-        "avg_days_since_update": 1.3857714671150232,
-        "stale_count": 0,
-        "stale_threshold_days": 14,
-        "freshness_score": 95
-      },
-      "flow": {
-        "incoming_deps": 0,
-        "outgoing_deps": 0,
-        "incoming_labels": null,
-        "outgoing_labels": null,
-        "blocked_by_external": 0,
-        "blocking_external": 0,
-        "flow_score": 100
-      },
-      "criticality": {
-        "avg_pagerank": 0.009671180323360014,
-        "avg_betweenness": 0,
-        "max_betweenness": 0,
-        "critical_path_count": 26,
-        "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -9473,8 +8950,8 @@
       "health": 55,
       "health_level": "warning",
       "attention_score": 0.3333333333333333,
-      "normalized_score": 0.16666666666666666,
-      "attention_rank": 36,
+      "normalized_score": 0.16449472655852007,
+      "attention_rank": 31,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -9593,12 +9070,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:31Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:57Z",
-        "avg_days_since_update": 5.006159661559468,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 82
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -9610,12 +9087,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 3,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -9624,11 +9101,11 @@
       "open_count": 2,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 58,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0.3333333333333333,
-      "normalized_score": 0.16666666666666666,
-      "attention_rank": 37,
+      "normalized_score": 0.16449472655852007,
+      "attention_rank": 32,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -9747,12 +9224,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:27Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-10T15:24:23Z",
-        "avg_days_since_update": 1.0708298004483565,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -9764,12 +9241,166 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 3,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
+      }
+    },
+    {
+      "label": "libc",
+      "issue_count": 3,
+      "open_count": 2,
+      "closed_count": 1,
+      "blocked_count": 0,
+      "health": 55,
+      "health_level": "warning",
+      "attention_score": 0.3333333333333333,
+      "normalized_score": 0.16449472655852007,
+      "attention_rank": 33,
+      "closed_last_7_days": 0,
+      "closed_last_30_days": 1,
+      "trend_direction": "declining",
+      "weekly_closed": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "stale_count": 0,
+      "incoming_deps": 0,
+      "outgoing_deps": 0,
+      "cooccurring_labels": [
+        {
+          "label": "regression",
+          "count": 2
+        },
+        {
+          "label": "robustness",
+          "count": 2
+        },
+        {
+          "label": "db",
+          "count": 1
+        },
+        {
+          "label": "hash",
+          "count": 1
+        },
+        {
+          "label": "kgdb",
+          "count": 1
+        }
+      ],
+      "top_core_issue_id": "dragonfly-586",
+      "critical_path_count": 3,
+      "velocity": {
+        "closed_last_7_days": 0,
+        "closed_last_30_days": 1,
+        "avg_days_to_close": 11.519039351851852,
+        "trend_direction": "declining",
+        "trend_percent": -100,
+        "velocity_score": 10,
+        "historical": {
+          "label": "libc",
+          "weekly_velocity": [
+            {
+              "week_start": "2026-11-23T00:00:00Z",
+              "week_end": "2026-11-30T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 0,
+              "cumulative": 1
+            },
+            {
+              "week_start": "2026-11-16T00:00:00Z",
+              "week_end": "2026-11-23T00:00:00Z",
+              "closed": 1,
+              "weeks_ago": 1,
+              "issue_ids": [
+                "dragonfly-el8"
+              ],
+              "cumulative": 1
+            },
+            {
+              "week_start": "2026-11-09T00:00:00Z",
+              "week_end": "2026-11-16T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 2,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-02T00:00:00Z",
+              "week_end": "2026-11-09T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 3,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-26T00:00:00Z",
+              "week_end": "2026-11-02T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 4,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-19T00:00:00Z",
+              "week_end": "2026-10-26T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 5,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-12T00:00:00Z",
+              "week_end": "2026-10-19T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 6,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-05T00:00:00Z",
+              "week_end": "2026-10-12T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 7,
+              "cumulative": 0
+            }
+          ],
+          "weeks_analyzed": 8,
+          "moving_avg_4_week": 0.25,
+          "moving_avg_8_week": 0.125,
+          "peak_week": 1,
+          "peak_velocity": 1,
+          "trough_week": 1,
+          "trough_velocity": 1,
+          "variance": 0.109375,
+          "consistency_score": 0
+        }
+      },
+      "freshness": {
+        "most_recent_update": "2026-11-27T19:40:20Z",
+        "oldest_open_issue": "2026-11-07T12:54:56Z",
+        "avg_days_since_update": 0.264960852713669,
+        "stale_count": 0,
+        "stale_threshold_days": 14,
+        "freshness_score": 99
+      },
+      "flow": {
+        "incoming_deps": 0,
+        "outgoing_deps": 0,
+        "incoming_labels": null,
+        "outgoing_labels": null,
+        "blocked_by_external": 0,
+        "blocking_external": 0,
+        "flow_score": 100
+      },
+      "criticality": {
+        "avg_pagerank": 0.007868228441088733,
+        "avg_betweenness": 0,
+        "max_betweenness": 0,
+        "critical_path_count": 3,
+        "bottleneck_count": 0,
+        "criticality_score": 9
       }
     },
     {
@@ -9778,11 +9409,11 @@
       "open_count": 2,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 55,
+      "health": 54,
       "health_level": "warning",
       "attention_score": 0.3333333333333333,
-      "normalized_score": 0.16666666666666666,
-      "attention_rank": 38,
+      "normalized_score": 0.16449472655852007,
+      "attention_rank": 34,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -9901,12 +9532,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:20Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:16:53Z",
-        "avg_days_since_update": 5.006229106003913,
+        "avg_days_since_update": 0.7250302971581135,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 82
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -9918,12 +9549,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 3,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -9932,11 +9563,11 @@
       "open_count": 1,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 61,
+      "health": 56,
       "health_level": "warning",
       "attention_score": 0.25,
-      "normalized_score": 0.125,
-      "attention_rank": 39,
+      "normalized_score": 0.12337104491889005,
+      "attention_rank": 35,
       "closed_last_7_days": 1,
       "closed_last_30_days": 1,
       "trend_direction": "improving",
@@ -10051,12 +9682,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:19Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-19T00:18:51Z",
-        "avg_days_since_update": 1.070922393040949,
+        "avg_days_since_update": 1.185122889750706,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 95
       },
       "flow": {
         "incoming_deps": 0,
@@ -10068,12 +9699,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 2,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -10082,11 +9713,11 @@
       "open_count": 1,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 61,
+      "health": 56,
       "health_level": "warning",
       "attention_score": 0.25,
-      "normalized_score": 0.125,
-      "attention_rank": 40,
+      "normalized_score": 0.12337104491889005,
+      "attention_rank": 36,
       "closed_last_7_days": 1,
       "closed_last_30_days": 1,
       "trend_direction": "improving",
@@ -10201,12 +9832,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:19Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-19T00:18:51Z",
-        "avg_days_since_update": 1.070922393040949,
+        "avg_days_since_update": 1.185122889750706,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 95
       },
       "flow": {
         "incoming_deps": 0,
@@ -10218,88 +9849,83 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 2,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
-      "label": "regression",
-      "issue_count": 4,
-      "open_count": 2,
-      "closed_count": 2,
+      "label": "kgdb",
+      "issue_count": 2,
+      "open_count": 1,
+      "closed_count": 1,
       "blocked_count": 0,
-      "health": 52,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0.25,
-      "normalized_score": 0.125,
-      "attention_rank": 41,
+      "normalized_score": 0.12337104491889005,
+      "attention_rank": 37,
       "closed_last_7_days": 0,
-      "closed_last_30_days": 2,
+      "closed_last_30_days": 1,
       "trend_direction": "declining",
       "weekly_closed": [
         0,
         0,
-        2,
+        1,
         0
       ],
-      "stale_count": 1,
+      "stale_count": 0,
       "incoming_deps": 0,
       "outgoing_deps": 0,
       "cooccurring_labels": [
         {
-          "label": "libc",
+          "label": "userland",
           "count": 2
         },
         {
-          "label": "drm",
-          "count": 1
-        },
-        {
-          "label": "kernel",
-          "count": 1
-        },
-        {
-          "label": "kgdb",
+          "label": "libc",
           "count": 1
         },
         {
           "label": "libkvm",
           "count": 1
+        },
+        {
+          "label": "regression",
+          "count": 1
         }
       ],
-      "top_core_issue_id": "dragonfly-3tj",
-      "critical_path_count": 4,
+      "top_core_issue_id": "dragonfly-39z",
+      "critical_path_count": 2,
       "velocity": {
         "closed_last_7_days": 0,
-        "closed_last_30_days": 2,
+        "closed_last_30_days": 1,
         "avg_days_to_close": 11.519039351851852,
         "trend_direction": "declining",
         "trend_percent": -100,
-        "velocity_score": 20,
+        "velocity_score": 10,
         "historical": {
-          "label": "regression",
+          "label": "kgdb",
           "weekly_velocity": [
             {
               "week_start": "2026-11-23T00:00:00Z",
               "week_end": "2026-11-30T00:00:00Z",
               "closed": 0,
               "weeks_ago": 0,
-              "cumulative": 2
+              "cumulative": 1
             },
             {
               "week_start": "2026-11-16T00:00:00Z",
               "week_end": "2026-11-23T00:00:00Z",
-              "closed": 2,
+              "closed": 1,
               "weeks_ago": 1,
               "issue_ids": [
-                "dragonfly-3tj",
                 "dragonfly-el8"
               ],
-              "cumulative": 2
+              "cumulative": 1
             },
             {
               "week_start": "2026-11-09T00:00:00Z",
@@ -10345,23 +9971,23 @@
             }
           ],
           "weeks_analyzed": 8,
-          "moving_avg_4_week": 0.5,
-          "moving_avg_8_week": 0.25,
+          "moving_avg_4_week": 0.25,
+          "moving_avg_8_week": 0.125,
           "peak_week": 1,
-          "peak_velocity": 2,
+          "peak_velocity": 1,
           "trough_week": 1,
-          "trough_velocity": 2,
-          "variance": 0.4375,
+          "trough_velocity": 1,
+          "variance": 0.109375,
           "consistency_score": 0
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:27Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 10.751634198596504,
-        "stale_count": 1,
+        "avg_days_since_update": 0.264960852713669,
+        "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 61
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -10373,106 +9999,83 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
-        "critical_path_count": 4,
+        "critical_path_count": 2,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
-      "label": "kernel",
-      "issue_count": 23,
-      "open_count": 17,
-      "closed_count": 6,
-      "blocked_count": 1,
-      "health": 62,
+      "label": "userland",
+      "issue_count": 2,
+      "open_count": 1,
+      "closed_count": 1,
+      "blocked_count": 0,
+      "health": 55,
       "health_level": "warning",
-      "attention_score": 0.2064777335602574,
-      "normalized_score": 0.1032388667801287,
-      "attention_rank": 42,
-      "closed_last_7_days": 2,
-      "closed_last_30_days": 6,
+      "attention_score": 0.25,
+      "normalized_score": 0.12337104491889005,
+      "attention_rank": 38,
+      "closed_last_7_days": 0,
+      "closed_last_30_days": 1,
       "trend_direction": "declining",
       "weekly_closed": [
         0,
         0,
-        4,
-        2
+        1,
+        0
       ],
       "stale_count": 0,
-      "incoming_deps": 4,
-      "outgoing_deps": 4,
-      "incoming_labels": [
-        "master-fixes",
-        "microvm",
-        "pc64",
-        "reboot"
-      ],
-      "outgoing_labels": [
-        "master-fixes",
-        "microvm",
-        "pc64",
-        "reboot"
-      ],
+      "incoming_deps": 0,
+      "outgoing_deps": 0,
       "cooccurring_labels": [
         {
-          "label": "master-fixes",
-          "count": 10
+          "label": "kgdb",
+          "count": 2
         },
         {
-          "label": "microvm",
-          "count": 5
+          "label": "libc",
+          "count": 1
         },
         {
-          "label": "pc64",
-          "count": 5
+          "label": "libkvm",
+          "count": 1
         },
         {
-          "label": "signals",
-          "count": 3
-        },
-        {
-          "label": "vfs",
-          "count": 3
+          "label": "regression",
+          "count": 1
         }
       ],
-      "top_core_issue_id": "dragonfly-ck4",
-      "critical_path_count": 23,
+      "top_core_issue_id": "dragonfly-39z",
+      "critical_path_count": 2,
       "velocity": {
-        "closed_last_7_days": 2,
-        "closed_last_30_days": 6,
-        "avg_days_to_close": 5.823713348765431,
+        "closed_last_7_days": 0,
+        "closed_last_30_days": 1,
+        "avg_days_to_close": 11.519039351851852,
         "trend_direction": "declining",
-        "trend_percent": -50,
-        "velocity_score": 60,
+        "trend_percent": -100,
+        "velocity_score": 10,
         "historical": {
-          "label": "kernel",
+          "label": "userland",
           "weekly_velocity": [
             {
               "week_start": "2026-11-23T00:00:00Z",
               "week_end": "2026-11-30T00:00:00Z",
-              "closed": 2,
+              "closed": 0,
               "weeks_ago": 0,
-              "issue_ids": [
-                "dragonfly-8a9",
-                "dragonfly-yu7"
-              ],
-              "cumulative": 6
+              "cumulative": 1
             },
             {
               "week_start": "2026-11-16T00:00:00Z",
               "week_end": "2026-11-23T00:00:00Z",
-              "closed": 4,
+              "closed": 1,
               "weeks_ago": 1,
               "issue_ids": [
-                "dragonfly-3tj",
-                "dragonfly-8h8",
-                "dragonfly-h46",
-                "dragonfly-6s3"
+                "dragonfly-el8"
               ],
-              "cumulative": 4
+              "cumulative": 1
             },
             {
               "week_start": "2026-11-09T00:00:00Z",
@@ -10518,50 +10121,191 @@
             }
           ],
           "weeks_analyzed": 8,
-          "moving_avg_4_week": 1.5,
-          "moving_avg_8_week": 0.75,
+          "moving_avg_4_week": 0.25,
+          "moving_avg_8_week": 0.125,
           "peak_week": 1,
-          "peak_velocity": 4,
-          "trough_week": 0,
-          "trough_velocity": 2,
-          "variance": 1.9375,
+          "peak_velocity": 1,
+          "trough_week": 1,
+          "trough_velocity": 1,
+          "variance": 0.109375,
           "consistency_score": 0
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:31Z",
-        "oldest_open_issue": "2026-11-07T12:16:53Z",
-        "avg_days_since_update": 6.163661363629183,
+        "most_recent_update": "2026-11-27T19:40:20Z",
+        "oldest_open_issue": "2026-11-07T12:54:56Z",
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 77
+        "freshness_score": 99
       },
       "flow": {
-        "incoming_deps": 4,
-        "outgoing_deps": 4,
-        "incoming_labels": [
-          "master-fixes",
-          "microvm",
-          "pc64",
-          "reboot"
-        ],
-        "outgoing_labels": [
-          "master-fixes",
-          "microvm",
-          "pc64",
-          "reboot"
-        ],
-        "blocked_by_external": 1,
-        "blocking_external": 1,
-        "flow_score": 80
+        "incoming_deps": 0,
+        "outgoing_deps": 0,
+        "incoming_labels": null,
+        "outgoing_labels": null,
+        "blocked_by_external": 0,
+        "blocking_external": 0,
+        "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.010386005707360016,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
-        "critical_path_count": 23,
+        "critical_path_count": 2,
         "bottleneck_count": 0,
-        "criticality_score": 29
+        "criticality_score": 9
+      }
+    },
+    {
+      "label": "virtio-gpu",
+      "issue_count": 24,
+      "open_count": 21,
+      "closed_count": 3,
+      "blocked_count": 21,
+      "health": 59,
+      "health_level": "warning",
+      "attention_score": 0.20309477724912098,
+      "normalized_score": 0.10022405954717309,
+      "attention_rank": 39,
+      "closed_last_7_days": 3,
+      "closed_last_30_days": 3,
+      "trend_direction": "improving",
+      "weekly_closed": [
+        0,
+        0,
+        0,
+        3
+      ],
+      "stale_count": 0,
+      "incoming_deps": 2,
+      "outgoing_deps": 0,
+      "incoming_labels": [
+        "kernel",
+        "virtio"
+      ],
+      "cooccurring_labels": [
+        {
+          "label": "drm",
+          "count": 24
+        },
+        {
+          "label": "virtio",
+          "count": 24
+        }
+      ],
+      "top_core_issue_id": "dragonfly-diq",
+      "critical_path_count": 24,
+      "velocity": {
+        "closed_last_7_days": 3,
+        "closed_last_30_days": 3,
+        "avg_days_to_close": 6.801512345679012,
+        "trend_direction": "improving",
+        "trend_percent": 100,
+        "velocity_score": 40,
+        "historical": {
+          "label": "virtio-gpu",
+          "weekly_velocity": [
+            {
+              "week_start": "2026-11-23T00:00:00Z",
+              "week_end": "2026-11-30T00:00:00Z",
+              "closed": 3,
+              "weeks_ago": 0,
+              "issue_ids": [
+                "dragonfly-diq.4",
+                "dragonfly-diq.3",
+                "dragonfly-diq.2"
+              ],
+              "cumulative": 3
+            },
+            {
+              "week_start": "2026-11-16T00:00:00Z",
+              "week_end": "2026-11-23T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 1,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-09T00:00:00Z",
+              "week_end": "2026-11-16T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 2,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-02T00:00:00Z",
+              "week_end": "2026-11-09T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 3,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-26T00:00:00Z",
+              "week_end": "2026-11-02T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 4,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-19T00:00:00Z",
+              "week_end": "2026-10-26T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 5,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-12T00:00:00Z",
+              "week_end": "2026-10-19T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 6,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-05T00:00:00Z",
+              "week_end": "2026-10-12T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 7,
+              "cumulative": 0
+            }
+          ],
+          "weeks_analyzed": 8,
+          "moving_avg_4_week": 0.75,
+          "moving_avg_8_week": 0.375,
+          "peak_week": 0,
+          "peak_velocity": 3,
+          "trough_week": 0,
+          "trough_velocity": 3,
+          "variance": 0.984375,
+          "consistency_score": 0
+        }
+      },
+      "freshness": {
+        "most_recent_update": "2026-11-27T19:40:20Z",
+        "oldest_open_issue": "2026-11-20T12:59:52Z",
+        "avg_days_since_update": 0.8025209276695772,
+        "stale_count": 0,
+        "stale_threshold_days": 14,
+        "freshness_score": 97
+      },
+      "flow": {
+        "incoming_deps": 2,
+        "outgoing_deps": 0,
+        "incoming_labels": [
+          "kernel",
+          "virtio"
+        ],
+        "outgoing_labels": null,
+        "blocked_by_external": 1,
+        "blocking_external": 0,
+        "flow_score": 90
+      },
+      "criticality": {
+        "avg_pagerank": 0.007868228441088728,
+        "avg_betweenness": 0,
+        "max_betweenness": 0,
+        "critical_path_count": 24,
+        "bottleneck_count": 0,
+        "criticality_score": 9
       }
     },
     {
@@ -10570,11 +10314,11 @@
       "open_count": 1,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 64,
+      "health": 57,
       "health_level": "warning",
       "attention_score": 0.17543868096793097,
-      "normalized_score": 0.08771934048396549,
-      "attention_rank": 43,
+      "normalized_score": 0.08657621356082174,
+      "attention_rank": 40,
       "closed_last_7_days": 1,
       "closed_last_30_days": 1,
       "trend_direction": "improving",
@@ -10685,12 +10429,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:31Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-25T21:58:43Z",
-        "avg_days_since_update": 1.070771930077986,
+        "avg_days_since_update": 1.184972426787743,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 95
       },
       "flow": {
         "incoming_deps": 0,
@@ -10702,12 +10446,333 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.013781426281360025,
+        "avg_pagerank": 0.011212221890786772,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 2,
         "bottleneck_count": 0,
-        "criticality_score": 38
+        "criticality_score": 13
+      }
+    },
+    {
+      "label": "regression",
+      "issue_count": 4,
+      "open_count": 2,
+      "closed_count": 2,
+      "blocked_count": 0,
+      "health": 57,
+      "health_level": "warning",
+      "attention_score": 0.16666666666666666,
+      "normalized_score": 0.08224736327926004,
+      "attention_rank": 41,
+      "closed_last_7_days": 0,
+      "closed_last_30_days": 2,
+      "trend_direction": "declining",
+      "weekly_closed": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "stale_count": 0,
+      "incoming_deps": 0,
+      "outgoing_deps": 0,
+      "cooccurring_labels": [
+        {
+          "label": "libc",
+          "count": 2
+        },
+        {
+          "label": "drm",
+          "count": 1
+        },
+        {
+          "label": "kernel",
+          "count": 1
+        },
+        {
+          "label": "kgdb",
+          "count": 1
+        },
+        {
+          "label": "libkvm",
+          "count": 1
+        }
+      ],
+      "top_core_issue_id": "dragonfly-3tj",
+      "critical_path_count": 4,
+      "velocity": {
+        "closed_last_7_days": 0,
+        "closed_last_30_days": 2,
+        "avg_days_to_close": 11.519039351851852,
+        "trend_direction": "declining",
+        "trend_percent": -100,
+        "velocity_score": 20,
+        "historical": {
+          "label": "regression",
+          "weekly_velocity": [
+            {
+              "week_start": "2026-11-23T00:00:00Z",
+              "week_end": "2026-11-30T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 0,
+              "cumulative": 2
+            },
+            {
+              "week_start": "2026-11-16T00:00:00Z",
+              "week_end": "2026-11-23T00:00:00Z",
+              "closed": 2,
+              "weeks_ago": 1,
+              "issue_ids": [
+                "dragonfly-3tj",
+                "dragonfly-el8"
+              ],
+              "cumulative": 2
+            },
+            {
+              "week_start": "2026-11-09T00:00:00Z",
+              "week_end": "2026-11-16T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 2,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-02T00:00:00Z",
+              "week_end": "2026-11-09T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 3,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-26T00:00:00Z",
+              "week_end": "2026-11-02T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 4,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-19T00:00:00Z",
+              "week_end": "2026-10-26T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 5,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-12T00:00:00Z",
+              "week_end": "2026-10-19T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 6,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-05T00:00:00Z",
+              "week_end": "2026-10-12T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 7,
+              "cumulative": 0
+            }
+          ],
+          "weeks_analyzed": 8,
+          "moving_avg_4_week": 0.5,
+          "moving_avg_8_week": 0.25,
+          "peak_week": 1,
+          "peak_velocity": 2,
+          "trough_week": 1,
+          "trough_velocity": 2,
+          "variance": 0.4375,
+          "consistency_score": 0
+        }
+      },
+      "freshness": {
+        "most_recent_update": "2026-11-27T19:40:20Z",
+        "oldest_open_issue": "2026-11-07T12:54:56Z",
+        "avg_days_since_update": 0.264960852713669,
+        "stale_count": 0,
+        "stale_threshold_days": 14,
+        "freshness_score": 99
+      },
+      "flow": {
+        "incoming_deps": 0,
+        "outgoing_deps": 0,
+        "incoming_labels": null,
+        "outgoing_labels": null,
+        "blocked_by_external": 0,
+        "blocking_external": 0,
+        "flow_score": 100
+      },
+      "criticality": {
+        "avg_pagerank": 0.007868228441088733,
+        "avg_betweenness": 0,
+        "max_betweenness": 0,
+        "critical_path_count": 4,
+        "bottleneck_count": 0,
+        "criticality_score": 9
+      }
+    },
+    {
+      "label": "drm",
+      "issue_count": 28,
+      "open_count": 24,
+      "closed_count": 4,
+      "blocked_count": 21,
+      "health": 62,
+      "health_level": "warning",
+      "attention_score": 0.16080402357907883,
+      "normalized_score": 0.07935424166445115,
+      "attention_rank": 42,
+      "closed_last_7_days": 3,
+      "closed_last_30_days": 4,
+      "trend_direction": "improving",
+      "weekly_closed": [
+        0,
+        0,
+        1,
+        3
+      ],
+      "stale_count": 0,
+      "incoming_deps": 2,
+      "outgoing_deps": 0,
+      "incoming_labels": [
+        "kernel",
+        "virtio"
+      ],
+      "cooccurring_labels": [
+        {
+          "label": "virtio",
+          "count": 25
+        },
+        {
+          "label": "virtio-gpu",
+          "count": 24
+        },
+        {
+          "label": "libdrm",
+          "count": 1
+        },
+        {
+          "label": "ports",
+          "count": 1
+        },
+        {
+          "label": "regression",
+          "count": 1
+        }
+      ],
+      "top_core_issue_id": "dragonfly-0m9",
+      "critical_path_count": 28,
+      "velocity": {
+        "closed_last_7_days": 3,
+        "closed_last_30_days": 4,
+        "avg_days_to_close": 5.10900462962963,
+        "trend_direction": "improving",
+        "trend_percent": 200,
+        "velocity_score": 50,
+        "historical": {
+          "label": "drm",
+          "weekly_velocity": [
+            {
+              "week_start": "2026-11-23T00:00:00Z",
+              "week_end": "2026-11-30T00:00:00Z",
+              "closed": 3,
+              "weeks_ago": 0,
+              "issue_ids": [
+                "dragonfly-diq.4",
+                "dragonfly-diq.3",
+                "dragonfly-diq.2"
+              ],
+              "cumulative": 4
+            },
+            {
+              "week_start": "2026-11-16T00:00:00Z",
+              "week_end": "2026-11-23T00:00:00Z",
+              "closed": 1,
+              "weeks_ago": 1,
+              "issue_ids": [
+                "dragonfly-81q"
+              ],
+              "cumulative": 1
+            },
+            {
+              "week_start": "2026-11-09T00:00:00Z",
+              "week_end": "2026-11-16T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 2,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-02T00:00:00Z",
+              "week_end": "2026-11-09T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 3,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-26T00:00:00Z",
+              "week_end": "2026-11-02T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 4,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-19T00:00:00Z",
+              "week_end": "2026-10-26T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 5,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-12T00:00:00Z",
+              "week_end": "2026-10-19T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 6,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-05T00:00:00Z",
+              "week_end": "2026-10-12T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 7,
+              "cumulative": 0
+            }
+          ],
+          "weeks_analyzed": 8,
+          "moving_avg_4_week": 1,
+          "moving_avg_8_week": 0.5,
+          "peak_week": 0,
+          "peak_velocity": 3,
+          "trough_week": 1,
+          "trough_velocity": 1,
+          "variance": 1,
+          "consistency_score": 0
+        }
+      },
+      "freshness": {
+        "most_recent_update": "2026-11-27T19:40:20Z",
+        "oldest_open_issue": "2026-11-20T12:38:21Z",
+        "avg_days_since_update": 0.7736650386704591,
+        "stale_count": 0,
+        "stale_threshold_days": 14,
+        "freshness_score": 97
+      },
+      "flow": {
+        "incoming_deps": 2,
+        "outgoing_deps": 0,
+        "incoming_labels": [
+          "kernel",
+          "virtio"
+        ],
+        "outgoing_labels": null,
+        "blocked_by_external": 1,
+        "blocking_external": 0,
+        "flow_score": 90
+      },
+      "criticality": {
+        "avg_pagerank": 0.007868228441088728,
+        "avg_betweenness": 0,
+        "max_betweenness": 0,
+        "critical_path_count": 28,
+        "bottleneck_count": 0,
+        "criticality_score": 9
       }
     },
     {
@@ -10716,11 +10781,11 @@
       "open_count": 1,
       "closed_count": 2,
       "blocked_count": 0,
-      "health": 54,
+      "health": 57,
       "health_level": "warning",
       "attention_score": 0.1111111111111111,
-      "normalized_score": 0.05555555555555555,
-      "attention_rank": 44,
+      "normalized_score": 0.05483157551950669,
+      "attention_rank": 43,
       "closed_last_7_days": 0,
       "closed_last_30_days": 2,
       "trend_direction": "declining",
@@ -10840,12 +10905,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:26Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:25:00Z",
-        "avg_days_since_update": 8.9415242448928,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 68
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -10857,12 +10922,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 3,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -10871,11 +10936,11 @@
       "open_count": 1,
       "closed_count": 3,
       "blocked_count": 0,
-      "health": 65,
+      "health": 60,
       "health_level": "warning",
       "attention_score": 0.042735047802900696,
-      "normalized_score": 0.021367523901450348,
-      "attention_rank": 45,
+      "normalized_score": 0.0210890700084103,
+      "attention_rank": 44,
       "closed_last_7_days": 1,
       "closed_last_30_days": 3,
       "trend_direction": "declining",
@@ -10998,12 +11063,12 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:31Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-14T12:32:02Z",
-        "avg_days_since_update": 1.070771930077986,
+        "avg_days_since_update": 0.264960852713669,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 96
+        "freshness_score": 99
       },
       "flow": {
         "incoming_deps": 0,
@@ -11015,12 +11080,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.011726303302360021,
+        "avg_pagerank": 0.009540225165937753,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 4,
         "bottleneck_count": 0,
-        "criticality_score": 32
+        "criticality_score": 11
       }
     },
     {
@@ -11029,7 +11094,161 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
+      "health_level": "warning",
+      "attention_score": 0,
+      "normalized_score": 0,
+      "attention_rank": 45,
+      "closed_last_7_days": 0,
+      "closed_last_30_days": 1,
+      "trend_direction": "declining",
+      "weekly_closed": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "stale_count": 0,
+      "incoming_deps": 0,
+      "outgoing_deps": 0,
+      "cooccurring_labels": [
+        {
+          "label": "contrib",
+          "count": 1
+        },
+        {
+          "label": "dports",
+          "count": 1
+        },
+        {
+          "label": "gcc",
+          "count": 1
+        },
+        {
+          "label": "lto",
+          "count": 1
+        },
+        {
+          "label": "toolchain",
+          "count": 1
+        }
+      ],
+      "top_core_issue_id": "dragonfly-3r7",
+      "critical_path_count": 1,
+      "velocity": {
+        "closed_last_7_days": 0,
+        "closed_last_30_days": 1,
+        "avg_days_to_close": 1.2047337962962963,
+        "trend_direction": "declining",
+        "trend_percent": -100,
+        "velocity_score": 10,
+        "historical": {
+          "label": "cc120",
+          "weekly_velocity": [
+            {
+              "week_start": "2026-11-23T00:00:00Z",
+              "week_end": "2026-11-30T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 0,
+              "cumulative": 1
+            },
+            {
+              "week_start": "2026-11-16T00:00:00Z",
+              "week_end": "2026-11-23T00:00:00Z",
+              "closed": 1,
+              "weeks_ago": 1,
+              "issue_ids": [
+                "dragonfly-3r7"
+              ],
+              "cumulative": 1
+            },
+            {
+              "week_start": "2026-11-09T00:00:00Z",
+              "week_end": "2026-11-16T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 2,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-11-02T00:00:00Z",
+              "week_end": "2026-11-09T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 3,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-26T00:00:00Z",
+              "week_end": "2026-11-02T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 4,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-19T00:00:00Z",
+              "week_end": "2026-10-26T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 5,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-12T00:00:00Z",
+              "week_end": "2026-10-19T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 6,
+              "cumulative": 0
+            },
+            {
+              "week_start": "2026-10-05T00:00:00Z",
+              "week_end": "2026-10-12T00:00:00Z",
+              "closed": 0,
+              "weeks_ago": 7,
+              "cumulative": 0
+            }
+          ],
+          "weeks_analyzed": 8,
+          "moving_avg_4_week": 0.25,
+          "moving_avg_8_week": 0.125,
+          "peak_week": 1,
+          "peak_velocity": 1,
+          "trough_week": 1,
+          "trough_velocity": 1,
+          "variance": 0.109375,
+          "consistency_score": 0
+        }
+      },
+      "freshness": {
+        "most_recent_update": "2026-11-27T19:40:20Z",
+        "oldest_open_issue": "0001-01-01T00:00:00Z",
+        "avg_days_since_update": 0,
+        "stale_count": 0,
+        "stale_threshold_days": 14,
+        "freshness_score": 100
+      },
+      "flow": {
+        "incoming_deps": 0,
+        "outgoing_deps": 0,
+        "incoming_labels": null,
+        "outgoing_labels": null,
+        "blocked_by_external": 0,
+        "blocking_external": 0,
+        "flow_score": 100
+      },
+      "criticality": {
+        "avg_pagerank": 0.007868228441088733,
+        "avg_betweenness": 0,
+        "max_betweenness": 0,
+        "critical_path_count": 1,
+        "bottleneck_count": 0,
+        "criticality_score": 9
+      }
+    },
+    {
+      "label": "ci",
+      "issue_count": 1,
+      "open_count": 0,
+      "closed_count": 1,
+      "blocked_count": 0,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
@@ -11048,37 +11267,25 @@
       "outgoing_deps": 0,
       "cooccurring_labels": [
         {
-          "label": "contrib",
+          "label": "build",
           "count": 1
         },
         {
-          "label": "dports",
-          "count": 1
-        },
-        {
-          "label": "gcc",
-          "count": 1
-        },
-        {
-          "label": "lto",
-          "count": 1
-        },
-        {
-          "label": "toolchain",
+          "label": "etc",
           "count": 1
         }
       ],
-      "top_core_issue_id": "dragonfly-3r7",
+      "top_core_issue_id": "dragonfly-wo3",
       "critical_path_count": 1,
       "velocity": {
         "closed_last_7_days": 0,
         "closed_last_30_days": 1,
-        "avg_days_to_close": 1.2047337962962963,
+        "avg_days_to_close": 0.02349537037037037,
         "trend_direction": "declining",
         "trend_percent": -100,
         "velocity_score": 10,
         "historical": {
-          "label": "cc120",
+          "label": "ci",
           "weekly_velocity": [
             {
               "week_start": "2026-11-23T00:00:00Z",
@@ -11093,7 +11300,7 @@
               "closed": 1,
               "weeks_ago": 1,
               "issue_ids": [
-                "dragonfly-3r7"
+                "dragonfly-wo3"
               ],
               "cumulative": 1
             },
@@ -11152,7 +11359,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:44:20Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -11169,21 +11376,21 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
-      "label": "ci",
+      "label": "contrib",
       "issue_count": 1,
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
@@ -11202,25 +11409,37 @@
       "outgoing_deps": 0,
       "cooccurring_labels": [
         {
-          "label": "build",
+          "label": "cc120",
           "count": 1
         },
         {
-          "label": "etc",
+          "label": "dports",
+          "count": 1
+        },
+        {
+          "label": "gcc",
+          "count": 1
+        },
+        {
+          "label": "lto",
+          "count": 1
+        },
+        {
+          "label": "toolchain",
           "count": 1
         }
       ],
-      "top_core_issue_id": "dragonfly-wo3",
+      "top_core_issue_id": "dragonfly-3r7",
       "critical_path_count": 1,
       "velocity": {
         "closed_last_7_days": 0,
         "closed_last_30_days": 1,
-        "avg_days_to_close": 0.02349537037037037,
+        "avg_days_to_close": 1.2047337962962963,
         "trend_direction": "declining",
         "trend_percent": -100,
         "velocity_score": 10,
         "historical": {
-          "label": "ci",
+          "label": "contrib",
           "weekly_velocity": [
             {
               "week_start": "2026-11-23T00:00:00Z",
@@ -11235,7 +11454,7 @@
               "closed": 1,
               "weeks_ago": 1,
               "issue_ids": [
-                "dragonfly-wo3"
+                "dragonfly-3r7"
               ],
               "cumulative": 1
             },
@@ -11294,7 +11513,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:18Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -11311,21 +11530,21 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
-      "label": "contrib",
+      "label": "etc",
       "issue_count": 1,
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
@@ -11344,160 +11563,6 @@
       "outgoing_deps": 0,
       "cooccurring_labels": [
         {
-          "label": "cc120",
-          "count": 1
-        },
-        {
-          "label": "dports",
-          "count": 1
-        },
-        {
-          "label": "gcc",
-          "count": 1
-        },
-        {
-          "label": "lto",
-          "count": 1
-        },
-        {
-          "label": "toolchain",
-          "count": 1
-        }
-      ],
-      "top_core_issue_id": "dragonfly-3r7",
-      "critical_path_count": 1,
-      "velocity": {
-        "closed_last_7_days": 0,
-        "closed_last_30_days": 1,
-        "avg_days_to_close": 1.2047337962962963,
-        "trend_direction": "declining",
-        "trend_percent": -100,
-        "velocity_score": 10,
-        "historical": {
-          "label": "contrib",
-          "weekly_velocity": [
-            {
-              "week_start": "2026-11-23T00:00:00Z",
-              "week_end": "2026-11-30T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 0,
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-16T00:00:00Z",
-              "week_end": "2026-11-23T00:00:00Z",
-              "closed": 1,
-              "weeks_ago": 1,
-              "issue_ids": [
-                "dragonfly-3r7"
-              ],
-              "cumulative": 1
-            },
-            {
-              "week_start": "2026-11-09T00:00:00Z",
-              "week_end": "2026-11-16T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 2,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-11-02T00:00:00Z",
-              "week_end": "2026-11-09T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 3,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-26T00:00:00Z",
-              "week_end": "2026-11-02T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 4,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-19T00:00:00Z",
-              "week_end": "2026-10-26T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 5,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-12T00:00:00Z",
-              "week_end": "2026-10-19T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 6,
-              "cumulative": 0
-            },
-            {
-              "week_start": "2026-10-05T00:00:00Z",
-              "week_end": "2026-10-12T00:00:00Z",
-              "closed": 0,
-              "weeks_ago": 7,
-              "cumulative": 0
-            }
-          ],
-          "weeks_analyzed": 8,
-          "moving_avg_4_week": 0.25,
-          "moving_avg_8_week": 0.125,
-          "peak_week": 1,
-          "peak_velocity": 1,
-          "trough_week": 1,
-          "trough_velocity": 1,
-          "variance": 0.109375,
-          "consistency_score": 0
-        }
-      },
-      "freshness": {
-        "most_recent_update": "2026-11-19T00:44:20Z",
-        "oldest_open_issue": "0001-01-01T00:00:00Z",
-        "avg_days_since_update": 0,
-        "stale_count": 0,
-        "stale_threshold_days": 14,
-        "freshness_score": 100
-      },
-      "flow": {
-        "incoming_deps": 0,
-        "outgoing_deps": 0,
-        "incoming_labels": null,
-        "outgoing_labels": null,
-        "blocked_by_external": 0,
-        "blocking_external": 0,
-        "flow_score": 100
-      },
-      "criticality": {
-        "avg_pagerank": 0.009671180323360019,
-        "avg_betweenness": 0,
-        "max_betweenness": 0,
-        "critical_path_count": 1,
-        "bottleneck_count": 0,
-        "criticality_score": 27
-      }
-    },
-    {
-      "label": "etc",
-      "issue_count": 1,
-      "open_count": 0,
-      "closed_count": 1,
-      "blocked_count": 0,
-      "health": 59,
-      "health_level": "warning",
-      "attention_score": 0,
-      "normalized_score": 0,
-      "attention_rank": 49,
-      "closed_last_7_days": 0,
-      "closed_last_30_days": 1,
-      "trend_direction": "declining",
-      "weekly_closed": [
-        0,
-        0,
-        1,
-        0
-      ],
-      "stale_count": 0,
-      "incoming_deps": 0,
-      "outgoing_deps": 0,
-      "cooccurring_labels": [
-        {
           "label": "build",
           "count": 1
         },
@@ -11590,7 +11655,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:18Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -11607,12 +11672,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -11621,11 +11686,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 50,
+      "attention_rank": 49,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -11744,7 +11809,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:44:20Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -11761,12 +11826,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -11775,11 +11840,11 @@
       "open_count": 0,
       "closed_count": 2,
       "blocked_count": 0,
-      "health": 65,
+      "health": 58,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 51,
+      "attention_rank": 50,
       "closed_last_7_days": 1,
       "closed_last_30_days": 2,
       "trend_direction": "stable",
@@ -11897,7 +11962,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:26Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -11914,12 +11979,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.013781426281360025,
+        "avg_pagerank": 0.011212221890786772,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 2,
         "bottleneck_count": 0,
-        "criticality_score": 38
+        "criticality_score": 13
       }
     },
     {
@@ -11928,11 +11993,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 52,
+      "attention_rank": 51,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -12047,7 +12112,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:27Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -12064,12 +12129,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -12078,11 +12143,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 53,
+      "attention_rank": 52,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -12201,7 +12266,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:44:20Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -12218,12 +12283,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -12232,11 +12297,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 54,
+      "attention_rank": 53,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -12347,7 +12412,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:19Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -12364,12 +12429,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -12378,11 +12443,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 55,
+      "attention_rank": 54,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -12493,7 +12558,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:26Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -12510,12 +12575,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -12524,11 +12589,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 56,
+      "attention_rank": 55,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -12635,7 +12700,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:25Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -12652,12 +12717,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -12666,11 +12731,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 57,
+      "attention_rank": 56,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -12777,7 +12842,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:26Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -12794,12 +12859,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -12808,11 +12873,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 62,
+      "health": 57,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 58,
+      "attention_rank": 57,
       "closed_last_7_days": 1,
       "closed_last_30_days": 1,
       "trend_direction": "improving",
@@ -12923,7 +12988,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:19Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -12940,12 +13005,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -12954,11 +13019,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 59,
+      "attention_rank": 58,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -13077,7 +13142,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-19T00:44:20Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -13094,12 +13159,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -13108,11 +13173,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 59,
+      "health": 55,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 60,
+      "attention_rank": 59,
       "closed_last_7_days": 0,
       "closed_last_30_days": 1,
       "trend_direction": "declining",
@@ -13223,7 +13288,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:26Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -13240,12 +13305,12 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     },
     {
@@ -13254,11 +13319,11 @@
       "open_count": 0,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 62,
+      "health": 57,
       "health_level": "warning",
       "attention_score": 0,
       "normalized_score": 0,
-      "attention_rank": 61,
+      "attention_rank": 60,
       "closed_last_7_days": 1,
       "closed_last_30_days": 1,
       "trend_direction": "improving",
@@ -13355,7 +13420,7 @@
         }
       },
       "freshness": {
-        "most_recent_update": "2026-11-26T21:35:24Z",
+        "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "0001-01-01T00:00:00Z",
         "avg_days_since_update": 0,
         "stale_count": 0,
@@ -13372,17 +13437,17 @@
         "flow_score": 100
       },
       "criticality": {
-        "avg_pagerank": 0.009671180323360019,
+        "avg_pagerank": 0.007868228441088733,
         "avg_betweenness": 0,
         "max_betweenness": 0,
         "critical_path_count": 1,
         "bottleneck_count": 0,
-        "criticality_score": 27
+        "criticality_score": 9
       }
     }
   ],
   "output_format": "json",
-  "scope_hash": "f2eae3bbf737d75ce0fecd5b71fba94391e3746149096515eba44ae507dea719",
+  "scope_hash": "dea05ebb064eb462773eaa01fa61b71d1ea510c7b09c7a9eb3e53fb866b7f315",
   "source_authority": {
     "state": "complete",
     "claim_safe": true,
@@ -13390,11 +13455,11 @@
     "loaded": 1,
     "failed": 0,
     "disabled": 0,
-    "valid": 100,
+    "valid": 108,
     "errors": 0,
     "skipped": 0,
     "read_errors": 0,
-    "visible": 100,
+    "visible": 108,
     "tombstones": 0,
     "warning_count": 0,
     "sources": [
@@ -13402,12 +13467,12 @@
         "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
         "source_kind": "jsonl_local",
         "status": "loaded",
-        "data_hash": "39c0b5156eacc9a0a6129fddaa976318ffd2c24ed15484174518193ca5dccd4b",
-        "valid": 100,
+        "data_hash": "2a7ddd4c904e41640ac894741ce0313b6ce546f234b7161800adc5839c83db8a",
+        "valid": 108,
         "errors": 0,
         "skipped": 0,
         "read_errors": 0,
-        "visible": 100,
+        "visible": 108,
         "tombstones": 0,
         "stale": false,
         "warning_count": 0
@@ -13418,15 +13483,55 @@
   "source_path": "/home/runner/work/_temp/dragonfly-dashboard/public/issues.jsonl",
   "top_unblocks": [
     {
+      "issue_id": "dragonfly-diq",
+      "issue_title": "drm: virtio-gpu phase 1 (2D KMS, dumb buffers) as a module",
+      "label": "drm",
+      "unblocks_count": 20,
+      "cascade_depth": 2,
+      "reason": "Unblocks 20 issues across 7 downstream labels"
+    },
+    {
       "issue_id": "dragonfly-ck4",
       "issue_title": "pc64: cpu_reset() last resort does not reset, reboot hangs",
       "label": "kernel",
-      "unblocks_count": 5,
+      "unblocks_count": 17,
+      "cascade_depth": 2,
+      "reason": "Unblocks 17 issues across 7 downstream labels"
+    },
+    {
+      "issue_id": "dragonfly-6es.3",
+      "issue_title": "vmod 2: virtio_pci: modern (virtio 1.0) transport",
+      "label": "kernel",
+      "unblocks_count": 9,
       "cascade_depth": 1,
-      "reason": "Unblocks 5 issues across 4 downstream labels"
+      "reason": "Unblocks 9 issues across 7 downstream labels"
+    },
+    {
+      "issue_id": "dragonfly-6es.1",
+      "issue_title": "vmod 0: branch from master and guest test setup",
+      "label": "kernel",
+      "unblocks_count": 3,
+      "cascade_depth": 1,
+      "reason": "Unblocks 3 issues across 7 downstream labels"
+    },
+    {
+      "issue_id": "dragonfly-6es.2",
+      "issue_title": "vmod 1: virtio core: VERSION_1, FEATURES_OK, ring address helpers",
+      "label": "kernel",
+      "unblocks_count": 3,
+      "cascade_depth": 1,
+      "reason": "Unblocks 3 issues across 7 downstream labels"
+    },
+    {
+      "issue_id": "dragonfly-6es.4",
+      "issue_title": "vmod 3: vtnet: 10-byte header on a modern device without MRG_RXBUF",
+      "label": "kernel",
+      "unblocks_count": 3,
+      "cascade_depth": 1,
+      "reason": "Unblocks 3 issues across 7 downstream labels"
     }
   ],
-  "total_labels": 61,
+  "total_labels": 60,
   "version": "v0.29.0",
   "warning_count": 60
 }
