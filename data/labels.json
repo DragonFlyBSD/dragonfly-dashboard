@@ -4510,7 +4510,7 @@
     ],
     "total_cross_label_deps": 43
   },
-  "generated_at": "2026-11-28T02:01:52Z",
+  "generated_at": "2026-11-28T12:00:21Z",
   "healthy_count": 0,
   "labels": [
     {
@@ -4657,10 +4657,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:57Z",
-        "avg_days_since_update": 0.7145139441115186,
+        "avg_days_since_update": 1.1301221149494585,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 97
+        "freshness_score": 95
       },
       "flow": {
         "incoming_deps": 10,
@@ -4825,10 +4825,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:57Z",
-        "avg_days_since_update": 0.2649608527136689,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 4,
@@ -4997,10 +4997,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:57Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 4,
@@ -5169,10 +5169,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:58Z",
-        "avg_days_since_update": 0.4489909453062616,
+        "avg_days_since_update": 0.8645991161442014,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 98
+        "freshness_score": 96
       },
       "flow": {
         "incoming_deps": 4,
@@ -5337,10 +5337,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:58Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 4,
@@ -5524,10 +5524,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:16:53Z",
-        "avg_days_since_update": 0.5180747416025578,
+        "avg_days_since_update": 0.9336829124404977,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 98
+        "freshness_score": 96
       },
       "flow": {
         "incoming_deps": 13,
@@ -5672,10 +5672,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-25T16:53:01Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -5818,10 +5818,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-10T15:22:09Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -5960,10 +5960,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:59Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -6098,10 +6098,10 @@
       "freshness": {
         "most_recent_update": "2026-11-26T21:35:20Z",
         "oldest_open_issue": "2026-11-25T23:00:10Z",
-        "avg_days_since_update": 1.185099741602558,
+        "avg_days_since_update": 1.6007079124404975,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 95
+        "freshness_score": 94
       },
       "flow": {
         "incoming_deps": 0,
@@ -6240,10 +6240,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-10T15:22:09Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -6382,10 +6382,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:25:00Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -6524,10 +6524,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:25:00Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -6670,10 +6670,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:59Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -6808,10 +6808,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:16:53Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -6946,10 +6946,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-20T12:38:21Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -7084,10 +7084,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-14T12:32:02Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -7230,10 +7230,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:58Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -7372,10 +7372,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:57Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -7514,10 +7514,10 @@
       "freshness": {
         "most_recent_update": "2026-11-26T21:35:18Z",
         "oldest_open_issue": "2026-11-19T00:18:51Z",
-        "avg_days_since_update": 1.185122889750706,
+        "avg_days_since_update": 1.6007310605886458,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 95
+        "freshness_score": 94
       },
       "flow": {
         "incoming_deps": 0,
@@ -7656,10 +7656,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -7790,10 +7790,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-25T16:53:01Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -7928,10 +7928,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-20T12:38:21Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -8074,10 +8074,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:59Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -8224,10 +8224,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -8358,10 +8358,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-19T00:18:50Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -8504,10 +8504,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:25:00Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -8642,10 +8642,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-20T15:50:10Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -8784,10 +8784,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:59Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -8918,10 +8918,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-19T09:55:54Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -8947,7 +8947,7 @@
       "open_count": 2,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 55,
+      "health": 54,
       "health_level": "warning",
       "attention_score": 0.3333333333333333,
       "normalized_score": 0.16449472655852007,
@@ -9072,10 +9072,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:24:57Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -9101,7 +9101,7 @@
       "open_count": 2,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 55,
+      "health": 54,
       "health_level": "warning",
       "attention_score": 0.3333333333333333,
       "normalized_score": 0.16449472655852007,
@@ -9226,10 +9226,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-10T15:24:23Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -9255,7 +9255,7 @@
       "open_count": 2,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 55,
+      "health": 54,
       "health_level": "warning",
       "attention_score": 0.3333333333333333,
       "normalized_score": 0.16449472655852007,
@@ -9380,10 +9380,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -9534,10 +9534,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:16:53Z",
-        "avg_days_since_update": 0.7250302971581135,
+        "avg_days_since_update": 1.140638467996053,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 97
+        "freshness_score": 95
       },
       "flow": {
         "incoming_deps": 0,
@@ -9684,10 +9684,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-19T00:18:51Z",
-        "avg_days_since_update": 1.185122889750706,
+        "avg_days_since_update": 1.6007310605886458,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 95
+        "freshness_score": 94
       },
       "flow": {
         "incoming_deps": 0,
@@ -9834,10 +9834,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-19T00:18:51Z",
-        "avg_days_since_update": 1.185122889750706,
+        "avg_days_since_update": 1.6007310605886458,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 95
+        "freshness_score": 94
       },
       "flow": {
         "incoming_deps": 0,
@@ -9863,7 +9863,7 @@
       "open_count": 1,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 55,
+      "health": 54,
       "health_level": "warning",
       "attention_score": 0.25,
       "normalized_score": 0.12337104491889005,
@@ -9984,10 +9984,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -10013,7 +10013,7 @@
       "open_count": 1,
       "closed_count": 1,
       "blocked_count": 0,
-      "health": 55,
+      "health": 54,
       "health_level": "warning",
       "attention_score": 0.25,
       "normalized_score": 0.12337104491889005,
@@ -10134,10 +10134,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -10282,10 +10282,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-20T12:59:52Z",
-        "avg_days_since_update": 0.8025209276695772,
+        "avg_days_since_update": 1.218129098507517,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 97
+        "freshness_score": 95
       },
       "flow": {
         "incoming_deps": 2,
@@ -10431,10 +10431,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-25T21:58:43Z",
-        "avg_days_since_update": 1.184972426787743,
+        "avg_days_since_update": 1.6005805976256828,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 95
+        "freshness_score": 94
       },
       "flow": {
         "incoming_deps": 0,
@@ -10586,10 +10586,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-07T12:54:56Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -10615,7 +10615,7 @@
       "open_count": 24,
       "closed_count": 4,
       "blocked_count": 21,
-      "health": 62,
+      "health": 61,
       "health_level": "warning",
       "attention_score": 0.16080402357907883,
       "normalized_score": 0.07935424166445115,
@@ -10749,10 +10749,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-20T12:38:21Z",
-        "avg_days_since_update": 0.7736650386704591,
+        "avg_days_since_update": 1.1892732095083989,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 97
+        "freshness_score": 95
       },
       "flow": {
         "incoming_deps": 2,
@@ -10907,10 +10907,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-13T19:25:00Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,
@@ -11065,10 +11065,10 @@
       "freshness": {
         "most_recent_update": "2026-11-27T19:40:20Z",
         "oldest_open_issue": "2026-11-14T12:32:02Z",
-        "avg_days_since_update": 0.264960852713669,
+        "avg_days_since_update": 0.6805690235516089,
         "stale_count": 0,
         "stale_threshold_days": 14,
-        "freshness_score": 99
+        "freshness_score": 97
       },
       "flow": {
         "incoming_deps": 0,

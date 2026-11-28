@@ -1,7 +1,7 @@
 {
   "authority_hash": "4c3ae9478b8b9f3391caa1f3febf547ccd9cd822e3510c246d8efbb919a35e1b",
   "data_hash": "2a7ddd4c904e41640ac894741ce0313b6ce546f234b7161800adc5839c83db8a",
-  "generated_at": "2026-11-28T02:01:52Z",
+  "generated_at": "2026-11-28T12:00:21Z",
   "global_capacity": {
     "open_count": 87,
     "total_minutes": 9235,
@@ -33,7 +33,7 @@
       ],
       "current_priority": 1,
       "suggested_priority": 2,
-      "impact_score": 0.41405480413796014,
+      "impact_score": 0.4222858903959717,
       "confidence": 0.8999999999999999,
       "reasoning": [
         "High centrality in dependency graph",
@@ -60,7 +60,7 @@
       "labels": [],
       "current_priority": 1,
       "suggested_priority": 3,
-      "impact_score": 0.2735854534623713,
+      "impact_score": 0.27481654351974216,
       "confidence": 0.8,
       "reasoning": [
         "High centrality in dependency graph",
@@ -87,7 +87,7 @@
       "labels": [],
       "current_priority": 1,
       "suggested_priority": 3,
-      "impact_score": 0.27054775953220395,
+      "impact_score": 0.2718094230908765,
       "confidence": 0.8,
       "reasoning": [
         "High centrality in dependency graph",
@@ -120,12 +120,12 @@
       ],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.266938133626524,
+      "impact_score": 0.267672645772311,
       "confidence": 0.7,
       "reasoning": [
         "High centrality in dependency graph",
         "Blocks 1 other item",
-        "aging (14 days)"
+        "aging (15 days)"
       ],
       "direction": "decrease",
       "what_if": {
@@ -151,7 +151,7 @@
       ],
       "current_priority": 1,
       "suggested_priority": 3,
-      "impact_score": 0.21077836058280602,
+      "impact_score": 0.21138900598494545,
       "confidence": 0.7,
       "reasoning": [
         "aging (21 days)",
@@ -178,7 +178,7 @@
       ],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.18576815496111163,
+      "impact_score": 0.18637908547105897,
       "confidence": 0.7,
       "reasoning": [
         "aging (21 days)",
@@ -205,10 +205,10 @@
       ],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.18425954110025466,
+      "impact_score": 0.1849156953901936,
       "confidence": 0.7,
       "reasoning": [
-        "aging (17 days)",
+        "aging (18 days)",
         "Parallel-friendly (slack available)"
       ],
       "direction": "decrease",
@@ -231,10 +231,10 @@
       ],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.18425860818063375,
+      "impact_score": 0.18491479180802936,
       "confidence": 0.7,
       "reasoning": [
-        "aging (17 days)",
+        "aging (18 days)",
         "Parallel-friendly (slack available)"
       ],
       "direction": "decrease",
@@ -258,10 +258,10 @@
       ],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.18185066721704873,
-      "confidence": 0.6924725859459836,
+      "impact_score": 0.18258517900016036,
+      "confidence": 0.6943476096690062,
       "reasoning": [
-        "aging (14 days)",
+        "aging (15 days)",
         "Parallel-friendly (slack available)"
       ],
       "direction": "decrease",
@@ -285,10 +285,10 @@
       ],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.18185063440598218,
-      "confidence": 0.6924724245992836,
+      "impact_score": 0.18258514727712186,
+      "confidence": 0.6943474576230422,
       "reasoning": [
-        "aging (14 days)",
+        "aging (15 days)",
         "Parallel-friendly (slack available)"
       ],
       "direction": "decrease",
@@ -312,10 +312,10 @@
       ],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.18185063440598218,
-      "confidence": 0.6924724245992836,
+      "impact_score": 0.18258514727712186,
+      "confidence": 0.6943474576230422,
       "reasoning": [
-        "aging (14 days)",
+        "aging (15 days)",
         "Parallel-friendly (slack available)"
       ],
       "direction": "decrease",
@@ -337,8 +337,8 @@
       ],
       "current_priority": 1,
       "suggested_priority": 3,
-      "impact_score": 0.1995463108393622,
-      "confidence": 0.656589655401451,
+      "impact_score": 0.20051735131426057,
+      "confidence": 0.6605331296293566,
       "reasoning": [
         "moderate time pressure",
         "Parallel-friendly (slack available)"
@@ -364,8 +364,8 @@
       ],
       "current_priority": 1,
       "suggested_priority": 3,
-      "impact_score": 0.19986268476632968,
-      "confidence": 0.6565895422890152,
+      "impact_score": 0.20088704866572232,
+      "confidence": 0.660533023037221,
       "reasoning": [
         "moderate time pressure",
         "Parallel-friendly (slack available)"
@@ -389,8 +389,8 @@
       ],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.17372397669714804,
-      "confidence": 0.6525589790054996,
+      "impact_score": 0.17471971988685536,
+      "confidence": 0.6567347992123904,
       "reasoning": [
         "moderate time pressure",
         "Parallel-friendly (slack available)"
@@ -415,8 +415,8 @@
       ],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.17117357373559572,
-      "confidence": 0.6400769169477569,
+      "impact_score": 0.17224177426207268,
+      "confidence": 0.64497225830784,
       "reasoning": [
         "moderate time pressure",
         "Parallel-friendly (slack available)"
@@ -441,8 +441,8 @@
       ],
       "current_priority": 1,
       "suggested_priority": 3,
-      "impact_score": 0.19583972395595775,
-      "confidence": 0.6384454048395616,
+      "impact_score": 0.1969168799795313,
+      "confidence": 0.6434347937591027,
       "reasoning": [
         "moderate time pressure",
         "Parallel-friendly (slack available)"
@@ -463,8 +463,8 @@
       "labels": [],
       "current_priority": 1,
       "suggested_priority": 3,
-      "impact_score": 0.19570192660470098,
-      "confidence": 0.6377721737276387,
+      "impact_score": 0.19678273965788867,
+      "confidence": 0.6428003706601328,
       "reasoning": [
         "moderate time pressure",
         "Parallel-friendly (slack available)"
@@ -485,8 +485,8 @@
       "labels": [],
       "current_priority": 1,
       "suggested_priority": 3,
-      "impact_score": 0.19550628669488965,
-      "confidence": 0.6368165280443212,
+      "impact_score": 0.1965922515086932,
+      "confidence": 0.6418998126122495,
       "reasoning": [
         "moderate time pressure",
         "Parallel-friendly (slack available)"
@@ -507,8 +507,8 @@
       "labels": [],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.17050625684201848,
-      "confidence": 0.6368163822381956,
+      "impact_score": 0.17159222243828143,
+      "confidence": 0.6418996752110324,
       "reasoning": [
         "moderate time pressure",
         "Parallel-friendly (slack available)"
@@ -529,8 +529,8 @@
       "labels": [],
       "current_priority": 2,
       "suggested_priority": 3,
-      "impact_score": 0.16984357102462394,
-      "confidence": 0.6337359892119139,
+      "impact_score": 0.17103291003149185,
+      "confidence": 0.6389968496357299,
       "reasoning": [
         "moderate time pressure",
         "Parallel-friendly (slack available)"

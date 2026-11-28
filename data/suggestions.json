@@ -1,7 +1,7 @@
 {
   "authority_hash": "4c3ae9478b8b9f3391caa1f3febf547ccd9cd822e3510c246d8efbb919a35e1b",
   "data_hash": "2a7ddd4c904e41640ac894741ce0313b6ce546f234b7161800adc5839c83db8a",
-  "generated_at": "2026-11-28T02:01:52Z",
+  "generated_at": "2026-11-28T12:00:21Z",
   "output_format": "json",
   "scope_hash": "dea05ebb064eb462773eaa01fa61b71d1ea510c7b09c7a9eb3e53fb866b7f315",
   "source_authority": {
@@ -56,7 +56,7 @@
       "summary": "Consider adding label 'drm'",
       "reason": "keywords: buffer, buffers, calls, checks, doesn, dragonfly, drm, flags, found, gem, i915, include, linux, looks, mapped, neither, new, non, out, page, pages, path, sets, test, them, ttm, userland, verified, while, write",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -100,7 +100,7 @@
       "summary": "Consider adding label 'kernel'",
       "reason": "keywords: asks, buffer, buffers, bytes, calls, checks, data, doesn, dragonfly, flags, found, ignore, ignored, include, leak, linux, looks, maps, neither, new, non, out, page, pages, path, scratch, sets, tables, test, them, too, while, working, write, zero, zeroed",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -150,7 +150,7 @@
       "summary": "Consider adding label 'virtio'",
       "reason": "keywords: asks, buffer, buffers, bytes, checks, doesn, dragonfly, drm, flags, found, gem, i915, include, linux, looks, mapped, new, non, out, page, pages, path, sets, tables, test, them, ttm, userland, verified, while, working, write",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -196,7 +196,7 @@
       "summary": "Consider adding label 'drm'",
       "reason": "keywords: accel, another, back, beads, both, but, client, current, dragonfly, drm, every, fails, false, fence, fixes, glxgears, gpu, kernel, kldunload, kvm, llvmpipe, master, monitor, needs, new, off, one, open, out, path, question, radeon, ran, related, reload, reset, returns, right, running, runs, same, second, seen, sets, started, starts, still, stops, switch, test, test2, testing, tests, trigger, ttm, until, using, wait, whether, without, xorg",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -271,7 +271,7 @@
       "summary": "Consider adding label 'kernel'",
       "reason": "keywords: another, back, beads, blocks, both, but, clean, client, current, data, df0, disabled, dmesg, dragonfly, ebusy, every, failed, fails, failure, false, fixes, got, gpu, hang, happen, init, kernel, kvm, last, leaves, machine, master, material, needs, new, next, off, one, open, out, path, pipe, ran, register, reload, reset, returns, right, ring, runs, same, says, second, seen, sets, still, switch, switches, test, test2, testing, tests, times, tries, twice, two, txt, until, wait, whether, without, working, xorg",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -358,7 +358,7 @@
       "summary": "Consider adding label 'virtio'",
       "reason": "keywords: accel, another, back, beads, both, but, client, current, disabled, dragonfly, drm, every, fails, fence, fixes, glxgears, got, gpu, kernel, kldunload, kvm, llvmpipe, machine, master, material, monitor, needs, new, next, off, one, open, out, path, question, radeon, ran, register, related, reload, reset, returns, right, ring, running, runs, same, says, second, seen, sets, started, starts, still, stops, switch, test, test2, testing, tests, trigger, ttm, txt, until, using, wait, whether, without, working, xorg",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -442,7 +442,7 @@
       "summary": "Consider adding label 'kernel'",
       "reason": "keywords: again, another, code, cpu, dev, diq, dragonfly, driver, dropped, dropping, drops, false, fix, found, idea, instead, interrupt, linux, list, new, off, one, own, per, put, queue, reading, relies, reproduced, request, run, runs, sees, sys, takes, true, wakeup, while, work, worker, yet",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -497,7 +497,7 @@
       "summary": "Consider adding label 'virtio'",
       "reason": "keywords: again, amdgpu, another, calling, code, cpu, cursor, deferred, dequeue, dev, diq, dragonfly, driver, drm, dropped, dropping, drops, fence, fix, found, i915, idea, instead, interrupt, item, know, linux, linux_workqueue, list, moment, new, off, one, own, per, queue, queue_work, queued, radeon, reading, run, running, runs, schedule_work, sys, system_wq, takes, true, virtio_gpu, wakeup, while, work, worker, workqueues, yet",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -566,7 +566,7 @@
       "summary": "Consider adding label 'virtio-gpu'",
       "reason": "keywords: another, calling, code, cpu, cursor, deferred, dequeue, dev, diq, dragonfly, driver, drm, dropped, dropping, drops, fence, fix, found, idea, instead, interrupt, item, linux, linux_workqueue, list, moment, one, own, per, queue, queue_work, queued, radeon, run, running, runs, schedule_work, sys, system_wq, takes, virtio_gpu, wakeup, while, work, worker",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -625,7 +625,7 @@
       "summary": "Consider adding label 'drm'",
       "reason": "keywords: 2026, adds, anything, beads, but, calls, check, code, compat, deltaports, dports, dragonfly, early, fails, find, fix, found, freebsd, graphics, handles, handling, link, main, master, never, object, patches, per, platform, port, ports, run, session, set, sources, test1, time, volumes, without, works",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -679,7 +679,7 @@
       "summary": "Consider adding label 'kernel'",
       "reason": "keywords: 2026, 2152, adds, around, beads, but, calls, check, checked, code, computed, deltaports, dports, dragonfly, early, elf, executable, fails, find, fix, found, freebsd, g732cbb, impact, keep, lang, link, linked, main, master, material, never, next, obj, origin, original, patches, per, platform, port, reported, run, session, set, shared, skipped, test1, time, too, without, works",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -744,7 +744,7 @@
       "summary": "Consider adding label 'virtio'",
       "reason": "keywords: 2026, adds, anything, beads, but, check, checked, code, compat, deltaports, dports, dragonfly, early, fails, find, fix, found, freebsd, graphics, handles, handling, keep, main, master, material, never, next, object, origin, patches, per, platform, port, ports, run, session, set, sources, test1, time, volumes, without, works",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -801,7 +801,7 @@
       "summary": "Consider adding label 'drm'",
       "reason": "keywords: already, another, block, blocked, code, cost, debug, device, doesn, dragonfly, driver, every, expected, fix, found, freed, held, idea, input, ioctl, kernel, kmod, kvm, master, needs, node, panic, per, possibly, read, reading, reproduced, returns, same, sleeps, still, switch, sys, takes, test, time, under, until, usb, while, without, write, xorg",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -863,7 +863,7 @@
       "summary": "Consider adding label 'master-fixes'",
       "reason": "keywords: afterwards, already, another, block, call, case, checked, code, count, debug, device, dragonfly, driver, every, fix, found, idea, keep, kernel, keyboard, kvm, lock, long, master, must, needs, panic, per, point, read, returns, same, short, sleeps, still, sys, takes, test, tested, time, two, under, until, while, without, write, writes",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -924,7 +924,7 @@
       "summary": "Consider adding label 'virtio'",
       "reason": "keywords: already, another, block, blocked, checked, code, cost, debug, device, doesn, dragonfly, driver, every, expected, fix, found, freed, held, idea, input, ioctl, keep, kernel, kmod, kvm, master, must, needs, node, panic, per, point, possibly, read, reading, returns, reused, same, sleeps, still, switch, sys, takes, test, tested, time, under, until, usb, while, without, write, xorg",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -991,7 +991,7 @@
       "summary": "Consider adding label 'drm'",
       "reason": "keywords: 2026, already, beads, build, change, code, deltaports, dirty, doesn, dragonfly, file, first, found, freebsd, linux, main, mark, master, moves, never, node, open, out, part, port, prints, relies, report, run, runs, same, second, session, set, sets, size, sources, start, status, sys, takes, test1, thinks, time, tree, volumes, while, workaround",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1053,7 +1053,7 @@
       "summary": "Consider adding label 'kernel'",
       "reason": "keywords: 2026, 2152, alone, already, beads, build, change, checked, code, data, deltaports, doesn, dragonfly, empty, file, fine, first, found, freebsd, g732cbb, goto, hammer, hammer2, impact, kern, last, leaves, left, length, linux, main, master, material, moves, mtime, never, node, open, original, out, part, port, posix, prints, relies, report, reported, run, runs, same, second, session, set, sets, size, sleep, start, status, sys, takes, test1, time, timestamps, tmpfs, tmpfs_subr, tree, twice, ufs, update, vap, vfs, vnoval, while",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1140,7 +1140,7 @@
       "summary": "Consider adding label 'virtio'",
       "reason": "keywords: 2026, alone, already, beads, build, change, checked, code, deltaports, dirty, doesn, dragonfly, file, first, found, freebsd, linux, main, mark, master, material, moves, never, node, open, out, part, port, prints, report, run, runs, same, second, session, set, sets, size, sources, start, status, sys, takes, test1, time, tree, ufs, volumes, while, workaround",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1204,7 +1204,7 @@
       "summary": "Consider adding label 'drm'",
       "reason": "keywords: but, calls, check, claim, claims, crash, debug, dragonfly, dump, dumps, expected, first, fixed, frame, function, gdb, info, instead, kgdb, line, matches, memory, panic, run, set, shown, stops, test2, thread, trap, type, until, valid, var, verified, vmcore, whether, worked",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1256,7 +1256,7 @@
       "summary": "Consider adding label 'kernel'",
       "reason": "keywords: around, bin, but, cache_drop, cache_fullpath, calls, check, claims, crash, debug, dounmount, dragonfly, dump, exception, expected, finds, first, fixed, function, gives, info, instead, kern, kern_shutdown, line, machine, matches, memory, mount_warning, next, panic, problem, registers, run, set, step, test2, thread, threads, trap, type, until, usr, var, vmcore, walked, whether, worked",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1318,7 +1318,7 @@
       "summary": "Consider adding label 'virtio'",
       "reason": "keywords: but, check, claim, claims, crash, debug, dragonfly, dump, dumps, expected, first, fixed, frame, function, gdb, gives, info, instead, kgdb, line, machine, matches, memory, next, panic, problem, registers, run, set, shown, step, stops, test2, thread, trap, type, until, valid, var, verified, vmcore, whether, worked",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1375,7 +1375,7 @@
       "summary": "Consider adding label 'drm'",
       "reason": "keywords: 2026, add, adds, already, attach, attaches, base, because, boot, bsd, built, bus, cause, change, checks, child, commit, console, context, device, dragonfly, driver, either, existing, files, fix, freebsd, gets, git, hardware, kernel, kernels, kvm, legacy, lines, master, needs, never, none, null, one, own, patch, pci, qemu, real, serial, shows, sys, tree, unchanged, upstream, used, verify, vga, way, without, x86_64, yet",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1448,7 +1448,7 @@
       "summary": "Consider adding label 'pc64'",
       "reason": "keywords: 2026, 805ca132ae, acpi, always, applies, base, because, boot, bsd, built, cause, change, commit, context, dragonfly, entry, fix, format, freebsd, gets, git, got, hardware, identical, isa, kernel, kvm, legacy, lines, local, machine, master, microvm, must, needs, never, one, own, patch, pci, problem, pvh, qemu, real, recommended, registers, results, sys, tree, txt, unchanged, upstream, verify, way, without, x86, x86_64, x86_64_generic, yet",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1521,7 +1521,7 @@
       "summary": "Consider adding label 'virtio'",
       "reason": "keywords: 2026, 805ca132ae, acpi, add, adds, already, always, applies, attach, attaches, base, because, boot, bsd, built, bus, cause, change, checks, child, commit, console, context, device, dragonfly, driver, driver_module, either, entry, existing, files, fix, format, freebsd, gets, git, got, hardware, kernel, kernels, kvm, legacy, lines, local, machine, master, microvm, must, needs, never, none, notes, null, one, otherwise, own, patch, pci, problem, pvh, qemu, real, recommended, registers, results, serial, shows, sys, tested, tree, txt, unchanged, upstream, used, verify, vga, way, without, x86_64, x86_64_generic, yet",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1616,7 +1616,7 @@
       "summary": "Consider adding label 'drm'",
       "reason": "keywords: 101, 2026, accel, code, cpu, desk, desktop, dragonfly, else, guest, host, instead, interrupt, investigated, kernel, lands, load, loop, master, nothing, nvmm, one, per, qemu, real, same, shows, sys, system, task, test2, thread, time, used, user, vgpu, while, xfce4, xorg",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1669,7 +1669,7 @@
       "summary": "Consider adding label 'kernel'",
       "reason": "keywords: 100, 2026, acpi, code, cpu, cpus, dragonfly, else, guest, halted, host, instead, interrupt, intr, kern, kernel, load, loop, machdep, master, nothing, nvmm, one, per, process, qemu, real, reports, return, same, see, shows, sys, system, test2, thread, ticks, time, top, used, user, vcpu, vcpus, vgpu, while, whole, xorg",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1730,7 +1730,7 @@
       "summary": "Consider adding label 'virtio'",
       "reason": "keywords: 101, 2026, accel, acpi, code, cpu, desk, desktop, dragonfly, guest, host, instead, interrupt, investigated, kernel, load, loop, master, nothing, nvmm, one, per, qemu, real, same, shows, sys, system, task, test2, thread, time, top, used, user, vgpu, while, xfce4, xorg",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1783,7 +1783,7 @@
       "summary": "Consider adding label 'drm'",
       "reason": "keywords: 2026, boot, calls, cause, code, compat, dev, device, doesn, dragonfly, drm, drops, fault, first, fix, found, function, gdb, include, itself, kernel, kib, kldload, kldunload, linux, list, load, loop, master, memory, never, null, one, page, pci, pdev, port, probe, radeon, read, reads, reference, reload, res, resource, returns, right, set, size, still, sys, test2, testing, ttm, unload, used, vgapci, vmcore, while, wrong, zone",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1858,7 +1858,7 @@
       "summary": "Consider adding label 'kernel'",
       "reason": "keywords: 2026, boot, callers, calls, cause, code, count, dev, device, doesn, dragonfly, drops, entry, exit, fault, faults, first, fix, found, function, include, itself, kernel, last, length, linux, list, load, loop, master, memory, never, next, null, one, page, panics, pci, port, read, reads, reference, releases, reload, returns, right, set, size, still, sys, test2, testing, used, vgapci, vmcore, while",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -1928,7 +1928,7 @@
       "summary": "Consider adding label 'virtio'",
       "reason": "keywords: 2026, boot, cause, code, compat, dev, device, doesn, dragonfly, drm, drops, entry, fault, faults, first, fix, found, function, gdb, include, itself, kernel, kib, kldload, kldunload, linux, list, load, loop, master, memory, never, next, null, one, page, pci, pdev, port, probe, radeon, read, reads, reference, reload, res, resource, returns, right, set, size, still, sys, test2, testing, ttm, unload, used, vgapci, vmcore, while, wrong, zone",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "matched_keywords": [
@@ -2006,7 +2006,7 @@
       "summary": "May depend on dragonfly-ckt",
       "reason": "17 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2037,7 +2037,7 @@
       "summary": "May depend on dragonfly-diq.22",
       "reason": "27 shared keywords, 1 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2081,7 +2081,7 @@
       "summary": "May depend on dragonfly-4mg",
       "reason": "36 shared keywords, 3 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2136,7 +2136,7 @@
       "summary": "May depend on dragonfly-ck4",
       "reason": "46 shared keywords, 3 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2201,7 +2201,7 @@
       "summary": "May depend on dragonfly-e9a",
       "reason": "42 shared keywords, 3 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2262,7 +2262,7 @@
       "summary": "May depend on dragonfly-xvx",
       "reason": "52 shared keywords, 3 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2333,7 +2333,7 @@
       "summary": "May depend on dragonfly-diq.16",
       "reason": "10 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2357,7 +2357,7 @@
       "summary": "May depend on dragonfly-4mg",
       "reason": "36 shared keywords, 3 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2412,7 +2412,7 @@
       "summary": "May depend on dragonfly-ck4",
       "reason": "47 shared keywords, 3 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2478,7 +2478,7 @@
       "summary": "May depend on dragonfly-e9a",
       "reason": "47 shared keywords, 3 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2544,7 +2544,7 @@
       "summary": "May depend on dragonfly-diq.1",
       "reason": "10 shared keywords, 1 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2571,7 +2571,7 @@
       "summary": "May depend on dragonfly-diq",
       "reason": "9 shared keywords, 1 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2597,7 +2597,7 @@
       "summary": "May depend on dragonfly-diq.1",
       "reason": "5 shared keywords, 1 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2619,7 +2619,7 @@
       "summary": "May depend on dragonfly-diq",
       "reason": "6 shared keywords, 1 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2642,7 +2642,7 @@
       "summary": "May depend on dragonfly-yw0",
       "reason": "22 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2678,7 +2678,7 @@
       "summary": "May depend on dragonfly-diq.16",
       "reason": "15 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2707,7 +2707,7 @@
       "summary": "May depend on dragonfly-854",
       "reason": "30 shared keywords",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2751,7 +2751,7 @@
       "summary": "May depend on dragonfly-7bb",
       "reason": "71 shared keywords, 3 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2841,7 +2841,7 @@
       "summary": "May depend on dragonfly-diq.5",
       "reason": "5 shared keywords, 3 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [
@@ -2865,7 +2865,7 @@
       "summary": "May depend on dragonfly-diq.6",
       "reason": "6 shared keywords, 3 shared labels",
       "confidence": 0.95,
-      "generated_at": "2026-11-28T02:01:52.617674461Z",
+      "generated_at": "2026-11-28T12:00:21.163634859Z",
       "metadata": {
         "action_unavailable_reason": "source has no verified live tracker route",
         "shared_keywords": [

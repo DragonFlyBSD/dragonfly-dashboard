@@ -2,7 +2,7 @@
   "authority_hash": "4c3ae9478b8b9f3391caa1f3febf547ccd9cd822e3510c246d8efbb919a35e1b",
   "data_hash": "2a7ddd4c904e41640ac894741ce0313b6ce546f234b7161800adc5839c83db8a",
   "dependency_count": 67,
-  "generated_at": "2026-11-28T02:01:52.617674461Z",
+  "generated_at": "2026-11-28T12:00:21.163634859Z",
   "has_forecast": true,
   "has_hybrid_wasm": false,
   "has_labels": true,
